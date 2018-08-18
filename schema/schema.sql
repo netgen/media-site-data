@@ -2492,6 +2492,36 @@ CREATE TABLE `ezworkflow_process` (
   KEY `ezworkflow_process_process_key` (`process_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `nguser_setting`
+--
+
+DROP TABLE IF EXISTS `nguser_setting`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `nguser_setting` (
+  `user_id` int(11) NOT NULL,
+  `is_activated` int(11) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sckenhancedselection`
+--
+
+DROP TABLE IF EXISTS `sckenhancedselection`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `sckenhancedselection` (
+  `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_attribute_version` int(11) NOT NULL DEFAULT '0',
+  `identifier` varchar(255) NOT NULL DEFAULT '',
+  KEY `sckenhancedselection_coaid_coav` (`contentobject_attribute_id`,`contentobject_attribute_version`),
+  KEY `sckenhancedselection_coaid_coav_iden` (`contentobject_attribute_id`,`contentobject_attribute_version`,`identifier` (191))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
