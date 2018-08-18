@@ -1,0 +1,16 @@
+{
+    "name": "netgen/media-site-data",
+    "description": "Demo data for Netgen Media Site",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Netgen",
+            "homepage": "https://www.netgenlabs.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
