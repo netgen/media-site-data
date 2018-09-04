@@ -3430,7 +3430,6 @@ INSERT INTO `ezimagefile` VALUES (2244,'var/site/storage/images/fitness/why-trac
 INSERT INTO `ezimagefile` VALUES (2161,'var/site/storage/images/fitness/7-keystone-habits-to-maximize-your-mornings/2161-9-eng-GB/7-keystone-habits-to-maximize-your-mornings.jpg',638);
 INSERT INTO `ezimagefile` VALUES (2216,'var/site/storage/images/fitness/why-should-you-choose-strength-training/2216-7-eng-GB/why-should-you-choose-strength-training.jpg',641);
 INSERT INTO `ezimagefile` VALUES (2230,'var/site/storage/images/fitness/bodyweight-circuit-with-running-pyramid-workout/2230-5-eng-GB/bodyweight-circuit-with-running-pyramid-workout.jpg',644);
-INSERT INTO `ezimagefile` VALUES (3695,'var/site/storage/images/fitness/10-workout-terms-you-need-to-know/3695-5-eng-GB/10-workout-terms-you-need-to-know.jpg',647);
 INSERT INTO `ezimagefile` VALUES (2185,'var/site/storage/images/fitness/the-bipolar-learning-curve/2185-7-eng-GB/the-bipolar-learning-curve.jpg',655);
 INSERT INTO `ezimagefile` VALUES (2199,'var/site/storage/images/fitness/split-options-weight-training-program/2199-7-eng-GB/split-options-weight-training-program.jpg',658);
 INSERT INTO `ezimagefile` VALUES (3461,'var/site/storage/images/healthy-eating/the-dirty-dozen-know-which-produce-you-should-always-buy-organic/3461-5-eng-GB/the-dirty-dozen-know-which-produce-you-should-always-buy-organic.jpg',664);
