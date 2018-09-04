@@ -7326,7 +7326,7 @@ INSERT INTO `ngbm_block_translation` VALUES (2,1,'en_GB','[]');
 INSERT INTO `ngbm_block_translation` VALUES (3,1,'en_GB','[]');
 INSERT INTO `ngbm_block_translation` VALUES (4,1,'en_GB','[]');
 INSERT INTO `ngbm_block_translation` VALUES (5,1,'en_GB','[]');
-INSERT INTO `ngbm_block_translation` VALUES (7,1,'en_GB','{\"tag\":\"h2\",\"title\":\"Mos Popular this Week\",\"use_link\":false,\"link\":{\"link_type\":null,\"link\":null,\"link_suffix\":null,\"new_window\":false},\"vertical_whitespace:enabled\":true,\"vertical_whitespace:position\":\"top\",\"vertical_whitespace:size\":\"md\",\"css_class\":null,\"css_id\":null,\"set_container\":true,\"set_container:size\":\"\",\"title_icon:enabled\":false,\"title_icon:css_class\":null}');
+INSERT INTO `ngbm_block_translation` VALUES (7,1,'en_GB','{\"tag\":\"h2\",\"title\":\"Most Popular this Week\",\"use_link\":false,\"link\":{\"link_type\":null,\"link\":null,\"link_suffix\":null,\"new_window\":false},\"vertical_whitespace:enabled\":true,\"vertical_whitespace:position\":\"top\",\"vertical_whitespace:size\":\"md\",\"css_class\":null,\"css_id\":null,\"set_container\":true,\"set_container:size\":\"\",\"title_icon:enabled\":false,\"title_icon:css_class\":null}');
 INSERT INTO `ngbm_block_translation` VALUES (8,1,'en_GB','[]');
 INSERT INTO `ngbm_block_translation` VALUES (9,1,'en_GB','[]');
 INSERT INTO `ngbm_block_translation` VALUES (10,1,'en_GB','[]');
