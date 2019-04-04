@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.23, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.25, for Linux (x86_64)
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	5.7.23-0ubuntu0.18.04.1
+-- Server version	5.7.25-0ubuntu0.18.10.2
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -262,7 +262,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',3,0,0,0,0,255,0,0,0,'','',''
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',3,0,0,0,0,255,0,0,0,'','','','','','ezstring',7,'description',0,0,1,2,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:11:\"Description\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',4,0,0,0,0,255,0,0,0,'','','','','','ezstring',8,'first_name',0,1,1,1,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:10:\"First name\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',4,0,0,0,0,255,0,0,0,'','','','','','ezstring',9,'last_name',0,1,1,2,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Last name\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (0,'',4,0,0,0,0,0,0,0,0,'','','','','','ezuser',12,'user_account',0,1,0,3,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"User account\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (0,'',4,0,0,0,0,7,10,0,0,'','','','','','ezuser',12,'user_account',0,1,0,3,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"User account\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',4,0,0,0,0,10,0,0,0,'','','','','','eztext',179,'signature',0,0,1,4,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Signature\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',4,0,0,0,0,1,0,0,0,'','','','','','ezimage',180,'image',0,0,0,5,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:5:\"Image\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',37,0,0,0,0,0,0,0,0,'','','','','','ezstring',313,'title',0,1,0,1,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
@@ -484,6 +484,15 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',97,0,0,0,0,60,0,0,0,'','',''
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `ezcontentclass_attribute_ml`
+--
+
+LOCK TABLES `ezcontentclass_attribute_ml` WRITE;
+/*!40000 ALTER TABLE `ezcontentclass_attribute_ml` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ezcontentclass_attribute_ml` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `ezcontentclass_classgroup`
 --
 
@@ -565,24 +574,24 @@ UNLOCK TABLES;
 
 LOCK TABLES `ezcontentobject` WRITE;
 /*!40000 ALTER TABLE `ezcontentobject` DISABLE KEYS */;
-INSERT INTO `ezcontentobject` VALUES (3,1,4,2,3,1033917596,'Users',14,1033917596,'f5c88a2209584891056f987fd965b0ba',2,1);
-INSERT INTO `ezcontentobject` VALUES (4,3,10,2,3,1453475784,'Anonymous User',14,1033920665,'faaeb9be3bd98ed09f606fc16d144eca',2,1);
-INSERT INTO `ezcontentobject` VALUES (3,1,11,2,3,1452255195,'Members',14,1452255195,'9b808c7e436ef274d225ed3c1a3757a7',2,1);
-INSERT INTO `ezcontentobject` VALUES (3,1,12,2,3,1033920775,'Administrator users',14,1033920775,'9b47a45624b023b1a76c73b74d704acf',2,1);
-INSERT INTO `ezcontentobject` VALUES (3,1,13,2,3,1033920794,'Editors',14,1033920794,'3c160cca19fb135f83bd02d911f04db2',2,1);
-INSERT INTO `ezcontentobject` VALUES (4,6,14,2,3,1472412012,'Administrator User',14,1033920830,'1bb4fe25487f05527efa8bfd394cecc7',2,1);
-INSERT INTO `ezcontentobject` VALUES (49,1,41,2,3,1060695457,'Media',14,1060695457,'a6e35cbcb7cd6ae4b691f3eee30cd262',3,1);
-INSERT INTO `ezcontentobject` VALUES (3,2,42,2,3,1397205317,'Anonymous users',14,1072180330,'15b256dbea2ae72418ff5facc999e8f9',2,1);
-INSERT INTO `ezcontentobject` VALUES (49,1,45,2,3,1079684190,'Setup',14,1079684190,'241d538ce310074e602f29f49e44e938',4,1);
-INSERT INTO `ezcontentobject` VALUES (49,1,56,2,3,1103023132,'Design',14,1103023132,'08799e609893f7aba22f10cb466d9cc8',5,1);
-INSERT INTO `ezcontentobject` VALUES (47,98,61,2,3,1453475463,'Home',14,1361269607,'c2a20616415e22135b81e68285d5f1dd',1,1);
-INSERT INTO `ezcontentobject` VALUES (49,1,62,2,3,1361279440,'Configuration',14,1361279440,'447c35347602e8f843ddc7d0008f30f3',3,1);
-INSERT INTO `ezcontentobject` VALUES (50,37,63,2,3,1536839432,'Netgen Media Site - [SITEINFO]',14,1361279467,'9eba65ee85ab04642c83b00a7dbfe247',3,1);
-INSERT INTO `ezcontentobject` VALUES (49,2,84,2,3,1380807379,'Banners',14,1366199858,'23c0873871e0acbe897cb90e20cf31d3',3,1);
-INSERT INTO `ezcontentobject` VALUES (49,1,168,2,3,1405090113,'Menu items',14,1405090113,'ee89de1506dfccc00d6eb0ce8cacd74d',3,1);
-INSERT INTO `ezcontentobject` VALUES (49,1,170,2,3,1416081876,'Files',14,1416081876,'03dbd2f1af3c7b8a4f8664fecd7e94bf',3,1);
-INSERT INTO `ezcontentobject` VALUES (49,1,171,2,3,1416081888,'Images',14,1416081888,'dc0c8aba89a4196000da84ef63500661',3,1);
-INSERT INTO `ezcontentobject` VALUES (49,1,172,2,3,1416081920,'Multimedia',14,1416081920,'cb5405ce7c36cc145098735004ef4f3a',3,1);
+INSERT INTO `ezcontentobject` VALUES (3,1,4,2,3,1033917596,'Users',14,1033917596,'f5c88a2209584891056f987fd965b0ba',2,1,0);
+INSERT INTO `ezcontentobject` VALUES (4,3,10,2,3,1453475784,'Anonymous User',14,1033920665,'faaeb9be3bd98ed09f606fc16d144eca',2,1,0);
+INSERT INTO `ezcontentobject` VALUES (3,1,11,2,3,1452255195,'Members',14,1452255195,'9b808c7e436ef274d225ed3c1a3757a7',2,1,0);
+INSERT INTO `ezcontentobject` VALUES (3,1,12,2,3,1033920775,'Administrator users',14,1033920775,'9b47a45624b023b1a76c73b74d704acf',2,1,0);
+INSERT INTO `ezcontentobject` VALUES (3,1,13,2,3,1033920794,'Editors',14,1033920794,'3c160cca19fb135f83bd02d911f04db2',2,1,0);
+INSERT INTO `ezcontentobject` VALUES (4,6,14,2,3,1472412012,'Administrator User',14,1033920830,'1bb4fe25487f05527efa8bfd394cecc7',2,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,1,41,2,3,1060695457,'Media',14,1060695457,'a6e35cbcb7cd6ae4b691f3eee30cd262',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (3,2,42,2,3,1397205317,'Anonymous users',14,1072180330,'15b256dbea2ae72418ff5facc999e8f9',2,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,1,45,2,3,1079684190,'Setup',14,1079684190,'241d538ce310074e602f29f49e44e938',4,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,1,56,2,3,1103023132,'Design',14,1103023132,'08799e609893f7aba22f10cb466d9cc8',5,1,0);
+INSERT INTO `ezcontentobject` VALUES (47,98,61,2,3,1453475463,'Home',14,1361269607,'c2a20616415e22135b81e68285d5f1dd',1,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,1,62,2,3,1361279440,'Configuration',14,1361279440,'447c35347602e8f843ddc7d0008f30f3',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (50,37,63,2,3,1536839432,'Netgen Media Site - [SITEINFO]',14,1361279467,'9eba65ee85ab04642c83b00a7dbfe247',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,2,84,2,3,1380807379,'Banners',14,1366199858,'23c0873871e0acbe897cb90e20cf31d3',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,1,168,2,3,1405090113,'Menu items',14,1405090113,'ee89de1506dfccc00d6eb0ce8cacd74d',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,1,170,2,3,1416081876,'Files',14,1416081876,'03dbd2f1af3c7b8a4f8664fecd7e94bf',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,1,171,2,3,1416081888,'Images',14,1416081888,'dc0c8aba89a4196000da84ef63500661',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (49,1,172,2,3,1416081920,'Multimedia',14,1416081920,'cb5405ce7c36cc145098735004ef4f3a',3,1,0);
 /*!40000 ALTER TABLE `ezcontentobject` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2613,7 +2622,7 @@ UNLOCK TABLES;
 LOCK TABLES `ezsite_data` WRITE;
 /*!40000 ALTER TABLE `ezsite_data` DISABLE KEYS */;
 INSERT INTO `ezsite_data` VALUES ('ezpublish-release','1');
-INSERT INTO `ezsite_data` VALUES ('ezpublish-version','7.3.0');
+INSERT INTO `ezsite_data` VALUES ('ezpublish-version','7.5.0');
 /*!40000 ALTER TABLE `ezsite_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3138,4 +3147,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-24  9:00:00
+-- Dump completed on 2019-04-04 12:00:00
