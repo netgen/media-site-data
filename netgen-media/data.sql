@@ -39,7 +39,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `ezbinaryfile` WRITE;
 /*!40000 ALTER TABLE `ezbinaryfile` DISABLE KEYS */;
-INSERT INTO `ezbinaryfile` VALUES (2112,0,'f0a8c1c80be9f029dc14731a81c61178.svg','image/svg+xml','logo-original.svg',34);
+INSERT INTO `ezbinaryfile` VALUES (2112,0,'f0a8c1c80be9f029dc14731a81c61178.svg','image/svg+xml','logo-original.svg',35);
 INSERT INTO `ezbinaryfile` VALUES (4585,0,'c32f9e739ea7dde7de3d1ccd1d38f491.txt','text/plain','test.txt',1);
 /*!40000 ALTER TABLE `ezbinaryfile` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -420,7 +420,7 @@ INSERT INTO `ezcontentclass` VALUES (1,'<teaser_title|title>',1360856949,14,46,'
 INSERT INTO `ezcontentclass` VALUES (0,'<title>',1360856949,14,47,'ng_frontpage',2,1,3,1536674449,14,'aff5987579ece42eae5a5ed13092a917','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Frontpage\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Frontpage\";}',1,1,'<title>',0);
 INSERT INTO `ezcontentclass` VALUES (0,'<teaser_title|title>',1360856949,14,48,'ng_landing_page',2,1,3,1536674459,14,'035570b01e5fb0f99de7be24b3cc8336','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:12:\"Landing page\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:12:\"Landing page\";}',2,0,'<url_text|teaser_title|title>',0);
 INSERT INTO `ezcontentclass` VALUES (1,'<title>',1360856949,14,49,'ng_container',2,1,3,1536674442,14,'d16e2ce1aa04a16963b9594c634711ad','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Container\";}',9,1,'<title>',0);
-INSERT INTO `ezcontentclass` VALUES (1,'<title> - [SITEINFO]',1360856949,14,50,'ng_site_info',2,0,3,1536674472,14,'3b35160b31fcc2f9e1edb67d02ee4f08','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Site info\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Site info\";}',1,1,'<title>',0);
+INSERT INTO `ezcontentclass` VALUES (1,'<title> - [SITEINFO]',1360856949,14,50,'ng_site_info',2,0,3,1555420493,14,'3b35160b31fcc2f9e1edb67d02ee4f08','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Site info\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Site info\";}',1,1,'<title>',0);
 INSERT INTO `ezcontentclass` VALUES (1,'<teaser_title|title>',1360856949,14,51,'ng_shortcut',2,0,3,1536674755,14,'71f8cc283a01e33187637fc0740cbeaa','a:2:{s:6:\"eng-GB\";s:53:\"Object for linking to external and internal resources\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:8:\"Shortcut\";}',1,1,'<teaser_title|title>',0);
 INSERT INTO `ezcontentclass` VALUES (0,'<name>',1361976612,14,80,'file',2,0,3,1536674513,14,'637d58bfddf164627bdfd265733280a0','a:1:{s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:6:\"eng-GB\";s:4:\"File\";s:16:\"always-available\";s:6:\"eng-GB\";}',1,1,'',0);
 INSERT INTO `ezcontentclass` VALUES (0,'<name>',1361976612,14,81,'image',2,0,3,1536674544,14,'f6df12aa74e36230eb675f364fccd25a','a:1:{s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:6:\"eng-GB\";s:5:\"Image\";s:16:\"always-available\";s:6:\"eng-GB\";}',1,1,'',0);
@@ -512,13 +512,13 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',48,0,0,0,0,0,0,0,0,'','','',
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',48,0,0,0,0,0,0,0,0,'Default','','','','','eztags',403,'tags',0,0,1,7,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:4:\"Tags\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',49,0,0,0,0,0,0,0,0,'','','','','','ezstring',405,'title',0,1,0,1,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezstring',406,'title',0,1,0,1,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',407,'main_menu',0,0,1,6,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:15:\"Main menu links\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',408,'additional_menu',0,0,1,7,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:21:\"Additional menu links\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,5,0,0,0,'','','','','','ezxmltext',409,'footer_block',0,0,1,8,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"Footer block\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',407,'main_menu',0,0,1,7,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:15:\"Main menu links\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',408,'additional_menu',0,0,1,8,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:21:\"Additional menu links\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,5,0,0,0,'','','','','','ezxmltext',409,'footer_block',0,0,1,9,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"Footer block\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',410,'metadata',0,0,1,2,'a:0:{}','a:2:{s:6:\"eng-GB\";s:23:\"Default metadata object\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,10,0,0,0,'','','','','','eztext',411,'javascript_block_top',0,0,1,9,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:17:\"JavaScript on top\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,10,0,0,0,'','','','','','eztext',412,'javascript_block_bottom',0,0,1,10,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:20:\"JavaScript on bottom\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezstring',413,'rss_feed',0,0,1,5,'a:0:{}','a:2:{s:6:\"eng-GB\";s:16:\"Default RSS feed\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"RSS feed\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,10,0,0,0,'','','','','','eztext',411,'javascript_block_top',0,0,1,10,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:17:\"JavaScript on top\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,10,0,0,0,'','','','','','eztext',412,'javascript_block_bottom',0,0,1,11,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:20:\"JavaScript on bottom\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezstring',413,'rss_feed',0,0,1,6,'a:0:{}','a:2:{s:6:\"eng-GB\";s:16:\"Default RSS feed\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"RSS feed\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',51,0,0,0,0,0,0,0,0,'','','','','','ezstring',414,'title',0,1,0,1,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',51,0,0,0,0,0,0,0,0,'','','','','','ezurl',415,'url',0,0,0,5,'a:0:{}','a:2:{s:6:\"eng-GB\";s:68:\"External page url to link to. Has priority over internal object link\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:17:\"External page url\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',51,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-object><constraints/></related-object>\n','ezobjectrelation',416,'related_object',0,0,0,6,'a:0:{}','a:2:{s:6:\"eng-GB\";s:40:\"Used if external page url is not defined\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:20:\"Internal object link\";}',0);
@@ -593,11 +593,11 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',44,0,0,0,0,0,0,0,0,'','','',
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',45,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints><allowed-class contentclass-identifier=\"ng_banner\"/><allowed-class contentclass-identifier=\"ng_gallery\"/><allowed-class contentclass-identifier=\"image\"/><allowed-class contentclass-identifier=\"ng_video\"/></constraints><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement node-id=\"53\"/></related-objects>\n','ezobjectrelationlist',742,'related_multimedia',0,0,1,13,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:24:\"Related multimedia items\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',97,0,0,0,0,0,0,0,0,'','','','','','ezstring',751,'video_identifier',0,0,0,6,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:76:\"Video identifier for external video content (YouTube, Vimeo, Dailymotion...)\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:16:\"Video identifier\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',97,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\"?>\n<content><options><option id=\"1\" name=\"YouTube\" identifier=\"youtube\" priority=\"1\"/><option id=\"2\" name=\"Vimeo\" identifier=\"vimeo\" priority=\"1\"/><option id=\"3\" name=\"Dailymotion\" identifier=\"dailymotion\" priority=\"1\"/><option id=\"4\" name=\"Uploaded video\" identifier=\"upload\" priority=\"1\"/></options><multiselect>0</multiselect><delimiter><![CDATA[]]></delimiter><query><![CDATA[]]></query></content>\n','sckenhancedselection',752,'video_type',0,1,1,3,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:10:\"Video type\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',753,'facebook',0,0,0,11,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"Facebook\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',754,'twitter',0,0,0,12,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:7:\"Twitter\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',755,'instagram',0,0,0,13,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Instagram\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',757,'gplus',0,0,0,14,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:7:\"Google+\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',758,'linkedin',0,0,0,15,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"LinkedIn\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',753,'facebook',0,0,0,12,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"Facebook\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',754,'twitter',0,0,0,13,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:7:\"Twitter\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',755,'instagram',0,0,0,14,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Instagram\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',757,'gplus',0,0,0,15,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:7:\"Google+\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezurl',758,'linkedin',0,0,0,16,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"LinkedIn\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',42,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-object><constraints/></related-object>\n','ezobjectrelation',761,'video',0,0,1,9,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:26:\"A relation to the ng_video\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:5:\"Video\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',48,0,0,0,0,5,0,0,0,'','','','','','ezxmltext',762,'teaser_intro',0,0,1,4,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:61:\"Teaser intro text, shown on category page or in search result\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:17:\"Teaser intro text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezstring',763,'site_name',0,1,1,3,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Site name\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
@@ -663,6 +663,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',41,0,0,0,0,60,0,0,0,'','',''
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',95,0,0,0,0,60,0,0,0,'','','','','','ezstring',838,'teaser_title',0,0,1,2,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:19:\"Short title version\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"Teaser title\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',51,0,0,0,0,60,0,0,0,'','','','','','ezstring',839,'teaser_title',0,0,1,2,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:19:\"Short title version\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"Teaser title\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',97,0,0,0,0,60,0,0,0,'','','','','','ezstring',840,'teaser_title',0,0,1,2,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:19:\"Short title version\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"Teaser title\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezimage',841,'site_opengraph_image',0,0,0,5,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:21:\"Site Open Graph image\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 /*!40000 ALTER TABLE `ezcontentclass_attribute` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -769,7 +770,7 @@ INSERT INTO `ezcontentobject` VALUES (49,1,45,2,3,1079684190,'Setup',14,10796841
 INSERT INTO `ezcontentobject` VALUES (49,1,56,2,3,1103023132,'Design',14,1103023132,'08799e609893f7aba22f10cb466d9cc8',5,1,0);
 INSERT INTO `ezcontentobject` VALUES (47,98,61,2,3,1453475463,'Home',14,1361269607,'c2a20616415e22135b81e68285d5f1dd',1,1,0);
 INSERT INTO `ezcontentobject` VALUES (49,1,62,2,3,1361279440,'Configuration',14,1361279440,'447c35347602e8f843ddc7d0008f30f3',3,1,0);
-INSERT INTO `ezcontentobject` VALUES (50,34,63,2,3,1535032267,'Fit & Healthy - [SITEINFO]',14,1361279467,'9eba65ee85ab04642c83b00a7dbfe247',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (50,35,63,2,3,1555420711,'Fit & Healthy - [SITEINFO]',14,1361279467,'9eba65ee85ab04642c83b00a7dbfe247',3,1,0);
 INSERT INTO `ezcontentobject` VALUES (49,2,84,2,3,1380807379,'Banners',14,1366199858,'23c0873871e0acbe897cb90e20cf31d3',3,1,0);
 INSERT INTO `ezcontentobject` VALUES (49,1,168,2,3,1405090113,'Menu items',14,1405090113,'ee89de1506dfccc00d6eb0ce8cacd74d',3,1,0);
 INSERT INTO `ezcontentobject` VALUES (49,1,170,2,3,1416081876,'Files',14,1416081876,'03dbd2f1af3c7b8a4f8664fecd7e94bf',3,1,0);
@@ -989,28 +990,28 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,405,56,0,NULL,'Design','ezstri
 INSERT INTO `ezcontentobject_attribute` VALUES (0,394,61,0,NULL,'Home','ezstring',226,'eng-GB',3,0,'home',98);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,395,61,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title></title><keywords></keywords><description></description><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',228,'eng-GB',3,0,'',98);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,62,0,NULL,'Configuration','ezstring',230,'eng-GB',3,0,'configuration',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,406,63,0,NULL,'Fit & Healthy','ezstring',231,'eng-GB',3,0,'fit & healthy',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,407,63,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list><relation-item priority=\"1\" contentobject-id=\"174\" contentobject-version=\"1\" node-id=\"167\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"beed906956ec740fd90f03262a2bfd19\"/><relation-item priority=\"2\" contentobject-id=\"175\" contentobject-version=\"1\" node-id=\"168\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"e7e38b0aa1e56250eacae6ecf68e11d5\"/><relation-item priority=\"3\" contentobject-id=\"197\" contentobject-version=\"1\" node-id=\"190\" parent-node-id=\"2\" contentclass-id=\"46\" contentclass-identifier=\"ng_category\" contentobject-remote-id=\"2d8cf5e84eebef0fab7efd633d6efd39\"/><relation-item priority=\"4\" contentobject-id=\"203\" contentobject-version=\"1\" node-id=\"195\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"55e27ad42bdea98deb3afe5cd9289a5b\"/><relation-item priority=\"5\" contentobject-id=\"206\" contentobject-version=\"1\" node-id=\"198\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"1a459b09aa9ac8dc31364ed9c94f425d\"/></relation-list></related-objects>\n','ezobjectrelationlist',232,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,408,63,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list><relation-item priority=\"1\" contentobject-id=\"203\" contentobject-version=\"3\" node-id=\"195\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"55e27ad42bdea98deb3afe5cd9289a5b\"/><relation-item priority=\"2\" contentobject-id=\"218\" contentobject-version=\"1\" node-id=\"210\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"f63daa904f40e2e035c071ac61c2f411\"/><relation-item priority=\"3\" contentobject-id=\"235\" contentobject-version=\"1\" node-id=\"224\" parent-node-id=\"2\" contentclass-id=\"94\" contentclass-identifier=\"ng_feedback_form\" contentobject-remote-id=\"85e74b55c4e4307fa35ba23e63fafbca\"/><relation-item priority=\"4\" contentobject-id=\"238\" contentobject-version=\"1\" node-id=\"227\" parent-node-id=\"166\" contentclass-id=\"100\" contentclass-identifier=\"ng_menu_item\" contentobject-remote-id=\"31534b87e7202411f717b67307aa95bf\"/></relation-list></related-objects>\n','ezobjectrelationlist',233,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,409,63,0,1045487555,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<section xmlns:image=\"http://ez.no/namespaces/ezpublish3/image/\" xmlns:xhtml=\"http://ez.no/namespaces/ezpublish3/xhtml/\" xmlns:custom=\"http://ez.no/namespaces/ezpublish3/custom/\"><paragraph>This demo site is built on eZ Platform, Netgen Admin UI and Netgen Layouts. </paragraph></section>\n','ezxmltext',234,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,410,63,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',235,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,411,63,0,NULL,'','eztext',236,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,412,63,0,NULL,'','eztext',237,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,413,63,0,NULL,'','ezstring',238,'eng-GB',3,0,'',34);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,406,63,0,NULL,'Fit & Healthy','ezstring',231,'eng-GB',3,0,'fit & healthy',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,407,63,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list><relation-item priority=\"1\" contentobject-id=\"174\" contentobject-version=\"1\" node-id=\"167\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"beed906956ec740fd90f03262a2bfd19\"/><relation-item priority=\"2\" contentobject-id=\"175\" contentobject-version=\"1\" node-id=\"168\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"e7e38b0aa1e56250eacae6ecf68e11d5\"/><relation-item priority=\"3\" contentobject-id=\"197\" contentobject-version=\"1\" node-id=\"190\" parent-node-id=\"2\" contentclass-id=\"46\" contentclass-identifier=\"ng_category\" contentobject-remote-id=\"2d8cf5e84eebef0fab7efd633d6efd39\"/><relation-item priority=\"4\" contentobject-id=\"203\" contentobject-version=\"1\" node-id=\"195\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"55e27ad42bdea98deb3afe5cd9289a5b\"/><relation-item priority=\"5\" contentobject-id=\"206\" contentobject-version=\"1\" node-id=\"198\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"1a459b09aa9ac8dc31364ed9c94f425d\"/></relation-list></related-objects>\n','ezobjectrelationlist',232,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,408,63,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list><relation-item priority=\"1\" contentobject-id=\"203\" contentobject-version=\"3\" node-id=\"195\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"55e27ad42bdea98deb3afe5cd9289a5b\"/><relation-item priority=\"2\" contentobject-id=\"218\" contentobject-version=\"1\" node-id=\"210\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"f63daa904f40e2e035c071ac61c2f411\"/><relation-item priority=\"3\" contentobject-id=\"235\" contentobject-version=\"1\" node-id=\"224\" parent-node-id=\"2\" contentclass-id=\"94\" contentclass-identifier=\"ng_feedback_form\" contentobject-remote-id=\"85e74b55c4e4307fa35ba23e63fafbca\"/><relation-item priority=\"4\" contentobject-id=\"238\" contentobject-version=\"1\" node-id=\"227\" parent-node-id=\"166\" contentclass-id=\"100\" contentclass-identifier=\"ng_menu_item\" contentobject-remote-id=\"31534b87e7202411f717b67307aa95bf\"/></relation-list></related-objects>\n','ezobjectrelationlist',233,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,409,63,0,1045487555,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<section xmlns:image=\"http://ez.no/namespaces/ezpublish3/image/\" xmlns:xhtml=\"http://ez.no/namespaces/ezpublish3/xhtml/\" xmlns:custom=\"http://ez.no/namespaces/ezpublish3/custom/\"><paragraph>This demo site is built on eZ Platform, Netgen Admin UI and Netgen Layouts. </paragraph></section>\n','ezxmltext',234,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,410,63,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',235,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,411,63,0,NULL,'','eztext',236,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,412,63,0,NULL,'','eztext',237,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,413,63,0,NULL,'','ezstring',238,'eng-GB',3,0,'',35);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,84,0,NULL,'Banners','ezstring',469,'eng-GB',3,0,'banners',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,168,0,NULL,'Menu items','ezstring',1366,'eng-GB',3,0,'menu items',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,170,0,NULL,'Files','ezstring',1375,'eng-GB',3,0,'files',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,171,0,NULL,'Images','ezstring',1376,'eng-GB',3,0,'images',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,172,0,NULL,'Multimedia','ezstring',1377,'eng-GB',3,0,'multimedia',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,753,63,0,0,'','ezurl',1822,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,754,63,0,0,'','ezurl',1825,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,755,63,0,0,'','ezurl',1828,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,757,63,0,0,'','ezurl',1831,'eng-GB',3,0,'',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,758,63,0,0,'','ezurl',1834,'eng-GB',3,0,'',34);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,753,63,0,0,'','ezurl',1822,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,754,63,0,0,'','ezurl',1825,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,755,63,0,0,'','ezurl',1828,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,757,63,0,0,'','ezurl',1831,'eng-GB',3,0,'',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,758,63,0,0,'','ezurl',1834,'eng-GB',3,0,'',35);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,6,11,0,NULL,'Members','ezstring',2109,'eng-GB',3,0,'members',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,7,11,0,NULL,'','ezstring',2110,'eng-GB',3,0,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,763,63,0,NULL,'Fit & Healthy','ezstring',2111,'eng-GB',3,0,'fit & healthy',34);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,764,63,0,NULL,'','ezbinaryfile',2112,'eng-GB',3,0,'',34);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,763,63,0,NULL,'Fit & Healthy','ezstring',2111,'eng-GB',3,0,'fit & healthy',35);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,764,63,0,NULL,'','ezbinaryfile',2112,'eng-GB',3,0,'',35);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,397,174,0,NULL,'Fitness','ezstring',2131,'eng-GB',2,0,'fitness',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,401,174,0,NULL,'','ezstring',2132,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,398,174,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2133,'eng-GB',2,0,'',1);
@@ -2847,6 +2848,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,578,393,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,570,394,0,NULL,'File test','ezstring',4583,'eng-GB',2,0,'file test',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,571,394,0,1045487555,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<section xmlns:image=\"http://ez.no/namespaces/ezpublish3/image/\" xmlns:xhtml=\"http://ez.no/namespaces/ezpublish3/xhtml/\" xmlns:custom=\"http://ez.no/namespaces/ezpublish3/custom/\"><paragraph>Description for file test item</paragraph></section>\n','ezxmltext',4584,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,572,394,0,NULL,'','ezbinaryfile',4585,'eng-GB',2,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,841,63,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ezimage serial_number=\"1\" is_valid=\"1\" filename=\"fit-healthy-siteinfo.png\" suffix=\"png\" basename=\"fit-healthy-siteinfo\" dirpath=\"var/site/storage/images/media/configuration/fit-healthy/4586-35-eng-GB\" url=\"var/site/storage/images/media/configuration/fit-healthy/4586-35-eng-GB/fit-healthy-siteinfo.png\" original_filename=\"opengraph.png\" mime_type=\"image/png\" width=\"250\" height=\"250\" alternative_text=\"\" alias_key=\"1293033771\" timestamp=\"1555420711\"><original attribute_id=\"4586\" attribute_version=\"35\" attribute_language=\"eng-GB\"/></ezimage>\n','ezimage',4586,'eng-GB',3,0,'',35);
 /*!40000 ALTER TABLE `ezcontentobject_attribute` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2893,15 +2895,6 @@ INSERT INTO `ezcontentobject_link` VALUES (0,283,7,931,2,284);
 INSERT INTO `ezcontentobject_link` VALUES (834,283,7,934,8,280);
 INSERT INTO `ezcontentobject_link` VALUES (0,366,5,953,2,347);
 INSERT INTO `ezcontentobject_link` VALUES (836,366,5,956,8,237);
-INSERT INTO `ezcontentobject_link` VALUES (407,63,34,975,8,174);
-INSERT INTO `ezcontentobject_link` VALUES (407,63,34,976,8,175);
-INSERT INTO `ezcontentobject_link` VALUES (407,63,34,977,8,197);
-INSERT INTO `ezcontentobject_link` VALUES (407,63,34,978,8,203);
-INSERT INTO `ezcontentobject_link` VALUES (407,63,34,979,8,206);
-INSERT INTO `ezcontentobject_link` VALUES (408,63,34,980,8,203);
-INSERT INTO `ezcontentobject_link` VALUES (408,63,34,981,8,218);
-INSERT INTO `ezcontentobject_link` VALUES (408,63,34,982,8,235);
-INSERT INTO `ezcontentobject_link` VALUES (408,63,34,983,8,238);
 INSERT INTO `ezcontentobject_link` VALUES (836,275,5,986,8,239);
 INSERT INTO `ezcontentobject_link` VALUES (0,270,8,987,2,271);
 INSERT INTO `ezcontentobject_link` VALUES (834,270,8,990,8,280);
@@ -2962,6 +2955,15 @@ INSERT INTO `ezcontentobject_link` VALUES (833,385,5,1134,8,237);
 INSERT INTO `ezcontentobject_link` VALUES (0,373,2,1135,2,325);
 INSERT INTO `ezcontentobject_link` VALUES (836,373,2,1138,8,239);
 INSERT INTO `ezcontentobject_link` VALUES (334,375,10,1140,8,218);
+INSERT INTO `ezcontentobject_link` VALUES (407,63,35,1159,8,174);
+INSERT INTO `ezcontentobject_link` VALUES (407,63,35,1160,8,175);
+INSERT INTO `ezcontentobject_link` VALUES (407,63,35,1161,8,197);
+INSERT INTO `ezcontentobject_link` VALUES (407,63,35,1162,8,203);
+INSERT INTO `ezcontentobject_link` VALUES (407,63,35,1163,8,206);
+INSERT INTO `ezcontentobject_link` VALUES (408,63,35,1164,8,203);
+INSERT INTO `ezcontentobject_link` VALUES (408,63,35,1165,8,218);
+INSERT INTO `ezcontentobject_link` VALUES (408,63,35,1166,8,235);
+INSERT INTO `ezcontentobject_link` VALUES (408,63,35,1167,8,238);
 /*!40000 ALTER TABLE `ezcontentobject_link` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2983,7 +2985,7 @@ INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,45,3,'Setup','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,56,3,'Design','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',98,61,3,'Home','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,62,3,'Configuration','eng-GB');
-INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',34,63,3,'Fit & Healthy - [SITEINFO]','eng-GB');
+INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',35,63,3,'Fit & Healthy - [SITEINFO]','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',2,84,3,'Banners','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,168,3,'Menu items','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,170,3,'Files','eng-GB');
@@ -3197,14 +3199,14 @@ UNLOCK TABLES;
 
 LOCK TABLES `ezcontentobject_tree` WRITE;
 /*!40000 ALTER TABLE `ezcontentobject_tree` DISABLE KEYS */;
-INSERT INTO `ezcontentobject_tree` VALUES (0,1,1,0,0,0,1,1551879559,1,1,'','/1/',0,'629709ba256fe317c3ddcee35453a96a',1,1);
+INSERT INTO `ezcontentobject_tree` VALUES (0,1,1,0,0,0,1,1555420711,1,1,'','/1/',0,'629709ba256fe317c3ddcee35453a96a',1,1);
 INSERT INTO `ezcontentobject_tree` VALUES (61,1,98,1,0,0,2,1551879559,2,1,'','/1/2/',0,'f3e90596361e31d496d4026eb624c983',8,1);
 INSERT INTO `ezcontentobject_tree` VALUES (4,1,1,1,0,0,5,1472412012,5,1,'users','/1/5/',0,'3f6d92f8044aed134f32153517850f5a',1,1);
 INSERT INTO `ezcontentobject_tree` VALUES (11,1,1,2,0,0,12,1452255195,12,5,'users/members','/1/5/12/',0,'a66e8445a6726eed1a20768a32a7c818',1,1);
 INSERT INTO `ezcontentobject_tree` VALUES (12,1,1,2,0,0,13,1472412012,13,5,'users/administrator_users','/1/5/13/',0,'769380b7aa94541679167eab817ca893',1,1);
 INSERT INTO `ezcontentobject_tree` VALUES (13,1,1,2,0,0,14,1453475799,14,5,'users/editors','/1/5/14/',0,'f7dda2854fc68f7c8455d9cb14bd04a9',1,1);
 INSERT INTO `ezcontentobject_tree` VALUES (14,1,6,3,0,0,15,1472412012,15,13,'users/administrator_users/administrator_user','/1/5/13/15/',0,'e5161a99f733200b9ed4e80f9c16187b',1,1);
-INSERT INTO `ezcontentobject_tree` VALUES (41,1,1,1,0,0,43,1535052323,43,1,'media','/1/43/',0,'75c715a51699d2d309a924eca6a95145',8,1);
+INSERT INTO `ezcontentobject_tree` VALUES (41,1,1,1,0,0,43,1555420711,43,1,'media','/1/43/',0,'75c715a51699d2d309a924eca6a95145',8,1);
 INSERT INTO `ezcontentobject_tree` VALUES (42,1,2,2,0,0,44,1453475784,44,5,'users/anonymous_users','/1/5/44/',0,'4fdf0072da953bb276c0c7e0141c5c9b',9,1);
 INSERT INTO `ezcontentobject_tree` VALUES (10,1,3,3,0,0,45,1453475784,45,44,'users/anonymous_users/anonymous_user','/1/5/44/45/',0,'2cf8343bee7b482bab82b269d8fecd76',9,1);
 INSERT INTO `ezcontentobject_tree` VALUES (45,1,1,1,0,0,48,1454432059,48,1,'setup2','/1/48/',0,'182ce1b5af0c09fa378557c462ba2617',9,1);
@@ -3212,8 +3214,8 @@ INSERT INTO `ezcontentobject_tree` VALUES (171,1,1,2,0,0,51,1535020504,51,43,'me
 INSERT INTO `ezcontentobject_tree` VALUES (170,1,1,2,0,0,52,1452604317,52,43,'media/files','/1/43/52/',0,'0b113a208f7890f9ad3c24444ff5988c',9,1);
 INSERT INTO `ezcontentobject_tree` VALUES (172,1,1,2,0,0,53,1453475554,53,43,'media/multimedia','/1/43/53/',2,'4f18b82c75f10aad476cae5adf98c11f',9,1);
 INSERT INTO `ezcontentobject_tree` VALUES (56,1,1,1,0,0,58,1454432021,58,1,'design','/1/58/',0,'79f2d67372ab56f59b5d65bb9e0ca3b9',2,0);
-INSERT INTO `ezcontentobject_tree` VALUES (62,1,1,2,0,0,64,1535032269,64,43,'media/configuration','/1/43/64/',3,'d0474efe5317adc90a419bb847257cd3',9,1);
-INSERT INTO `ezcontentobject_tree` VALUES (63,1,34,3,0,0,65,1535032269,65,64,'media/configuration/fit_healthy','/1/43/64/65/',0,'4b2ab8dca36765c7f893d6c4c20e6972',1,1);
+INSERT INTO `ezcontentobject_tree` VALUES (62,1,1,2,0,0,64,1555420711,64,43,'media/configuration','/1/43/64/',3,'d0474efe5317adc90a419bb847257cd3',9,1);
+INSERT INTO `ezcontentobject_tree` VALUES (63,1,35,3,0,0,65,1555420711,65,64,'media/configuration/fit_healthy','/1/43/64/65/',0,'4b2ab8dca36765c7f893d6c4c20e6972',1,1);
 INSERT INTO `ezcontentobject_tree` VALUES (84,1,2,2,0,0,85,1535052323,85,43,'media/banners','/1/43/85/',6,'34f42ccb142b1dd46c020a49c3d650f8',9,1);
 INSERT INTO `ezcontentobject_tree` VALUES (168,1,1,2,0,0,166,1533763655,166,43,'media/menu_items','/1/43/166/',5,'315ad5948c74c87826f574f129440bdd',9,1);
 INSERT INTO `ezcontentobject_tree` VALUES (174,1,1,2,0,0,167,1535064322,167,2,'fitness','/1/2/167/',0,'1dfa83a75f62dbbd7865352194a3b942',2,0);
@@ -3557,7 +3559,6 @@ INSERT INTO `ezcontentobject_version` VALUES (177,1535027320,14,2644,2,3,1535027
 INSERT INTO `ezcontentobject_version` VALUES (252,1535027521,14,2646,2,3,1535027529,1,0,8,0);
 INSERT INTO `ezcontentobject_version` VALUES (190,1535027606,14,2647,2,3,1535027731,1,0,10,0);
 INSERT INTO `ezcontentobject_version` VALUES (366,1535029142,14,2652,2,3,1535029192,1,0,5,0);
-INSERT INTO `ezcontentobject_version` VALUES (63,1535032208,14,2653,2,3,1535032260,1,0,34,0);
 INSERT INTO `ezcontentobject_version` VALUES (275,1535033362,14,2654,2,3,1535033560,1,0,5,0);
 INSERT INTO `ezcontentobject_version` VALUES (270,1535033645,14,2655,2,3,1535033713,1,0,8,0);
 INSERT INTO `ezcontentobject_version` VALUES (254,1535033782,14,2656,2,3,1535033826,1,0,8,0);
@@ -3605,6 +3606,7 @@ INSERT INTO `ezcontentobject_version` VALUES (374,1551877967,14,2760,2,3,1551877
 INSERT INTO `ezcontentobject_version` VALUES (375,1551877978,14,2761,2,3,1551877983,1,0,10,0);
 INSERT INTO `ezcontentobject_version` VALUES (393,1551877992,14,2762,2,3,1551878003,1,0,3,0);
 INSERT INTO `ezcontentobject_version` VALUES (394,1551879463,14,2763,2,3,1551879544,1,0,1,0);
+INSERT INTO `ezcontentobject_version` VALUES (63,1555420518,14,2764,2,3,1555420711,1,0,35,0);
 /*!40000 ALTER TABLE `ezcontentobject_version` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3831,6 +3833,7 @@ INSERT INTO `ezimagefile` VALUES (4582,'var/site/storage/images/showcase/image-t
 INSERT INTO `ezimagefile` VALUES (4387,'var/site/storage/images/showcase/article-test/4387-1-eng-GB/article-test.jpg',1065);
 INSERT INTO `ezimagefile` VALUES (4406,'var/site/storage/images/showcase/audio-test/4406-1-eng-GB/audio-test.jpg',1068);
 INSERT INTO `ezimagefile` VALUES (4408,'var/site/storage/images/showcase/banner-test/2725-7-eng-GB/banner-test.jpg',1071);
+INSERT INTO `ezimagefile` VALUES (4586,'var/site/storage/images/media/configuration/fit-healthy/4586-35-eng-GB/fit-healthy-siteinfo.png',1080);
 /*!40000 ALTER TABLE `ezimagefile` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -5235,7 +5238,6 @@ INSERT INTO `eznode_assignment` VALUES (177,10,-1,2190,1,2,167,'5c9eb752ac1702bf
 INSERT INTO `eznode_assignment` VALUES (252,8,-1,2192,1,2,167,'1714402329a8c6f4655de987eeb9eb5c','0',2,0,0,0);
 INSERT INTO `eznode_assignment` VALUES (190,10,-1,2193,1,2,168,'83edb2fa889260308493aebd53e280d5','0',2,0,0,0);
 INSERT INTO `eznode_assignment` VALUES (366,5,-1,2196,1,2,168,'8e7ad853a46ab70da1a82d0bc9e6307c','0',2,0,0,0);
-INSERT INTO `eznode_assignment` VALUES (63,34,-1,2197,1,2,64,'4b2ab8dca36765c7f893d6c4c20e6972','0',1,1,0,0);
 INSERT INTO `eznode_assignment` VALUES (275,5,-1,2198,1,2,168,'d2bbba81c39d42617acde5b1a9b4d201','0',2,0,0,0);
 INSERT INTO `eznode_assignment` VALUES (270,8,-1,2199,1,2,168,'6b785731bf12e6c6068929c35bce707a','0',2,0,0,0);
 INSERT INTO `eznode_assignment` VALUES (254,8,-1,2200,1,2,168,'3ddb448680a19f76094f1b7874363707','0',2,0,0,0);
@@ -5283,6 +5285,7 @@ INSERT INTO `eznode_assignment` VALUES (374,3,-1,2300,1,2,357,'2244d0761e496a02e
 INSERT INTO `eznode_assignment` VALUES (375,10,-1,2301,1,2,357,'a50315d6bc3972b91ab3e0bcf07ca976','0',2,0,0,0);
 INSERT INTO `eznode_assignment` VALUES (393,3,-1,2302,1,2,357,'cd1699f8c3ab1fd22d0823c3dc0cdf12','0',2,0,0,0);
 INSERT INTO `eznode_assignment` VALUES (394,1,0,2303,1,2,357,'c4afe58f6cb617c39ce002be32ec3be9','0',1,1,0,0);
+INSERT INTO `eznode_assignment` VALUES (63,35,-1,2304,1,2,64,'4b2ab8dca36765c7f893d6c4c20e6972','0',1,1,0,0);
 /*!40000 ALTER TABLE `eznode_assignment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8332,7 +8335,7 @@ INSERT INTO `ngbm_layout` VALUES (12,1,'layout_2','Full / Video','',1533149062,1
 INSERT INTO `ngbm_layout` VALUES (13,1,'layout_2','Full / Topic','',1533150797,1535064875,0,'en_GB');
 INSERT INTO `ngbm_layout` VALUES (16,1,'layout_4','Full / Recipe','',1533550005,1534849896,0,'en_GB');
 INSERT INTO `ngbm_layout` VALUES (17,1,'layout_2','Landing Page (Topic) / Running','',1533714030,1535064868,0,'en_GB');
-INSERT INTO `ngbm_layout` VALUES (18,1,'layout_2','Showcase','',1551873140,1552385959,0,'en_GB');
+INSERT INTO `ngbm_layout` VALUES (18,1,'layout_2','Showcase','',1551873140,1555409748,0,'en_GB');
 /*!40000 ALTER TABLE `ngbm_layout` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8610,4 +8613,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-04 12:00:00
+-- Dump completed on 2019-04-15 12:00:00
