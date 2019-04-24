@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	5.7.25-0ubuntu0.18.10.2
+-- Server version	5.7.25-1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -8376,7 +8376,26 @@ INSERT INTO `ngbm_migration_versions` VALUES ('000900');
 INSERT INTO `ngbm_migration_versions` VALUES ('001000');
 INSERT INTO `ngbm_migration_versions` VALUES ('001100');
 INSERT INTO `ngbm_migration_versions` VALUES ('001200');
+INSERT INTO `ngbm_migration_versions` VALUES ('001300');
 /*!40000 ALTER TABLE `ngbm_migration_versions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ngbm_role`
+--
+
+LOCK TABLES `ngbm_role` WRITE;
+/*!40000 ALTER TABLE `ngbm_role` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ngbm_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ngbm_role_policy`
+--
+
+LOCK TABLES `ngbm_role_policy` WRITE;
+/*!40000 ALTER TABLE `ngbm_role_policy` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ngbm_role_policy` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -8613,4 +8632,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-15 12:00:00
+-- Dump completed on 2019-04-24 12:00:00

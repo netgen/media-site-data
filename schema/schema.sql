@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	5.7.25-0ubuntu0.18.10.2
+-- Server version	5.7.25-1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -2732,6 +2732,46 @@ CREATE TABLE `ngbm_migration_versions` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `ngbm_role`
+--
+
+DROP TABLE IF EXISTS `ngbm_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ngbm_role` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `status` int(11) NOT NULL,
+  `name` varchar(191) NOT NULL,
+  `identifier` varchar(191) NOT NULL,
+  `description` text NOT NULL,
+  PRIMARY KEY (`id`,`status`),
+  KEY `idx_ngl_role_identifier` (`identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ngbm_role_policy`
+--
+
+DROP TABLE IF EXISTS `ngbm_role_policy`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ngbm_role_policy` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `status` int(11) NOT NULL,
+  `role_id` int(11) NOT NULL,
+  `component` varchar(191) DEFAULT NULL,
+  `permission` varchar(191) DEFAULT NULL,
+  `limitations` text NOT NULL,
+  PRIMARY KEY (`id`,`status`),
+  KEY `idx_ngl_role` (`role_id`,`status`),
+  KEY `idx_ngl_policy_component` (`component`),
+  KEY `idx_ngl_policy_component_permission` (`component`,`permission`),
+  CONSTRAINT `fk_ngl_policy_role` FOREIGN KEY (`role_id`, `status`) REFERENCES `ngbm_role` (`id`, `status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `ngbm_rule`
 --
 
@@ -2864,4 +2904,4 @@ CREATE TABLE `sckenhancedselection` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-04 12:00:00
+-- Dump completed on 2019-04-24 12:00:00
