@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.25, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.26, for Linux (x86_64)
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	5.7.25-1
+-- Server version	5.7.26-0ubuntu0.19.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -2977,179 +2977,189 @@ LOCK TABLES `ezworkflow_process` WRITE;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_block`
+-- Dumping data for table `nglayouts_block`
 --
 
-LOCK TABLES `ngbm_block` WRITE;
-/*!40000 ALTER TABLE `ngbm_block` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_block` ENABLE KEYS */;
+LOCK TABLES `nglayouts_block` WRITE;
+/*!40000 ALTER TABLE `nglayouts_block` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_block` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_block_collection`
+-- Dumping data for table `nglayouts_block_collection`
 --
 
-LOCK TABLES `ngbm_block_collection` WRITE;
-/*!40000 ALTER TABLE `ngbm_block_collection` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_block_collection` ENABLE KEYS */;
+LOCK TABLES `nglayouts_block_collection` WRITE;
+/*!40000 ALTER TABLE `nglayouts_block_collection` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_block_collection` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_block_translation`
+-- Dumping data for table `nglayouts_block_translation`
 --
 
-LOCK TABLES `ngbm_block_translation` WRITE;
-/*!40000 ALTER TABLE `ngbm_block_translation` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_block_translation` ENABLE KEYS */;
+LOCK TABLES `nglayouts_block_translation` WRITE;
+/*!40000 ALTER TABLE `nglayouts_block_translation` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_block_translation` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_collection`
+-- Dumping data for table `nglayouts_collection`
 --
 
-LOCK TABLES `ngbm_collection` WRITE;
-/*!40000 ALTER TABLE `ngbm_collection` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_collection` ENABLE KEYS */;
+LOCK TABLES `nglayouts_collection` WRITE;
+/*!40000 ALTER TABLE `nglayouts_collection` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_collection` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_collection_item`
+-- Dumping data for table `nglayouts_collection_item`
 --
 
-LOCK TABLES `ngbm_collection_item` WRITE;
-/*!40000 ALTER TABLE `ngbm_collection_item` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_collection_item` ENABLE KEYS */;
+LOCK TABLES `nglayouts_collection_item` WRITE;
+/*!40000 ALTER TABLE `nglayouts_collection_item` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_collection_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_collection_query`
+-- Dumping data for table `nglayouts_collection_query`
 --
 
-LOCK TABLES `ngbm_collection_query` WRITE;
-/*!40000 ALTER TABLE `ngbm_collection_query` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_collection_query` ENABLE KEYS */;
+LOCK TABLES `nglayouts_collection_query` WRITE;
+/*!40000 ALTER TABLE `nglayouts_collection_query` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_collection_query` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_collection_query_translation`
+-- Dumping data for table `nglayouts_collection_query_translation`
 --
 
-LOCK TABLES `ngbm_collection_query_translation` WRITE;
-/*!40000 ALTER TABLE `ngbm_collection_query_translation` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_collection_query_translation` ENABLE KEYS */;
+LOCK TABLES `nglayouts_collection_query_translation` WRITE;
+/*!40000 ALTER TABLE `nglayouts_collection_query_translation` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_collection_query_translation` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_collection_translation`
+-- Dumping data for table `nglayouts_collection_slot`
 --
 
-LOCK TABLES `ngbm_collection_translation` WRITE;
-/*!40000 ALTER TABLE `ngbm_collection_translation` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_collection_translation` ENABLE KEYS */;
+LOCK TABLES `nglayouts_collection_slot` WRITE;
+/*!40000 ALTER TABLE `nglayouts_collection_slot` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_collection_slot` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_layout`
+-- Dumping data for table `nglayouts_collection_translation`
 --
 
-LOCK TABLES `ngbm_layout` WRITE;
-/*!40000 ALTER TABLE `ngbm_layout` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_layout` ENABLE KEYS */;
+LOCK TABLES `nglayouts_collection_translation` WRITE;
+/*!40000 ALTER TABLE `nglayouts_collection_translation` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_collection_translation` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_layout_translation`
+-- Dumping data for table `nglayouts_layout`
 --
 
-LOCK TABLES `ngbm_layout_translation` WRITE;
-/*!40000 ALTER TABLE `ngbm_layout_translation` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_layout_translation` ENABLE KEYS */;
+LOCK TABLES `nglayouts_layout` WRITE;
+/*!40000 ALTER TABLE `nglayouts_layout` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_layout` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_migration_versions`
+-- Dumping data for table `nglayouts_layout_translation`
 --
 
-LOCK TABLES `ngbm_migration_versions` WRITE;
-/*!40000 ALTER TABLE `ngbm_migration_versions` DISABLE KEYS */;
-INSERT INTO `ngbm_migration_versions` VALUES ('000700');
-INSERT INTO `ngbm_migration_versions` VALUES ('000800');
-INSERT INTO `ngbm_migration_versions` VALUES ('000900');
-INSERT INTO `ngbm_migration_versions` VALUES ('001000');
-INSERT INTO `ngbm_migration_versions` VALUES ('001100');
-INSERT INTO `ngbm_migration_versions` VALUES ('001200');
-INSERT INTO `ngbm_migration_versions` VALUES ('001300');
-/*!40000 ALTER TABLE `ngbm_migration_versions` ENABLE KEYS */;
+LOCK TABLES `nglayouts_layout_translation` WRITE;
+/*!40000 ALTER TABLE `nglayouts_layout_translation` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_layout_translation` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_role`
+-- Dumping data for table `nglayouts_migration_versions`
 --
 
-LOCK TABLES `ngbm_role` WRITE;
-/*!40000 ALTER TABLE `ngbm_role` DISABLE KEYS */;
-INSERT INTO `ngbm_role` VALUES (1,1,'Editor','editor','');
-/*!40000 ALTER TABLE `ngbm_role` ENABLE KEYS */;
+LOCK TABLES `nglayouts_migration_versions` WRITE;
+/*!40000 ALTER TABLE `nglayouts_migration_versions` DISABLE KEYS */;
+INSERT INTO `nglayouts_migration_versions` VALUES ('000700','2019-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('000800','2019-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('000900','2019-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('001000','2019-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('001100','2019-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('001200','2019-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('001300','2019-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('010000','2019-06-15 12:00:00');
+/*!40000 ALTER TABLE `nglayouts_migration_versions` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_role_policy`
+-- Dumping data for table `nglayouts_role`
 --
 
-LOCK TABLES `ngbm_role_policy` WRITE;
-/*!40000 ALTER TABLE `ngbm_role_policy` DISABLE KEYS */;
-INSERT INTO `ngbm_role_policy` VALUES (1,1,1,'ui','access','[]');
-INSERT INTO `ngbm_role_policy` VALUES (2,1,1,'layout','edit','[]');
-INSERT INTO `ngbm_role_policy` VALUES (3,1,1,'layout','add','[]');
-INSERT INTO `ngbm_role_policy` VALUES (4,1,1,'layout','clear_cache','[]');
-INSERT INTO `ngbm_role_policy` VALUES (5,1,1,'block',NULL,'[]');
-INSERT INTO `ngbm_role_policy` VALUES (6,1,1,'collection',NULL,'[]');
-/*!40000 ALTER TABLE `ngbm_role_policy` ENABLE KEYS */;
+LOCK TABLES `nglayouts_role` WRITE;
+/*!40000 ALTER TABLE `nglayouts_role` DISABLE KEYS */;
+INSERT INTO `nglayouts_role` VALUES (1,1,'85b2c54b-82f5-5053-b04a-2ee1fc084f25','Editor','editor','');
+/*!40000 ALTER TABLE `nglayouts_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_rule`
+-- Dumping data for table `nglayouts_role_policy`
 --
 
-LOCK TABLES `ngbm_rule` WRITE;
-/*!40000 ALTER TABLE `ngbm_rule` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_rule` ENABLE KEYS */;
+LOCK TABLES `nglayouts_role_policy` WRITE;
+/*!40000 ALTER TABLE `nglayouts_role_policy` DISABLE KEYS */;
+INSERT INTO `nglayouts_role_policy` VALUES (1,1,'6f69017f-8b9e-52ae-910b-26492515a8a4',1,'ui','access','[]');
+INSERT INTO `nglayouts_role_policy` VALUES (2,1,'89242ef8-bbb5-5a6f-8228-fdfd4a2e2421',1,'layout','edit','[]');
+INSERT INTO `nglayouts_role_policy` VALUES (3,1,'093c7c32-a76f-5d4e-8de9-4ed06c22304e',1,'layout','add','[]');
+INSERT INTO `nglayouts_role_policy` VALUES (4,1,'d3bf815b-0ffe-5c1f-9bdc-152dca0ce51a',1,'layout','clear_cache','[]');
+INSERT INTO `nglayouts_role_policy` VALUES (5,1,'aa44032c-7a40-5a10-975c-1a713b62ecf4',1,'block',NULL,'[]');
+INSERT INTO `nglayouts_role_policy` VALUES (6,1,'6ab1e329-a467-5d9a-a7ac-2535b39e886b',1,'collection',NULL,'[]');
+/*!40000 ALTER TABLE `nglayouts_role_policy` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_rule_condition`
+-- Dumping data for table `nglayouts_rule`
 --
 
-LOCK TABLES `ngbm_rule_condition` WRITE;
-/*!40000 ALTER TABLE `ngbm_rule_condition` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_rule_condition` ENABLE KEYS */;
+LOCK TABLES `nglayouts_rule` WRITE;
+/*!40000 ALTER TABLE `nglayouts_rule` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_rule` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_rule_data`
+-- Dumping data for table `nglayouts_rule_condition`
 --
 
-LOCK TABLES `ngbm_rule_data` WRITE;
-/*!40000 ALTER TABLE `ngbm_rule_data` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_rule_data` ENABLE KEYS */;
+LOCK TABLES `nglayouts_rule_condition` WRITE;
+/*!40000 ALTER TABLE `nglayouts_rule_condition` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_rule_condition` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_rule_target`
+-- Dumping data for table `nglayouts_rule_data`
 --
 
-LOCK TABLES `ngbm_rule_target` WRITE;
-/*!40000 ALTER TABLE `ngbm_rule_target` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_rule_target` ENABLE KEYS */;
+LOCK TABLES `nglayouts_rule_data` WRITE;
+/*!40000 ALTER TABLE `nglayouts_rule_data` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_rule_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ngbm_zone`
+-- Dumping data for table `nglayouts_rule_target`
 --
 
-LOCK TABLES `ngbm_zone` WRITE;
-/*!40000 ALTER TABLE `ngbm_zone` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ngbm_zone` ENABLE KEYS */;
+LOCK TABLES `nglayouts_rule_target` WRITE;
+/*!40000 ALTER TABLE `nglayouts_rule_target` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_rule_target` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `nglayouts_zone`
+--
+
+LOCK TABLES `nglayouts_zone` WRITE;
+/*!40000 ALTER TABLE `nglayouts_zone` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_zone` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -3179,4 +3189,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-24 12:00:00
+-- Dump completed on 2019-06-15 12:00:00
