@@ -445,7 +445,7 @@ CREATE TABLE `ezcontentclass_attribute` (
   `data_int2` int(11) DEFAULT NULL,
   `data_int3` int(11) DEFAULT NULL,
   `data_int4` int(11) DEFAULT NULL,
-  `data_text1` varchar(50) DEFAULT NULL,
+  `data_text1` varchar(255) DEFAULT NULL,
   `data_text2` varchar(50) DEFAULT NULL,
   `data_text3` varchar(50) DEFAULT NULL,
   `data_text4` varchar(255) DEFAULT NULL,
