@@ -6189,7 +6189,7 @@ INSERT INTO `ezurl` VALUES (1533731715,25,1,0,1533731715,'22cdcca1671a243386e08d
 INSERT INTO `ezurl` VALUES (1533732888,26,1,0,1533732888,'6587eefe89cc5e6022446de188adc8b4','https://www.makebetterfood.com/');
 INSERT INTO `ezurl` VALUES (1533733771,27,1,0,1533733771,'7f9a029d6497aef1ba195383bd68d96e','https://www.makebetterfood.com/recipes/american-sandwich-bread/');
 INSERT INTO `ezurl` VALUES (1533733771,28,1,0,1533733771,'7dbcf29b612e712389f1447ecd20ab91','https://www.makebetterfood.com/recipes/kale-pesto/');
-INSERT INTO `ezurl` VALUES (1533763655,29,1,0,1533763655,'901fcf8ff1b596fe682b9edbc6972b82','https://www.netgenlabs.com/');
+INSERT INTO `ezurl` VALUES (1533763655,29,1,0,1533763655,'b8db9092395917eb973b6cdab1c21223','https://netgen.io/');
 INSERT INTO `ezurl` VALUES (1534862704,30,1,0,1534862704,'05d6a4654c06b84324d39c763afaebd2','https://www.ncbi.nlm.nih.gov/pubmed/8897392');
 INSERT INTO `ezurl` VALUES (1534862704,31,1,0,1534862704,'63771eb4a515537c7fc6f2930f70d53f','https://www.ncbi.nlm.nih.gov/pubmed/8028502');
 INSERT INTO `ezurl` VALUES (1534862704,32,1,0,1534862704,'18de59ab96b47456b0c47f0fa05d78a1','https://www.skillbasedfitness.com/interval-training-part-i/');
