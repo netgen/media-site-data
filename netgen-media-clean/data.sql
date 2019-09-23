@@ -1130,8 +1130,8 @@ UNLOCK TABLES;
 
 LOCK TABLES `ezuser` WRITE;
 /*!40000 ALTER TABLE `ezuser` DISABLE KEYS */;
-INSERT INTO `ezuser` VALUES (10,'nospam@ez.no','anonymous','$2y$10$35gOSQs6JK4u4whyERaeUuVeQBi2TUBIZIfP7HEj7sfz.MxvTuOeC',7);
-INSERT INTO `ezuser` VALUES (14,'info@netgen.hr','admin','$2y$10$FDn9NPwzhq85cLLxfD5Wu.L3SL3Z/LNCvhkltJUV0wcJj7ciJg2oy',7);
+INSERT INTO `ezuser` VALUES (10,'nospam@ez.no','anonymous','$2y$10$35gOSQs6JK4u4whyERaeUuVeQBi2TUBIZIfP7HEj7sfz.MxvTuOeC',7,NULL);
+INSERT INTO `ezuser` VALUES (14,'info@netgen.hr','admin','$2y$10$FDn9NPwzhq85cLLxfD5Wu.L3SL3Z/LNCvhkltJUV0wcJj7ciJg2oy',7,NULL);
 /*!40000 ALTER TABLE `ezuser` ENABLE KEYS */;
 UNLOCK TABLES;
 
