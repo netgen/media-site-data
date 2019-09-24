@@ -999,6 +999,24 @@ INSERT INTO `ezsite_data` VALUES ('ezpublish-version','7.5.3');
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `ezstarrating`
+--
+
+LOCK TABLES `ezstarrating` WRITE;
+/*!40000 ALTER TABLE `ezstarrating` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ezstarrating` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ezstarrating_data`
+--
+
+LOCK TABLES `ezstarrating_data` WRITE;
+/*!40000 ALTER TABLE `ezstarrating_data` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ezstarrating_data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `eztags`
 --
 
