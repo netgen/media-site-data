@@ -821,24 +821,6 @@ CREATE TABLE `ezsearch_object_word_link` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `ezsearch_search_phrase`
---
-
-DROP TABLE IF EXISTS `ezsearch_search_phrase`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `ezsearch_search_phrase` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `phrase` varchar(250) DEFAULT NULL,
-  `phrase_count` int(11) DEFAULT '0',
-  `result_count` int(11) DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `ezsearch_search_phrase_phrase` (`phrase`(191)),
-  KEY `ezsearch_search_phrase_count` (`phrase_count`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Table structure for table `ezsearch_word`
 --
 
@@ -1139,24 +1121,6 @@ CREATE TABLE `ezuser_setting` (
   `max_login` int(11) DEFAULT NULL,
   `user_id` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `ezuservisit`
---
-
-DROP TABLE IF EXISTS `ezuservisit`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `ezuservisit` (
-  `current_visit_timestamp` int(11) NOT NULL DEFAULT '0',
-  `failed_login_attempts` int(11) NOT NULL DEFAULT '0',
-  `last_visit_timestamp` int(11) NOT NULL DEFAULT '0',
-  `login_count` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`user_id`),
-  KEY `ezuservisit_co_visit_count` (`current_visit_timestamp`,`login_count`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

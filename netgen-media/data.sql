@@ -4162,15 +4162,6 @@ LOCK TABLES `ezsearch_object_word_link` WRITE;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `ezsearch_search_phrase`
---
-
-LOCK TABLES `ezsearch_search_phrase` WRITE;
-/*!40000 ALTER TABLE `ezsearch_search_phrase` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ezsearch_search_phrase` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Dumping data for table `ezsearch_word`
 --
 
@@ -5817,15 +5808,6 @@ LOCK TABLES `ezuser_setting` WRITE;
 INSERT INTO `ezuser_setting` VALUES (1,1000,10);
 INSERT INTO `ezuser_setting` VALUES (1,10,14);
 /*!40000 ALTER TABLE `ezuser_setting` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Dumping data for table `ezuservisit`
---
-
-LOCK TABLES `ezuservisit` WRITE;
-/*!40000 ALTER TABLE `ezuservisit` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ezuservisit` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
