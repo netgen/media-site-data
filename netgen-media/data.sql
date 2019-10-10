@@ -4229,7 +4229,7 @@ UNLOCK TABLES;
 LOCK TABLES `ezsite_data` WRITE;
 /*!40000 ALTER TABLE `ezsite_data` DISABLE KEYS */;
 INSERT INTO `ezsite_data` VALUES ('ezpublish-release','1');
-INSERT INTO `ezsite_data` VALUES ('ezpublish-version','7.5.3');
+INSERT INTO `ezsite_data` VALUES ('ezpublish-version','8.0.0');
 /*!40000 ALTER TABLE `ezsite_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
