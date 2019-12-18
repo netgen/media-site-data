@@ -1520,7 +1520,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,641,235,0,NULL,'','ezstring',2
 INSERT INTO `ezcontentobject_attribute` VALUES (0,642,235,0,NULL,'','ezemail',2957,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,643,235,0,NULL,'','ezstring',2958,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,644,235,0,NULL,'','eztext',2959,'eng-GB',2,0,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,646,235,0,NULL,'info@netgen.io','ezemail',2960,'eng-GB',2,0,'info@netgen.io',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,646,235,0,NULL,'test@netgen.io','ezemail',2960,'eng-GB',2,0,'test@netgen.io',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,696,235,0,1045487555,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<section xmlns:image=\"http://ez.no/namespaces/ezpublish3/image/\" xmlns:xhtml=\"http://ez.no/namespaces/ezpublish3/xhtml/\" xmlns:custom=\"http://ez.no/namespaces/ezpublish3/custom/\"/>\n','ezxmltext',2961,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,236,0,NULL,'Authors','ezstring',2962,'eng-GB',3,0,'authors',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,824,237,0,NULL,'John Doe','ezstring',2963,'eng-GB',3,0,'john doe',1);
@@ -2776,7 +2776,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,641,379,0,NULL,'','ezstring',4
 INSERT INTO `ezcontentobject_attribute` VALUES (0,642,379,0,NULL,'','ezemail',4476,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,643,379,0,NULL,'','ezstring',4477,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,644,379,0,NULL,'','eztext',4478,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,646,379,0,NULL,'info@netgen.io','ezemail',4479,'eng-GB',2,0,'info@netgen.io',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,646,379,0,NULL,'test@netgen.io','ezemail',4479,'eng-GB',2,0,'test@netgen.io',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,696,379,0,1045487555,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<section xmlns:image=\"http://ez.no/namespaces/ezpublish3/image/\" xmlns:xhtml=\"http://ez.no/namespaces/ezpublish3/xhtml/\" xmlns:custom=\"http://ez.no/namespaces/ezpublish3/custom/\"/>\n','ezxmltext',4480,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,647,381,0,NULL,'Gallery test','ezstring',4483,'eng-GB',2,0,'gallery test',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,838,381,0,NULL,'','ezstring',4484,'eng-GB',2,0,'',11);
