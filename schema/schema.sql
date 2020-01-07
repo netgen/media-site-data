@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 5.7.26, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.18, for Linux (x86_64)
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	5.7.26-0ubuntu0.19.04.1
+-- Server version	8.0.18-0ubuntu0.19.10.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,7 +21,7 @@
 
 DROP TABLE IF EXISTS `ezbinaryfile`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezbinaryfile` (
   `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
   `download_count` int(11) NOT NULL DEFAULT '0',
@@ -39,7 +39,7 @@ CREATE TABLE `ezbinaryfile` (
 
 DROP TABLE IF EXISTS `ezcobj_state`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state` (
   `default_language_id` bigint(20) NOT NULL DEFAULT '0',
   `group_id` int(11) NOT NULL DEFAULT '0',
@@ -60,7 +60,7 @@ CREATE TABLE `ezcobj_state` (
 
 DROP TABLE IF EXISTS `ezcobj_state_group`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state_group` (
   `default_language_id` bigint(20) NOT NULL DEFAULT '0',
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -78,7 +78,7 @@ CREATE TABLE `ezcobj_state_group` (
 
 DROP TABLE IF EXISTS `ezcobj_state_group_language`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state_group_language` (
   `contentobject_state_group_id` int(11) NOT NULL DEFAULT '0',
   `description` longtext NOT NULL,
@@ -95,7 +95,7 @@ CREATE TABLE `ezcobj_state_group_language` (
 
 DROP TABLE IF EXISTS `ezcobj_state_language`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state_language` (
   `contentobject_state_id` int(11) NOT NULL DEFAULT '0',
   `description` longtext NOT NULL,
@@ -111,7 +111,7 @@ CREATE TABLE `ezcobj_state_language` (
 
 DROP TABLE IF EXISTS `ezcobj_state_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state_link` (
   `contentobject_id` int(11) NOT NULL DEFAULT '0',
   `contentobject_state_id` int(11) NOT NULL DEFAULT '0',
@@ -125,7 +125,7 @@ CREATE TABLE `ezcobj_state_link` (
 
 DROP TABLE IF EXISTS `ezcontent_language`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontent_language` (
   `disabled` int(11) NOT NULL DEFAULT '0',
   `id` bigint(20) NOT NULL DEFAULT '0',
@@ -142,7 +142,7 @@ CREATE TABLE `ezcontent_language` (
 
 DROP TABLE IF EXISTS `ezcontentbrowsebookmark`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentbrowsebookmark` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL DEFAULT '',
@@ -163,7 +163,7 @@ CREATE TABLE `ezcontentbrowsebookmark` (
 
 DROP TABLE IF EXISTS `ezcontentclass`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass` (
   `always_available` int(11) NOT NULL DEFAULT '0',
   `contentobject_name` varchar(255) DEFAULT NULL,
@@ -195,7 +195,7 @@ CREATE TABLE `ezcontentclass` (
 
 DROP TABLE IF EXISTS `ezcontentclass_attribute`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass_attribute` (
   `can_translate` int(11) DEFAULT '1',
   `category` varchar(25) NOT NULL DEFAULT '',
@@ -219,6 +219,7 @@ CREATE TABLE `ezcontentclass_attribute` (
   `is_information_collector` int(11) NOT NULL DEFAULT '0',
   `is_required` int(11) NOT NULL DEFAULT '0',
   `is_searchable` int(11) NOT NULL DEFAULT '0',
+  `is_thumbnail` tinyint(1) NOT NULL DEFAULT '0',
   `placement` int(11) NOT NULL DEFAULT '0',
   `serialized_data_text` longtext,
   `serialized_description_list` longtext,
@@ -235,7 +236,7 @@ CREATE TABLE `ezcontentclass_attribute` (
 
 DROP TABLE IF EXISTS `ezcontentclass_attribute_ml`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass_attribute_ml` (
   `contentclass_attribute_id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
@@ -256,7 +257,7 @@ CREATE TABLE `ezcontentclass_attribute_ml` (
 
 DROP TABLE IF EXISTS `ezcontentclass_classgroup`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass_classgroup` (
   `contentclass_id` int(11) NOT NULL DEFAULT '0',
   `contentclass_version` int(11) NOT NULL DEFAULT '0',
@@ -272,7 +273,7 @@ CREATE TABLE `ezcontentclass_classgroup` (
 
 DROP TABLE IF EXISTS `ezcontentclass_name`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass_name` (
   `contentclass_id` int(11) NOT NULL DEFAULT '0',
   `contentclass_version` int(11) NOT NULL DEFAULT '0',
@@ -289,7 +290,7 @@ CREATE TABLE `ezcontentclass_name` (
 
 DROP TABLE IF EXISTS `ezcontentclassgroup`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclassgroup` (
   `created` int(11) NOT NULL DEFAULT '0',
   `creator_id` int(11) NOT NULL DEFAULT '0',
@@ -307,7 +308,7 @@ CREATE TABLE `ezcontentclassgroup` (
 
 DROP TABLE IF EXISTS `ezcontentobject`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject` (
   `contentclass_id` int(11) NOT NULL DEFAULT '0',
   `current_version` int(11) DEFAULT NULL,
@@ -340,7 +341,7 @@ CREATE TABLE `ezcontentobject` (
 
 DROP TABLE IF EXISTS `ezcontentobject_attribute`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_attribute` (
   `attribute_original_id` int(11) DEFAULT '0',
   `contentclassattribute_id` int(11) NOT NULL DEFAULT '0',
@@ -370,7 +371,7 @@ CREATE TABLE `ezcontentobject_attribute` (
 
 DROP TABLE IF EXISTS `ezcontentobject_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_link` (
   `contentclassattribute_id` int(11) NOT NULL DEFAULT '0',
   `from_contentobject_id` int(11) NOT NULL DEFAULT '0',
@@ -390,7 +391,7 @@ CREATE TABLE `ezcontentobject_link` (
 
 DROP TABLE IF EXISTS `ezcontentobject_name`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_name` (
   `content_translation` varchar(20) NOT NULL DEFAULT '',
   `content_version` int(11) NOT NULL DEFAULT '0',
@@ -411,7 +412,7 @@ CREATE TABLE `ezcontentobject_name` (
 
 DROP TABLE IF EXISTS `ezcontentobject_trash`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_trash` (
   `contentobject_id` int(11) DEFAULT NULL,
   `contentobject_version` int(11) DEFAULT NULL,
@@ -445,7 +446,7 @@ CREATE TABLE `ezcontentobject_trash` (
 
 DROP TABLE IF EXISTS `ezcontentobject_tree`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_tree` (
   `contentobject_id` int(11) DEFAULT NULL,
   `contentobject_is_published` int(11) DEFAULT NULL,
@@ -481,7 +482,7 @@ CREATE TABLE `ezcontentobject_tree` (
 
 DROP TABLE IF EXISTS `ezcontentobject_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_version` (
   `contentobject_id` int(11) DEFAULT NULL,
   `created` int(11) NOT NULL DEFAULT '0',
@@ -508,7 +509,7 @@ CREATE TABLE `ezcontentobject_version` (
 
 DROP TABLE IF EXISTS `ezgmaplocation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezgmaplocation` (
   `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
   `contentobject_version` int(11) NOT NULL DEFAULT '0',
@@ -526,7 +527,7 @@ CREATE TABLE `ezgmaplocation` (
 
 DROP TABLE IF EXISTS `ezimagefile`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezimagefile` (
   `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
   `filepath` longtext NOT NULL,
@@ -543,7 +544,7 @@ CREATE TABLE `ezimagefile` (
 
 DROP TABLE IF EXISTS `ezinfocollection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezinfocollection` (
   `contentobject_id` int(11) NOT NULL DEFAULT '0',
   `created` int(11) NOT NULL DEFAULT '0',
@@ -562,7 +563,7 @@ CREATE TABLE `ezinfocollection` (
 
 DROP TABLE IF EXISTS `ezinfocollection_attribute`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezinfocollection_attribute` (
   `contentclass_attribute_id` int(11) NOT NULL DEFAULT '0',
   `contentobject_attribute_id` int(11) DEFAULT NULL,
@@ -586,7 +587,7 @@ CREATE TABLE `ezinfocollection_attribute` (
 
 DROP TABLE IF EXISTS `ezkeyword`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezkeyword` (
   `class_id` int(11) NOT NULL DEFAULT '0',
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -602,7 +603,7 @@ CREATE TABLE `ezkeyword` (
 
 DROP TABLE IF EXISTS `ezkeyword_attribute_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezkeyword_attribute_link` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `keyword_id` int(11) NOT NULL DEFAULT '0',
@@ -619,7 +620,7 @@ CREATE TABLE `ezkeyword_attribute_link` (
 
 DROP TABLE IF EXISTS `ezmedia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezmedia` (
   `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
   `controls` varchar(50) DEFAULT NULL,
@@ -644,7 +645,7 @@ CREATE TABLE `ezmedia` (
 
 DROP TABLE IF EXISTS `eznode_assignment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eznode_assignment` (
   `contentobject_id` int(11) DEFAULT NULL,
   `contentobject_version` int(11) DEFAULT NULL,
@@ -673,7 +674,7 @@ CREATE TABLE `eznode_assignment` (
 
 DROP TABLE IF EXISTS `eznotification`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eznotification` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `owner_id` int(11) NOT NULL DEFAULT '0',
@@ -693,7 +694,7 @@ CREATE TABLE `eznotification` (
 
 DROP TABLE IF EXISTS `ezpackage`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpackage` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `install_date` int(11) NOT NULL DEFAULT '0',
@@ -709,7 +710,7 @@ CREATE TABLE `ezpackage` (
 
 DROP TABLE IF EXISTS `ezpolicy`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpolicy` (
   `function_name` varchar(255) DEFAULT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -728,7 +729,7 @@ CREATE TABLE `ezpolicy` (
 
 DROP TABLE IF EXISTS `ezpolicy_limitation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpolicy_limitation` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(255) NOT NULL DEFAULT '',
@@ -744,7 +745,7 @@ CREATE TABLE `ezpolicy_limitation` (
 
 DROP TABLE IF EXISTS `ezpolicy_limitation_value`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpolicy_limitation_value` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `limitation_id` int(11) DEFAULT NULL,
@@ -761,7 +762,7 @@ CREATE TABLE `ezpolicy_limitation_value` (
 
 DROP TABLE IF EXISTS `ezpreferences`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpreferences` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
@@ -779,7 +780,7 @@ CREATE TABLE `ezpreferences` (
 
 DROP TABLE IF EXISTS `ezrole`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezrole` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `is_new` int(11) NOT NULL DEFAULT '0',
@@ -796,7 +797,7 @@ CREATE TABLE `ezrole` (
 
 DROP TABLE IF EXISTS `ezsearch_object_word_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezsearch_object_word_link` (
   `contentclass_attribute_id` int(11) NOT NULL DEFAULT '0',
   `contentclass_id` int(11) NOT NULL DEFAULT '0',
@@ -826,7 +827,7 @@ CREATE TABLE `ezsearch_object_word_link` (
 
 DROP TABLE IF EXISTS `ezsearch_word`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezsearch_word` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `object_count` int(11) NOT NULL DEFAULT '0',
@@ -843,7 +844,7 @@ CREATE TABLE `ezsearch_word` (
 
 DROP TABLE IF EXISTS `ezsection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezsection` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(255) DEFAULT NULL,
@@ -860,7 +861,7 @@ CREATE TABLE `ezsection` (
 
 DROP TABLE IF EXISTS `ezsite_data`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezsite_data` (
   `name` varchar(60) NOT NULL DEFAULT '',
   `value` longtext NOT NULL,
@@ -874,7 +875,7 @@ CREATE TABLE `ezsite_data` (
 
 DROP TABLE IF EXISTS `eztags`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eztags` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `parent_id` int(11) NOT NULL DEFAULT '0',
@@ -899,7 +900,7 @@ CREATE TABLE `eztags` (
 
 DROP TABLE IF EXISTS `eztags_attribute_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eztags_attribute_link` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `keyword_id` int(11) NOT NULL DEFAULT '0',
@@ -921,7 +922,7 @@ CREATE TABLE `eztags_attribute_link` (
 
 DROP TABLE IF EXISTS `eztags_keyword`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eztags_keyword` (
   `keyword_id` int(11) NOT NULL DEFAULT '0',
   `language_id` int(11) NOT NULL DEFAULT '0',
@@ -938,7 +939,7 @@ CREATE TABLE `eztags_keyword` (
 
 DROP TABLE IF EXISTS `ezurl`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurl` (
   `created` int(11) NOT NULL DEFAULT '0',
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -958,7 +959,7 @@ CREATE TABLE `ezurl` (
 
 DROP TABLE IF EXISTS `ezurl_object_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurl_object_link` (
   `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
   `contentobject_attribute_version` int(11) NOT NULL DEFAULT '0',
@@ -975,7 +976,7 @@ CREATE TABLE `ezurl_object_link` (
 
 DROP TABLE IF EXISTS `ezurlalias`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurlalias` (
   `destination_url` longtext NOT NULL,
   `forward_to_id` int(11) NOT NULL DEFAULT '0',
@@ -1001,7 +1002,7 @@ CREATE TABLE `ezurlalias` (
 
 DROP TABLE IF EXISTS `ezurlalias_ml`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurlalias_ml` (
   `action` longtext NOT NULL,
   `action_type` varchar(32) NOT NULL DEFAULT '',
@@ -1031,7 +1032,7 @@ CREATE TABLE `ezurlalias_ml` (
 
 DROP TABLE IF EXISTS `ezurlalias_ml_incr`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurlalias_ml_incr` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
@@ -1044,7 +1045,7 @@ CREATE TABLE `ezurlalias_ml_incr` (
 
 DROP TABLE IF EXISTS `ezurlwildcard`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurlwildcard` (
   `destination_url` longtext NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1060,7 +1061,7 @@ CREATE TABLE `ezurlwildcard` (
 
 DROP TABLE IF EXISTS `ezuser`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezuser` (
   `contentobject_id` int(11) NOT NULL DEFAULT '0',
   `email` varchar(150) NOT NULL DEFAULT '',
@@ -1079,7 +1080,7 @@ CREATE TABLE `ezuser` (
 
 DROP TABLE IF EXISTS `ezuser_accountkey`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezuser_accountkey` (
   `hash_key` varchar(32) NOT NULL DEFAULT '',
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1096,7 +1097,7 @@ CREATE TABLE `ezuser_accountkey` (
 
 DROP TABLE IF EXISTS `ezuser_role`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezuser_role` (
   `contentobject_id` int(11) DEFAULT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1115,7 +1116,7 @@ CREATE TABLE `ezuser_role` (
 
 DROP TABLE IF EXISTS `ezuser_setting`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezuser_setting` (
   `is_enabled` int(11) NOT NULL DEFAULT '0',
   `max_login` int(11) DEFAULT NULL,
@@ -1130,7 +1131,7 @@ CREATE TABLE `ezuser_setting` (
 
 DROP TABLE IF EXISTS `nglayouts_block`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_block` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1163,7 +1164,7 @@ CREATE TABLE `nglayouts_block` (
 
 DROP TABLE IF EXISTS `nglayouts_block_collection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_block_collection` (
   `block_id` int(11) NOT NULL,
   `block_status` int(11) NOT NULL,
@@ -1184,7 +1185,7 @@ CREATE TABLE `nglayouts_block_collection` (
 
 DROP TABLE IF EXISTS `nglayouts_block_translation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_block_translation` (
   `block_id` int(11) NOT NULL,
   `status` int(11) NOT NULL,
@@ -1201,7 +1202,7 @@ CREATE TABLE `nglayouts_block_translation` (
 
 DROP TABLE IF EXISTS `nglayouts_collection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1222,7 +1223,7 @@ CREATE TABLE `nglayouts_collection` (
 
 DROP TABLE IF EXISTS `nglayouts_collection_item`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1246,7 +1247,7 @@ CREATE TABLE `nglayouts_collection_item` (
 
 DROP TABLE IF EXISTS `nglayouts_collection_query`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_query` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1266,7 +1267,7 @@ CREATE TABLE `nglayouts_collection_query` (
 
 DROP TABLE IF EXISTS `nglayouts_collection_query_translation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_query_translation` (
   `query_id` int(11) NOT NULL,
   `status` int(11) NOT NULL,
@@ -1283,7 +1284,7 @@ CREATE TABLE `nglayouts_collection_query_translation` (
 
 DROP TABLE IF EXISTS `nglayouts_collection_slot`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_slot` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1305,7 +1306,7 @@ CREATE TABLE `nglayouts_collection_slot` (
 
 DROP TABLE IF EXISTS `nglayouts_collection_translation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_translation` (
   `collection_id` int(11) NOT NULL,
   `status` int(11) NOT NULL,
@@ -1321,7 +1322,7 @@ CREATE TABLE `nglayouts_collection_translation` (
 
 DROP TABLE IF EXISTS `nglayouts_layout`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_layout` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1347,7 +1348,7 @@ CREATE TABLE `nglayouts_layout` (
 
 DROP TABLE IF EXISTS `nglayouts_layout_translation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_layout_translation` (
   `layout_id` int(11) NOT NULL,
   `status` int(11) NOT NULL,
@@ -1363,7 +1364,7 @@ CREATE TABLE `nglayouts_layout_translation` (
 
 DROP TABLE IF EXISTS `nglayouts_migration_versions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_migration_versions` (
   `version` varchar(14) NOT NULL,
   `executed_at` datetime DEFAULT NULL COMMENT '(DC2Type:datetime_immutable)',
@@ -1377,7 +1378,7 @@ CREATE TABLE `nglayouts_migration_versions` (
 
 DROP TABLE IF EXISTS `nglayouts_role`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_role` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1397,7 +1398,7 @@ CREATE TABLE `nglayouts_role` (
 
 DROP TABLE IF EXISTS `nglayouts_role_policy`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_role_policy` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1421,7 +1422,7 @@ CREATE TABLE `nglayouts_role_policy` (
 
 DROP TABLE IF EXISTS `nglayouts_rule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1440,7 +1441,7 @@ CREATE TABLE `nglayouts_rule` (
 
 DROP TABLE IF EXISTS `nglayouts_rule_condition`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_condition` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1461,7 +1462,7 @@ CREATE TABLE `nglayouts_rule_condition` (
 
 DROP TABLE IF EXISTS `nglayouts_rule_data`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_data` (
   `rule_id` int(11) NOT NULL,
   `enabled` tinyint(1) NOT NULL,
@@ -1476,7 +1477,7 @@ CREATE TABLE `nglayouts_rule_data` (
 
 DROP TABLE IF EXISTS `nglayouts_rule_target`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_target` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
@@ -1498,7 +1499,7 @@ CREATE TABLE `nglayouts_rule_target` (
 
 DROP TABLE IF EXISTS `nglayouts_zone`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_zone` (
   `identifier` varchar(191) NOT NULL,
   `layout_id` int(11) NOT NULL,
@@ -1521,7 +1522,7 @@ CREATE TABLE `nglayouts_zone` (
 
 DROP TABLE IF EXISTS `nguser_setting`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nguser_setting` (
   `user_id` int(11) NOT NULL,
   `is_activated` int(11) NOT NULL,
@@ -1535,7 +1536,7 @@ CREATE TABLE `nguser_setting` (
 
 DROP TABLE IF EXISTS `sckenhancedselection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sckenhancedselection` (
   `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
   `contentobject_attribute_version` int(11) NOT NULL DEFAULT '0',
@@ -1554,4 +1555,4 @@ CREATE TABLE `sckenhancedselection` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-06-15 12:00:00
+-- Dump completed on 2020-01-07 12:00:00
