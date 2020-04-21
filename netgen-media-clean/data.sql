@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.18, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.19, for Linux (x86_64)
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	8.0.18-0ubuntu0.19.10.1
+-- Server version	8.0.19-0ubuntu0.19.10.3
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -1412,4 +1412,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-07 12:00:00
+-- Dump completed on 2020-04-21 12:00:00

@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.18, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.19, for Linux (x86_64)
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	8.0.18-0ubuntu0.19.10.1
+-- Server version	8.0.19-0ubuntu0.19.10.3
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -608,9 +608,11 @@ CREATE TABLE `ezkeyword_attribute_link` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `keyword_id` int(11) NOT NULL DEFAULT '0',
   `objectattribute_id` int(11) NOT NULL DEFAULT '0',
+  `version` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `ezkeyword_attr_link_kid_oaid` (`keyword_id`,`objectattribute_id`),
-  KEY `ezkeyword_attr_link_oaid` (`objectattribute_id`)
+  KEY `ezkeyword_attr_link_oaid` (`objectattribute_id`),
+  KEY `ezkeyword_attr_link_oaid_ver` (`objectattribute_id`,`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -1556,4 +1558,4 @@ CREATE TABLE `sckenhancedselection` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-07 12:00:00
+-- Dump completed on 2020-04-21 12:00:00
