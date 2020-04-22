@@ -465,7 +465,7 @@ CREATE TABLE `ezcontentobject_tree` (
   `sort_field` int(11) DEFAULT '1',
   `sort_order` int(11) DEFAULT '1',
   PRIMARY KEY (`node_id`),
-  UNIQUE KEY `ezcontentobject_tree_contentobject_id_path_string` (`path_string`(191),`contentobject_id`),
+  KEY `ezcontentobject_tree_contentobject_id_path_string` (`path_string`(191),`contentobject_id`),
   KEY `ezcontentobject_tree_remote_id` (`remote_id`),
   KEY `ezcontentobject_tree_co_id` (`contentobject_id`),
   KEY `ezcontentobject_tree_depth` (`depth`),
@@ -500,6 +500,31 @@ CREATE TABLE `ezcontentobject_version` (
   KEY `ezcobj_version_status` (`status`),
   KEY `idx_object_version_objver` (`contentobject_id`,`version`),
   KEY `ezcontobj_version_obj_status` (`contentobject_id`,`status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ezdfsfile`
+--
+
+DROP TABLE IF EXISTS `ezdfsfile`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ezdfsfile` (
+  `name_hash` varchar(34) NOT NULL DEFAULT '',
+  `name` text NOT NULL,
+  `name_trunk` text NOT NULL,
+  `datatype` varchar(255) NOT NULL DEFAULT 'application/octet-stream',
+  `scope` varchar(25) NOT NULL DEFAULT '',
+  `size` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `mtime` int(11) NOT NULL DEFAULT '0',
+  `expired` tinyint(1) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`name_hash`),
+  KEY `ezdfsfile_name_trunk` (`name_trunk`(191)),
+  KEY `ezdfsfile_expired_name` (`expired`,`name`(191)),
+  KEY `ezdfsfile_name` (`name`(191)),
+  KEY `ezdfsfile_mtime` (`mtime`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -608,7 +633,7 @@ CREATE TABLE `ezkeyword_attribute_link` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `keyword_id` int(11) NOT NULL DEFAULT '0',
   `objectattribute_id` int(11) NOT NULL DEFAULT '0',
-  `version` int(11) NOT NULL,
+  `version` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ezkeyword_attr_link_kid_oaid` (`keyword_id`,`objectattribute_id`),
   KEY `ezkeyword_attr_link_oaid` (`objectattribute_id`),
@@ -678,12 +703,12 @@ DROP TABLE IF EXISTS `eznotification`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eznotification` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `owner_id` int(11) NOT NULL DEFAULT '0',
   `is_pending` tinyint(1) NOT NULL DEFAULT '1',
   `type` varchar(128) NOT NULL DEFAULT '',
   `created` int(11) NOT NULL DEFAULT '0',
-  `data` text,
+  `data` longtext,
   PRIMARY KEY (`id`),
   KEY `eznotification_owner` (`owner_id`),
   KEY `eznotification_owner_is_pending` (`owner_id`,`is_pending`)
@@ -816,11 +841,11 @@ CREATE TABLE `ezsearch_object_word_link` (
   `word_id` int(11) NOT NULL DEFAULT '0',
   `language_mask` bigint NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
-  KEY `ezsearch_object_word_link_frequency` (`frequency`),
+  KEY `ezsearch_object_word_link_object` (`contentobject_id`),
   KEY `ezsearch_object_word_link_identifier` (`identifier`(191)),
   KEY `ezsearch_object_word_link_integer_value` (`integer_value`),
-  KEY `ezsearch_object_word_link_object` (`contentobject_id`),
-  KEY `ezsearch_object_word_link_word` (`word_id`)
+  KEY `ezsearch_object_word_link_word` (`word_id`),
+  KEY `ezsearch_object_word_link_frequency` (`frequency`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -930,9 +955,9 @@ CREATE TABLE `eztags_keyword` (
   `keyword_id` int(11) NOT NULL DEFAULT '0',
   `language_id` int(11) NOT NULL DEFAULT '0',
   `keyword` varchar(255) NOT NULL DEFAULT '',
-  `locale` varchar(255) NOT NULL DEFAULT '',
+  `locale` varchar(20) NOT NULL DEFAULT '',
   `status` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`keyword_id`,`locale`(191))
+  PRIMARY KEY (`keyword_id`,`locale`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -990,12 +1015,12 @@ CREATE TABLE `ezurlalias` (
   `source_md5` varchar(32) DEFAULT NULL,
   `source_url` longtext NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `ezurlalias_desturl` (`destination_url`(191)),
+  KEY `ezurlalias_source_md5` (`source_md5`),
+  KEY `ezurlalias_wcard_fwd` (`is_wildcard`,`forward_to_id`),
   KEY `ezurlalias_forward_to_id` (`forward_to_id`),
   KEY `ezurlalias_imp_wcard_fwd` (`is_imported`,`is_wildcard`,`forward_to_id`),
-  KEY `ezurlalias_source_md5` (`source_md5`),
   KEY `ezurlalias_source_url` (`source_url`(191)),
-  KEY `ezurlalias_wcard_fwd` (`is_wildcard`,`forward_to_id`)
+  KEY `ezurlalias_desturl` (`destination_url`(191))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -1019,13 +1044,13 @@ CREATE TABLE `ezurlalias_ml` (
   `text` longtext NOT NULL,
   `text_md5` varchar(32) NOT NULL DEFAULT '',
   PRIMARY KEY (`parent`,`text_md5`),
-  KEY `ezurlalias_ml_act_org` (`action`(32),`is_original`),
   KEY `ezurlalias_ml_actt_org_al` (`action_type`,`is_original`,`is_alias`),
-  KEY `ezurlalias_ml_id` (`id`),
+  KEY `ezurlalias_ml_text_lang` (`text`(32),`lang_mask`,`parent`),
   KEY `ezurlalias_ml_par_act_id_lnk` (`action`(32),`id`,`link`,`parent`),
   KEY `ezurlalias_ml_par_lnk_txt` (`parent`,`text`(32),`link`),
+  KEY `ezurlalias_ml_act_org` (`action`(32),`is_original`),
   KEY `ezurlalias_ml_text` (`text`(32),`id`,`link`),
-  KEY `ezurlalias_ml_text_lang` (`text`(32),`lang_mask`,`parent`)
+  KEY `ezurlalias_ml_id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
