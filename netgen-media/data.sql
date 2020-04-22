@@ -3567,6 +3567,15 @@ INSERT INTO `ezcontentobject_version` VALUES (63,1570439659,14,2771,2,3,15704396
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `ezdfsfile`
+--
+
+LOCK TABLES `ezdfsfile` WRITE;
+/*!40000 ALTER TABLE `ezdfsfile` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ezdfsfile` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `ezgmaplocation`
 --
 
