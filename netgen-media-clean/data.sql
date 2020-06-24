@@ -1405,6 +1405,24 @@ LOCK TABLES `nguser_setting` WRITE;
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `novaseo_meta`
+--
+
+LOCK TABLES `novaseo_meta` WRITE;
+/*!40000 ALTER TABLE `novaseo_meta` DISABLE KEYS */;
+/*!40000 ALTER TABLE `novaseo_meta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `novaseo_redirect_import_history`
+--
+
+LOCK TABLES `novaseo_redirect_import_history` WRITE;
+/*!40000 ALTER TABLE `novaseo_redirect_import_history` DISABLE KEYS */;
+/*!40000 ALTER TABLE `novaseo_redirect_import_history` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `sckenhancedselection`
 --
 

@@ -1559,6 +1559,39 @@ CREATE TABLE `nguser_setting` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `novaseo_meta`
+--
+
+DROP TABLE IF EXISTS `novaseo_meta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `novaseo_meta` (
+  `objectattribute_id` bigint(20) unsigned NOT NULL,
+  `meta_name` varchar(255) NOT NULL,
+  `meta_content` text NOT NULL,
+  `objectattribute_version` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`objectattribute_id`,`objectattribute_version`,`meta_name`),
+  KEY `novaseo_idx_content` (`objectattribute_id`,`objectattribute_version`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `novaseo_redirect_import_history`
+--
+
+DROP TABLE IF EXISTS `novaseo_redirect_import_history`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `novaseo_redirect_import_history` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name_file` varchar(255) NOT NULL,
+  `date` datetime NOT NULL,
+  `path` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `sckenhancedselection`
 --
 
