@@ -2481,7 +2481,8 @@ INSERT INTO `ezpolicy_limitation_value` VALUES (4852,1170,'100');
 INSERT INTO `ezpolicy_limitation_value` VALUES (4853,1170,'51');
 INSERT INTO `ezpolicy_limitation_value` VALUES (4854,1170,'50');
 INSERT INTO `ezpolicy_limitation_value` VALUES (4855,1170,'97');
-INSERT INTO `ezpolicy_limitation_value` VALUES (4856,1171,'3');
+INSERT INTO `ezpolicy_limitation_value` VALUES (4856,1170,'49');
+INSERT INTO `ezpolicy_limitation_value` VALUES (4857,1171,'3');
 /*!40000 ALTER TABLE `ezpolicy_limitation_value` ENABLE KEYS */;
 UNLOCK TABLES;
 
