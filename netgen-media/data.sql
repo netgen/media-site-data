@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.19, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.20, for Linux (x86_64)
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	8.0.19-0ubuntu0.19.10.3
+-- Server version	8.0.20-0ubuntu0.20.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -344,7 +344,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',4,0,0,0,0,10,0,0,0,'','','',
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',4,0,0,0,0,1,0,0,0,'','','','','','ezimage',180,'image',0,0,0,0,5,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:5:\"Image\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',37,0,0,0,0,0,0,0,0,'','','','','','ezstring',313,'title',0,1,0,0,1,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',37,0,0,0,0,10,0,0,0,'','','','','','eztext',314,'html_code',0,0,0,0,2,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"HTML code\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',37,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',315,'metadata',0,0,0,0,3,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',37,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',315,'metadata',0,0,0,0,3,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',41,0,0,0,0,0,0,0,0,'','','','','','ezstring',327,'title',0,1,1,0,1,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:5:\"Title\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',41,0,0,0,0,5,0,0,0,'',NULL,'','','','ezrichtext',328,'teaser_intro',0,0,1,0,3,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"Teaser intro\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',41,0,0,0,0,10,0,0,0,'',NULL,'','','','ezrichtext',329,'description',0,0,1,0,4,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:11:\"Description\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
@@ -365,7 +365,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',44,0,0,0,0,2,0,0,0,'',NULL,'
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',44,0,0,0,0,5,0,0,0,'',NULL,'','','','ezrichtext',354,'teaser_intro',0,0,1,0,7,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:61:\"Teaser intro text, shown on category page or in search result\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:17:\"Teaser intro text\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',44,0,0,0,0,20,0,0,0,'',NULL,'','','','ezrichtext',355,'body',0,0,1,0,8,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:17:\"Main article text\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Body text\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',44,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',357,'related_content',0,0,0,0,10,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:24:\"Links to related content\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:15:\"Related content\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',44,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',358,'metadata',0,0,1,0,15,'a:0:{}','a:2:{s:6:\"eng-GB\";s:13:\"SEO meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',44,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',358,'metadata',0,0,0,0,15,'a:0:{}','a:2:{s:6:\"eng-GB\";s:13:\"SEO meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',44,0,0,0,0,0,0,0,0,'','','','','','ezstring',359,'css_class',0,0,1,0,16,'a:0:{}','a:2:{s:6:\"eng-GB\";s:18:\"Specific CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',44,0,0,0,0,0,0,0,0,'','','','','','ezstring',360,'url_text',0,0,1,0,17,'a:0:{}','a:2:{s:6:\"eng-GB\";s:42:\"Text to be used when generating smart URLs\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"URL  text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'content',45,0,0,0,0,1,0,0,0,'','','','','','ezdatetime',361,'publish_date',0,1,1,0,7,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:12:\"Publish date\";}',0);
@@ -379,7 +379,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',45,0,0,0,0,2,0,0,0,'',NULL,'
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',45,0,0,0,0,5,0,0,0,'',NULL,'','','','ezrichtext',369,'teaser_intro',0,0,1,0,10,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:61:\"Teaser intro text, shown on category page or in search result\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:17:\"Teaser intro text\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',45,0,0,0,0,20,0,0,0,'',NULL,'','','','ezrichtext',370,'body',0,0,1,0,11,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:14:\"Main news text\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Body text\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',45,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',372,'related_content',0,0,0,0,12,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:24:\"Links to related content\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:15:\"Related content\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',45,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',374,'metadata',0,0,1,0,17,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',45,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',374,'metadata',0,0,0,0,17,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',45,0,0,0,0,0,0,0,0,'','','','','','ezstring',376,'css_class',0,0,1,0,18,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',45,0,0,0,0,0,0,0,0,'','','','','','ezstring',377,'url_text',0,0,1,0,19,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"URL text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',46,0,0,0,0,255,0,0,0,'','','','','','ezstring',378,'title',0,1,1,0,1,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
@@ -388,7 +388,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (0,'',46,0,0,0,0,0,0,1,0,'','','',
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',46,0,0,0,0,0,0,0,0,'','','','','','ezstring',382,'children_class_filter_include',0,0,0,0,5,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:103:\"Class identifiers of classes to be shown on category page, comma delimited. Example: ng_article,ng_news\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:21:\"Children class filter\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',46,0,0,0,0,0,0,0,0,'','','','','','ezboolean',383,'fetch_subtree',0,0,0,0,6,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:37:\"Show all descendents on category page\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:28:\"Fetch all items in a subtree\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',46,0,0,0,0,-1,1000,-1,3,'','','','','','ezinteger',384,'page_limit',0,1,0,0,7,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:76:\"Number of child nodes per page (if set to -1 template default value is used)\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:20:\"Child nodes per page\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',46,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',385,'metadata',0,0,1,0,4,'a:0:{}','a:2:{s:6:\"eng-GB\";s:13:\"SEO meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',46,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',385,'metadata',0,0,0,0,4,'a:0:{}','a:2:{s:6:\"eng-GB\";s:13:\"SEO meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',46,0,0,0,0,0,0,0,0,'','','','','','ezstring',386,'css_class',0,0,0,0,8,'a:0:{}','a:2:{s:6:\"eng-GB\";s:18:\"Specific CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',46,0,0,0,0,5,0,0,0,'',NULL,'','','','ezrichtext',387,'teaser_intro',0,0,1,0,11,'a:0:{}','a:2:{s:6:\"eng-GB\";s:60:\"Teaser intro text, shown on listing page or in search result\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:17:\"Teaser intro text\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',46,0,0,0,0,20,0,0,0,'',NULL,'','','','ezrichtext',388,'body',0,0,1,0,12,'a:0:{}','a:2:{s:6:\"eng-GB\";s:30:\"Main category description text\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Body text\";}',0);
@@ -397,9 +397,9 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',46,0,0,0,0,10,0,0,0,'',NULL,
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',46,0,0,0,0,0,0,0,0,'','','','','','ezstring',392,'url_text',0,0,1,0,9,'a:0:{}','a:2:{s:6:\"eng-GB\";s:42:\"Text to be used when generating smart URLs\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"URL text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',46,0,0,0,0,0,0,0,0,'Default','','','','','eztags',393,'tags',0,0,1,0,14,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:4:\"Tags\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',47,0,0,0,0,0,0,0,0,'','','','','','ezstring',394,'title',0,1,0,0,1,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',47,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',395,'metadata',0,0,1,0,2,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',47,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',395,'metadata',0,0,0,0,2,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',48,0,0,0,0,0,0,0,0,'','','','','','ezstring',397,'title',0,1,0,0,1,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',48,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',398,'metadata',0,0,1,0,3,'a:0:{}','a:2:{s:6:\"eng-GB\";s:10:\"SEO podaci\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',48,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',398,'metadata',0,0,0,0,3,'a:0:{}','a:2:{s:6:\"eng-GB\";s:10:\"SEO podaci\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',48,0,0,0,0,0,0,0,0,'','','','','','ezstring',399,'css_class',0,0,0,0,5,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',48,0,0,0,0,0,0,0,0,'','','','','','ezstring',400,'url_text',0,0,1,0,6,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"URL text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',48,0,0,0,0,0,0,0,0,'','','','','','ezstring',401,'teaser_title',0,0,1,0,2,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"Teaser title\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
@@ -409,7 +409,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','',
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',407,'main_menu',0,0,1,0,8,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:15:\"Main menu links\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',408,'additional_menu',0,0,1,0,9,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:21:\"Additional menu links\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,5,0,0,0,'',NULL,'','','','ezrichtext',409,'footer_block',0,0,1,0,10,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:12:\"Footer block\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',410,'metadata',0,0,1,0,2,'a:0:{}','a:2:{s:6:\"eng-GB\";s:23:\"Default metadata object\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',410,'metadata',0,0,0,0,2,'a:0:{}','a:2:{s:6:\"eng-GB\";s:23:\"Default metadata object\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,10,0,0,0,'','','','','','eztext',411,'javascript_block_top',0,0,1,0,11,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:17:\"JavaScript on top\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,10,0,0,0,'','','','','','eztext',412,'javascript_block_bottom',0,0,1,0,12,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:20:\"JavaScript on bottom\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',50,0,0,0,0,0,0,0,0,'','','','','','ezstring',413,'rss_feed',0,0,1,0,7,'a:0:{}','a:2:{s:6:\"eng-GB\";s:16:\"Default RSS feed\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"RSS feed\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
@@ -436,7 +436,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',93,0,0,0,0,5,0,0,0,'',NULL,'
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',93,0,0,0,0,20,0,0,0,'',NULL,'','','','ezrichtext',631,'body',0,0,1,0,10,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:14:\"Main news text\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:9:\"Body text\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',93,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',632,'related_content',0,0,0,0,11,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:24:\"Links to related content\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:15:\"Related content\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',93,0,0,0,0,0,0,0,0,'Default','','','','','eztags',633,'tags',0,0,1,0,13,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:4:\"Tags\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:4:\"Tags\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',93,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',634,'metadata',0,0,1,0,15,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',93,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',634,'metadata',0,0,0,0,15,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',93,0,0,0,0,0,0,0,0,'','','','','','ezstring',636,'css_class',0,0,1,0,16,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',93,0,0,0,0,0,0,0,0,'','','','','','ezstring',637,'url_text',0,0,1,0,17,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"URL text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',94,0,0,0,0,0,0,0,0,'','','','','','ezstring',639,'title',0,1,1,0,1,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:19:\"Feedback form title\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:5:\"Title\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
@@ -508,7 +508,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,20,0,0,0,'',NULL
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints/><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement/></related-objects>\n','ezobjectrelationlist',775,'related_content',0,0,0,0,14,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:24:\"Links to related content\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:15:\"Related content\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,0,0,0,0,'','','','','<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><constraints><allowed-class contentclass-identifier=\"ng_banner\"/><allowed-class contentclass-identifier=\"ng_gallery\"/><allowed-class contentclass-identifier=\"image\"/><allowed-class contentclass-identifier=\"ng_video\"/></constraints><type value=\"2\"/><selection_type value=\"0\"/><object_class value=\"\"/><contentobject-placement node-id=\"53\"/></related-objects>\n','ezobjectrelationlist',776,'related_multimedia',0,0,1,0,15,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:24:\"Related multimedia items\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,0,0,1,0,'Default','','','','','eztags',777,'tags',0,0,1,0,17,'a:0:{}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:4:\"Tags\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',101,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',778,'metadata',0,0,1,0,19,'a:0:{}','a:2:{s:6:\"eng-GB\";s:13:\"SEO meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',101,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',778,'metadata',0,0,0,0,19,'a:0:{}','a:2:{s:6:\"eng-GB\";s:13:\"SEO meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',101,0,0,0,0,0,0,0,0,'','','','','','ezstring',779,'css_class',0,0,1,0,20,'a:0:{}','a:2:{s:6:\"eng-GB\";s:18:\"Specific CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',101,0,0,0,0,0,0,0,0,'','','','','','ezstring',780,'url_text',0,0,1,0,21,'a:0:{}','a:2:{s:6:\"eng-GB\";s:42:\"Text to be used when generating smart URLs\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"URL text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,0,0,0,0,'','','','','','ezinteger',781,'preparation_time',0,0,1,0,9,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:16:\"Preparation time\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
@@ -517,7 +517,7 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,0,0,0,0,'','',''
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,0,0,0,0,'','','','','','ezinteger',784,'serving_carbohydrates',0,0,1,0,12,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:27:\"Carbohydrates (per serving)\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,0,0,0,0,'','','','','','ezinteger',785,'serving_protein',0,0,1,0,13,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:21:\"Protein (per serving)\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',102,0,0,0,0,255,0,0,0,'','','','','','ezstring',786,'title',0,1,1,0,1,'a:0:{}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Title\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',102,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',789,'metadata',0,0,1,0,5,'a:0:{}','a:2:{s:6:\"eng-GB\";s:13:\"SEO meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',102,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',789,'metadata',0,0,0,0,5,'a:0:{}','a:2:{s:6:\"eng-GB\";s:13:\"SEO meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',102,0,0,0,0,0,0,0,0,'','','','','','ezstring',793,'css_class',0,0,0,0,6,'a:0:{}','a:2:{s:6:\"eng-GB\";s:18:\"Specific CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',102,0,0,0,0,0,0,0,0,'','','','','','ezstring',794,'url_text',0,0,1,0,7,'a:0:{}','a:2:{s:6:\"eng-GB\";s:42:\"Text to be used when generating smart URLs\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"URL text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',102,0,0,0,0,10,0,0,0,'',NULL,'','','','ezrichtext',795,'full_intro',0,0,1,0,3,'a:0:{}','a:2:{s:6:\"eng-GB\";s:39:\"Full intro text, shown on category page\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:10:\"Intro text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
@@ -534,14 +534,14 @@ INSERT INTO `ezcontentclass_attribute` VALUES (1,'',101,0,0,0,0,0,0,1,1,'Default
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',97,0,0,0,0,0,0,1,1,'Default','','','','','eztags',813,'main_topic',0,0,1,0,10,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:10:\"Main topic\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',97,0,0,0,0,0,0,1,0,'Default','','','','','eztags',814,'tags',0,0,1,0,11,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:4:\"Tags\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',97,0,0,0,0,0,0,0,0,'','','','','','ezstring',815,'sponsored_content_disclosure',0,0,1,0,12,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:28:\"Sponsored content disclosure\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',97,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',816,'metadata',0,0,1,0,15,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',97,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',816,'metadata',0,0,0,0,15,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',97,0,0,0,0,0,0,0,0,'','','','','','ezstring',817,'css_class',0,0,1,0,16,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"CSS class\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',97,0,0,0,0,0,0,0,0,'','','','','','ezstring',818,'url_text',0,0,1,0,17,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"URL text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',95,0,0,0,0,0,0,1,1,'Default','','','','','eztags',819,'main_topic',0,0,1,0,5,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:10:\"Main topic\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',95,0,0,0,0,0,0,1,0,'Default','','','','','eztags',820,'tags',0,0,1,0,6,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:4:\"Tags\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',95,0,0,0,0,0,0,0,0,'','','','','','ezstring',821,'sponsored_content_disclosure',0,0,1,0,7,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:28:\"Sponsored content disclosure\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',95,0,0,0,0,0,0,0,0,'','','','','','ezstring',822,'url_text',0,0,1,0,10,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:8:\"URL text\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
-INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',95,0,0,0,0,0,0,0,0,'','','','','','xrowmetadata',823,'metadata',0,0,1,0,8,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
+INSERT INTO `ezcontentclass_attribute` VALUES (1,'meta',95,0,0,0,0,0,0,0,0,'','','','','{\"title\":null,\"description\":null,\"keywords\":null,\"canonical\":null,\"og:title\":null,\"og:description\":null,\"og:image\":null,\"twitter:title\":null,\"twitter:description\":null,\"twitter:image\":null}','novaseometas',823,'metadata',0,0,0,0,8,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:6:\"eng-GB\";s:9:\"Meta data\";s:16:\"always-available\";s:6:\"eng-GB\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',103,0,0,0,0,0,0,0,0,'','','','','','ezstring',824,'name',0,1,1,0,1,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:4:\"Name\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',103,0,0,0,0,10,0,0,0,'',NULL,'','','','ezrichtext',825,'cv',0,0,1,0,2,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:2:\"CV\";}',0);
 INSERT INTO `ezcontentclass_attribute` VALUES (1,'',103,0,0,0,0,0,0,0,0,'','','','','','ezimage',826,'image',0,0,0,0,3,'a:2:{s:6:\"eng-GB\";s:0:\"\";s:16:\"always-available\";s:6:\"eng-GB\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:0:\"\";}','a:2:{s:16:\"always-available\";s:6:\"eng-GB\";s:6:\"eng-GB\";s:5:\"Image\";}',0);
@@ -907,13 +907,13 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,179,14,0,0,'','eztext',178,'en
 INSERT INTO `ezcontentobject_attribute` VALUES (0,180,10,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ezimage serial_number=\"1\" is_valid=\"\" filename=\"\" suffix=\"\" basename=\"\" dirpath=\"\" url=\"\" original_filename=\"\" mime_type=\"\" width=\"\" height=\"\" alternative_text=\"\" alias_key=\"1293033771\" timestamp=\"1379074071\"><original attribute_id=\"179\" attribute_version=\"3\" attribute_language=\"eng-GB\"/></ezimage>\n','ezimage',179,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,180,14,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ezimage serial_number=\"1\" is_valid=\"\" filename=\"\" suffix=\"\" basename=\"\" dirpath=\"\" url=\"\" original_filename=\"\" mime_type=\"\" width=\"\" height=\"\" alternative_text=\"\" alias_key=\"1293033771\" timestamp=\"1472412002\"><original attribute_id=\"180\" attribute_version=\"6\" attribute_language=\"eng-GB\"/></ezimage>\n','ezimage',180,'eng-GB',3,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,394,61,0,NULL,'Home','ezstring',226,'eng-GB',3,0,'home',98);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,395,61,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title></title><keywords></keywords><description></description><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',228,'eng-GB',3,0,'',98);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,395,61,NULL,NULL,NULL,'novaseometas',228,'eng-GB',3,0,'',98);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,62,0,NULL,'Configuration','ezstring',230,'eng-GB',3,0,'configuration',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,406,63,0,NULL,'Fit & Healthy','ezstring',231,'eng-GB',3,0,'fit & healthy',36);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,407,63,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list><relation-item priority=\"1\" contentobject-id=\"174\" contentobject-version=\"1\" node-id=\"167\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"beed906956ec740fd90f03262a2bfd19\"/><relation-item priority=\"2\" contentobject-id=\"175\" contentobject-version=\"1\" node-id=\"168\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"e7e38b0aa1e56250eacae6ecf68e11d5\"/><relation-item priority=\"3\" contentobject-id=\"197\" contentobject-version=\"1\" node-id=\"190\" parent-node-id=\"2\" contentclass-id=\"46\" contentclass-identifier=\"ng_category\" contentobject-remote-id=\"2d8cf5e84eebef0fab7efd633d6efd39\"/><relation-item priority=\"4\" contentobject-id=\"203\" contentobject-version=\"1\" node-id=\"195\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"55e27ad42bdea98deb3afe5cd9289a5b\"/><relation-item priority=\"5\" contentobject-id=\"206\" contentobject-version=\"1\" node-id=\"198\" parent-node-id=\"2\" contentclass-id=\"48\" contentclass-identifier=\"ng_landing_page\" contentobject-remote-id=\"1a459b09aa9ac8dc31364ed9c94f425d\"/></relation-list></related-objects>\n','ezobjectrelationlist',232,'eng-GB',3,0,'',36);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,408,63,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list><relation-item priority=\"1\" contentobject-id=\"203\" contentobject-version=\"3\" node-id=\"195\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"55e27ad42bdea98deb3afe5cd9289a5b\"/><relation-item priority=\"2\" contentobject-id=\"218\" contentobject-version=\"1\" node-id=\"210\" parent-node-id=\"2\" contentclass-id=\"102\" contentclass-identifier=\"ng_topic\" contentobject-remote-id=\"f63daa904f40e2e035c071ac61c2f411\"/><relation-item priority=\"3\" contentobject-id=\"235\" contentobject-version=\"1\" node-id=\"224\" parent-node-id=\"2\" contentclass-id=\"94\" contentclass-identifier=\"ng_feedback_form\" contentobject-remote-id=\"85e74b55c4e4307fa35ba23e63fafbca\"/><relation-item priority=\"4\" contentobject-id=\"238\" contentobject-version=\"1\" node-id=\"227\" parent-node-id=\"166\" contentclass-id=\"100\" contentclass-identifier=\"ng_menu_item\" contentobject-remote-id=\"31534b87e7202411f717b67307aa95bf\"/></relation-list></related-objects>\n','ezobjectrelationlist',233,'eng-GB',3,0,'',36);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,409,63,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>This demo site is built on eZ Platform and Netgen Layouts. </para></section>\n','ezrichtext',234,'eng-GB',3,0,'',36);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,410,63,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',235,'eng-GB',3,0,'',36);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,410,63,NULL,NULL,NULL,'novaseometas',235,'eng-GB',3,0,'',36);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,411,63,0,NULL,'','eztext',236,'eng-GB',3,0,'',36);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,412,63,0,NULL,'','eztext',237,'eng-GB',3,0,'',36);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,413,63,0,NULL,'','ezstring',238,'eng-GB',3,0,'',36);
@@ -933,7 +933,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,763,63,0,NULL,'Fit & Healthy',
 INSERT INTO `ezcontentobject_attribute` VALUES (0,764,63,0,NULL,'','ezbinaryfile',2112,'eng-GB',3,0,'',36);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,397,174,0,NULL,'Fitness','ezstring',2131,'eng-GB',2,0,'fitness',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,401,174,0,NULL,'','ezstring',2132,'eng-GB',2,0,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,398,174,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2133,'eng-GB',2,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,398,174,NULL,NULL,NULL,'novaseometas',2133,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,762,174,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',2134,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,399,174,0,NULL,'','ezstring',2135,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,400,174,0,NULL,'','ezstring',2136,'eng-GB',2,0,'',1);
@@ -942,7 +942,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,726,174,0,NULL,'','ezobjectrel
 INSERT INTO `ezcontentobject_attribute` VALUES (0,727,174,0,0,'','ezurl',2139,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,397,175,0,NULL,'Healthy eating','ezstring',2140,'eng-GB',2,0,'healthy eating',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,401,175,0,NULL,'','ezstring',2141,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,398,175,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2142,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,398,175,NULL,NULL,NULL,'novaseometas',2142,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,762,175,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',2143,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,399,175,0,NULL,'','ezstring',2144,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,400,175,0,NULL,'','ezstring',2145,'eng-GB',2,0,'',2);
@@ -960,7 +960,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,655,177,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,357,177,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2167,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,177,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2168,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,177,0,NULL,'','eztags',2169,'eng-GB',2,0,'',10);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,177,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2170,'eng-GB',2,0,'',10);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,177,NULL,NULL,NULL,'novaseometas',2170,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,177,0,NULL,'','ezstring',2171,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,177,0,NULL,'','ezstring',2172,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,179,0,NULL,'The BiPolar Learning Curve','ezstring',2183,'eng-GB',2,0,'the bipolar learning curve',8);
@@ -974,7 +974,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,655,179,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,357,179,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2191,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,179,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2192,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,179,0,NULL,'','eztags',2193,'eng-GB',2,0,'',8);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,179,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2194,'eng-GB',2,0,'',8);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,179,NULL,NULL,NULL,'novaseometas',2194,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,179,0,NULL,'','ezstring',2195,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,179,0,NULL,'','ezstring',2196,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,180,0,NULL,'Split Options Weight Training Program','ezstring',2197,'eng-GB',2,0,'split options weight training program',7);
@@ -988,7 +988,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,655,180,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,357,180,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2205,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,180,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2206,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,180,0,NULL,'','eztags',2207,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,180,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2208,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,180,NULL,NULL,NULL,'novaseometas',2208,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,180,0,NULL,'','ezstring',2209,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,180,0,NULL,'','ezstring',2210,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,181,0,NULL,'Photo4','ezstring',2211,'eng-GB',2,0,'photo4',1);
@@ -1005,7 +1005,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,655,182,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,357,182,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2222,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,182,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2223,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,182,0,NULL,'','eztags',2224,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,182,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2225,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,182,NULL,NULL,NULL,'novaseometas',2225,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,182,0,NULL,'','ezstring',2226,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,182,0,NULL,'','ezstring',2227,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,183,0,NULL,'Bodyweight Circuit with Running Pyramid Workout','ezstring',2228,'eng-GB',2,0,'bodyweight circuit with running pyramid workout',7);
@@ -1019,7 +1019,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,655,183,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,357,183,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2236,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,183,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2237,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,183,0,NULL,'','eztags',2238,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,183,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2239,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,183,NULL,NULL,NULL,'novaseometas',2239,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,183,0,NULL,'','ezstring',2240,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,183,0,NULL,'','ezstring',2241,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,184,0,NULL,'Why Track Your Workouts?','ezstring',2242,'eng-GB',2,0,'why track your workouts?',7);
@@ -1033,7 +1033,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,655,184,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,357,184,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2250,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,184,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2251,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,184,0,NULL,'','eztags',2252,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,184,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2253,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,184,NULL,NULL,NULL,'novaseometas',2253,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,184,0,NULL,'','ezstring',2254,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,184,0,NULL,'','ezstring',2255,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,187,0,NULL,'How to Follow the Mediterranean Diet for Senior Health, & Related Research Findings','ezstring',2284,'eng-GB',2,0,'how to follow the mediterranean diet for senior health, & related research findings',11);
@@ -1047,7 +1047,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,655,187,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,357,187,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2292,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,187,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2293,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,187,0,NULL,'','eztags',2294,'eng-GB',2,0,'',11);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,187,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2295,'eng-GB',2,0,'',11);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,187,NULL,NULL,NULL,'novaseometas',2295,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,187,0,NULL,'','ezstring',2296,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,187,0,NULL,'','ezstring',2297,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,364,188,0,NULL,'The Food Delivery Industry Is Changing the Way We Think About Food','ezstring',2298,'eng-GB',2,0,'the food delivery industry is changing the way we think about food',10);
@@ -1061,7 +1061,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,654,188,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,372,188,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2306,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,742,188,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2307,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,367,188,0,NULL,'','eztags',2308,'eng-GB',2,0,'',10);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,374,188,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2309,'eng-GB',2,0,'',10);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,374,188,NULL,NULL,NULL,'novaseometas',2309,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,376,188,0,NULL,'','ezstring',2310,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,377,188,0,NULL,'','ezstring',2311,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,190,0,NULL,'Healthy vs Unhealthy Food: the Challenges of Understanding Food Choices','ezstring',2326,'eng-GB',2,0,'healthy vs unhealthy food: the challenges of understanding food choices',10);
@@ -1075,7 +1075,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,655,190,0,0,'','ezgmaplocation
 INSERT INTO `ezcontentobject_attribute` VALUES (0,357,190,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2334,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,190,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',2335,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,190,0,NULL,'','eztags',2336,'eng-GB',2,0,'',10);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,190,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2337,'eng-GB',2,0,'',10);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,190,NULL,NULL,NULL,'novaseometas',2337,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,190,0,NULL,'','ezstring',2338,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,190,0,NULL,'','ezstring',2339,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,191,0,NULL,'Photo13','ezstring',2340,'eng-GB',2,0,'photo13',1);
@@ -1099,7 +1099,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,578,196,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,378,197,0,NULL,'Recipes','ezstring',2358,'eng-GB',3,0,'recipes',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,379,197,0,NULL,'','ezstring',2359,'eng-GB',3,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (2360,381,197,0,1,'','ezboolean',2360,'eng-GB',3,1,'',10);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,385,197,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2361,'eng-GB',3,0,'',10);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,385,197,NULL,NULL,NULL,'novaseometas',2361,'eng-GB',3,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,382,197,0,NULL,'','ezstring',2362,'eng-GB',3,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,383,197,0,0,'','ezboolean',2363,'eng-GB',3,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,384,197,0,-1,'','ezinteger',2364,'eng-GB',3,-1,'',10);
@@ -1118,12 +1118,12 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,786,203,0,NULL,'Running','ezst
 INSERT INTO `ezcontentobject_attribute` VALUES (0,804,203,0,NULL,'','eztags',2467,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,795,203,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>Running is nothing more than a series of arguments between the part of your brain that wants to stop and the part that wants to keep going.</para></section>\n','ezrichtext',2468,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,797,203,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',2469,'eng-GB',3,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,789,203,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2470,'eng-GB',3,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,789,203,NULL,NULL,NULL,'novaseometas',2470,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,793,203,0,NULL,'','ezstring',2471,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,794,203,0,NULL,'','ezstring',2472,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,397,206,0,NULL,'Video','ezstring',2501,'eng-GB',2,0,'video',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,401,206,0,NULL,'','ezstring',2502,'eng-GB',2,0,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,398,206,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2503,'eng-GB',2,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,398,206,NULL,NULL,NULL,'novaseometas',2503,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,762,206,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',2504,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,399,206,0,NULL,'','ezstring',2505,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,400,206,0,NULL,'','ezstring',2506,'eng-GB',2,0,'',1);
@@ -1187,9 +1187,9 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,210,0,NULL,'','eztags',265
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,208,0,NULL,'','ezstring',2660,'eng-GB',3,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,209,0,NULL,'','ezstring',2663,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,210,0,NULL,'','ezstring',2665,'eng-GB',3,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,208,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2667,'eng-GB',3,0,'',6);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,209,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2668,'eng-GB',3,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,210,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2669,'eng-GB',3,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,208,NULL,NULL,NULL,'novaseometas',2667,'eng-GB',3,0,'',6);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,209,NULL,NULL,NULL,'novaseometas',2668,'eng-GB',3,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,210,NULL,NULL,NULL,'novaseometas',2669,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,208,0,NULL,'','ezstring',2670,'eng-GB',3,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,209,0,NULL,'','ezstring',2673,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,210,0,NULL,'','ezstring',2675,'eng-GB',3,0,'',4);
@@ -1200,15 +1200,15 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,786,218,0,NULL,'Workout','ezst
 INSERT INTO `ezcontentobject_attribute` VALUES (0,804,218,0,NULL,'','eztags',2712,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,795,218,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',2713,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,797,218,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',2714,'eng-GB',3,0,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,789,218,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2715,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,789,218,NULL,NULL,NULL,'novaseometas',2715,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,793,218,0,NULL,'','ezstring',2716,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,794,218,0,NULL,'','ezstring',2717,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,313,219,0,NULL,'Ad 300x250','ezstring',2718,'eng-GB',3,0,'ad 300x250',13);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,314,219,0,NULL,'<div class=\"ad-container\" style=\"\r\n    background-color: #f8f9fc;\r\n    width: 100%;\r\n    max-width: 340px;\">\r\n    <div class=\"outer\" style=\"\r\n        width: 100%;\r\n        height: 0;\r\n        position: relative;\r\n        padding-bottom: 83.3%;\r\n        background-color: #f8f9fc;\">\r\n        <div class=\"inner\" style=\"\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n            right: 20px;\r\n            bottom: 20px;\r\n            display: flex;\r\n            justify-content: center;\r\n            text-align: center;\r\n            align-items: center;\r\n            font-weight: bold;\r\n            font-size: 24px;\r\n            background-color: #7BD7C0;\">\r\n            Rectangle Ad.\r\n        </div>\r\n    </div>\r\n</div>','eztext',2719,'eng-GB',3,0,'',13);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,315,219,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2720,'eng-GB',3,0,'',13);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,315,219,NULL,NULL,NULL,'novaseometas',2720,'eng-GB',3,0,'',13);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,313,220,0,NULL,'Ad 728x90','ezstring',2721,'eng-GB',3,0,'ad 728x90',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,314,220,0,NULL,'<div class=\"text-center\">\r\n    <div style=\"background-color:#7BD7C0; width:728px; height:90px; max-width: 100%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 24px; margin: 0 auto -2rem;\">Leaderboard Ad.</div>\r\n</div>','eztext',2722,'eng-GB',3,0,'',8);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,315,220,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2723,'eng-GB',3,0,'',8);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,315,220,NULL,NULL,NULL,'novaseometas',2723,'eng-GB',3,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,336,221,0,NULL,'Workouts','ezstring',2724,'eng-GB',3,0,'workouts',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,339,221,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ezimage serial_number=\"1\" is_valid=\"1\" filename=\"workouts.jpg\" suffix=\"jpg\" basename=\"workouts\" dirpath=\"var/site/storage/images/media/banners/workouts/2725-7-eng-GB\" url=\"var/site/storage/images/media/banners/workouts/2725-7-eng-GB/workouts.jpg\" original_filename=\"29023552457_fe714f7bfe_k.jpg\" mime_type=\"image/jpeg\" width=\"2048\" height=\"1362\" alternative_text=\"\" alias_key=\"1293033771\" timestamp=\"1535052042\"><original attribute_id=\"2725\" attribute_version=\"7\" attribute_language=\"eng-GB\"/><information Height=\"1362\" Width=\"2048\" IsColor=\"1\"/></ezimage>\n','ezimage',2725,'eng-GB',3,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,338,221,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',2726,'eng-GB',3,0,'',8);
@@ -1231,7 +1231,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,224,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,224,0,NULL,'','eztags',2762,'eng-GB',2,0,'',16);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,224,0,NULL,'','eztags',2763,'eng-GB',2,0,'',16);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,224,0,NULL,'','ezstring',2764,'eng-GB',2,0,'',16);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,224,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2765,'eng-GB',2,0,'',16);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,224,NULL,NULL,NULL,'novaseometas',2765,'eng-GB',2,0,'',16);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,224,0,NULL,'','ezstring',2766,'eng-GB',2,0,'',16);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,224,0,NULL,'','ezstring',2767,'eng-GB',2,0,'',16);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,225,0,NULL,'Gluten-Free Shrimp Pad Thai with Tofu','ezstring',2768,'eng-GB',2,0,'gluten-free shrimp pad thai with tofu',12);
@@ -1251,7 +1251,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,225,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,225,0,NULL,'','eztags',2782,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,225,0,NULL,'','eztags',2783,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,225,0,NULL,'','ezstring',2784,'eng-GB',2,0,'',12);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,225,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2785,'eng-GB',2,0,'',12);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,225,NULL,NULL,NULL,'novaseometas',2785,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,225,0,NULL,'','ezstring',2786,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,225,0,NULL,'','ezstring',2787,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,227,0,NULL,'Vegan Granola with Almonds, Walnuts, Cranberries, and Goji Berries','ezstring',2808,'eng-GB',2,0,'vegan granola with almonds, walnuts, cranberries, and goji berries',4);
@@ -1271,7 +1271,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,227,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,227,0,NULL,'','eztags',2822,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,227,0,NULL,'','eztags',2823,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,227,0,NULL,'','ezstring',2824,'eng-GB',2,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,227,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2825,'eng-GB',2,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,227,NULL,NULL,NULL,'novaseometas',2825,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,227,0,NULL,'','ezstring',2826,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,227,0,NULL,'','ezstring',2827,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,228,0,NULL,'Zucchini Zoodles with Ground Turkey Tomato Sauce','ezstring',2828,'eng-GB',2,0,'zucchini zoodles with ground turkey tomato sauce',4);
@@ -1291,7 +1291,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,228,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,228,0,NULL,'','eztags',2842,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,228,0,NULL,'','eztags',2843,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,228,0,NULL,'','ezstring',2844,'eng-GB',2,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,228,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2845,'eng-GB',2,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,228,NULL,NULL,NULL,'novaseometas',2845,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,228,0,NULL,'','ezstring',2846,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,228,0,NULL,'','ezstring',2847,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,229,0,NULL,'Kale Salad','ezstring',2848,'eng-GB',2,0,'kale salad',3);
@@ -1311,7 +1311,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,229,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,229,0,NULL,'','eztags',2862,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,229,0,NULL,'','eztags',2863,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,229,0,NULL,'','ezstring',2864,'eng-GB',2,0,'',3);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,229,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2865,'eng-GB',2,0,'',3);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,229,NULL,NULL,NULL,'novaseometas',2865,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,229,0,NULL,'','ezstring',2866,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,229,0,NULL,'','ezstring',2867,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,230,0,NULL,'Quiche Cups with Tomato and Prosciutto','ezstring',2868,'eng-GB',2,0,'quiche cups with tomato and prosciutto',4);
@@ -1331,7 +1331,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,230,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,230,0,NULL,'','eztags',2882,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,230,0,NULL,'','eztags',2883,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,230,0,NULL,'','ezstring',2884,'eng-GB',2,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,230,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2885,'eng-GB',2,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,230,NULL,NULL,NULL,'novaseometas',2885,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,230,0,NULL,'','ezstring',2886,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,230,0,NULL,'','ezstring',2887,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,231,0,NULL,'Low-Carb Oatmeal Pancakes','ezstring',2888,'eng-GB',2,0,'low-carb oatmeal pancakes',2);
@@ -1351,7 +1351,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,231,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,231,0,NULL,'','eztags',2902,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,231,0,NULL,'','eztags',2903,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,231,0,NULL,'','ezstring',2904,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,231,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2905,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,231,NULL,NULL,NULL,'novaseometas',2905,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,231,0,NULL,'','ezstring',2906,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,231,0,NULL,'','ezstring',2907,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,232,0,NULL,'Avocado Kale Pesto Grilled Cheese','ezstring',2908,'eng-GB',2,0,'avocado kale pesto grilled cheese',5);
@@ -1371,7 +1371,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,232,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,232,0,NULL,'','eztags',2922,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,232,0,NULL,'','eztags',2923,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,232,0,NULL,'','ezstring',2924,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,232,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2925,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,232,NULL,NULL,NULL,'novaseometas',2925,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,232,0,NULL,'','ezstring',2926,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,232,0,NULL,'','ezstring',2927,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,233,0,NULL,'Home-made Hummus','ezstring',2928,'eng-GB',2,0,'home-made hummus',4);
@@ -1391,12 +1391,12 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,233,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,233,0,NULL,'','eztags',2942,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,233,0,NULL,'','eztags',2943,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,233,0,NULL,'','ezstring',2944,'eng-GB',2,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,233,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2945,'eng-GB',2,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,233,NULL,NULL,NULL,'novaseometas',2945,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,233,0,NULL,'','ezstring',2946,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,233,0,NULL,'','ezstring',2947,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,313,234,0,NULL,'Ad 300x250 for Runners','ezstring',2948,'eng-GB',3,0,'ad 300x250 for runners',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,314,234,0,NULL,'<div class=\"ad-container\" style=\"\r\n    background-color: #f8f9fc;\r\n    width: 100%;\r\n    max-width: 340px;\">\r\n    <div class=\"outer\" style=\"\r\n        width: 100%;\r\n        height: 0;\r\n        position: relative;\r\n        padding-bottom: 83.3%;\r\n        background-color: #f8f9fc;\">\r\n        <div class=\"inner\" style=\"\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n            right: 20px;\r\n            bottom: 20px;\r\n            display: flex;\r\n            justify-content: center;\r\n            text-align: center;\r\n            align-items: center;\r\n            font-weight: bold;\r\n            font-size: 24px;\r\n            background-color: #7BD7C0;\">\r\n            Special Ad For Runners.\r\n        </div>\r\n    </div>\r\n</div>','eztext',2949,'eng-GB',3,0,'',9);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,315,234,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',2950,'eng-GB',3,0,'',9);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,315,234,NULL,NULL,NULL,'novaseometas',2950,'eng-GB',3,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,639,235,0,NULL,'Feedback','ezstring',2951,'eng-GB',2,0,'feedback',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,657,235,0,NULL,'','ezstring',2952,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,658,235,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>Our readers are passionate about food and health, and their comments are valuable feedback to all of us, including our editorial staff. To contact us, please fill in the form below</para></section>\n','ezrichtext',2953,'eng-GB',2,0,'',1);
@@ -1471,7 +1471,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,240,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,240,0,NULL,'','eztags',3110,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,240,0,NULL,'','eztags',3111,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,240,0,NULL,'','ezstring',3112,'eng-GB',2,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,240,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3113,'eng-GB',2,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,240,NULL,NULL,NULL,'novaseometas',3113,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,240,0,NULL,'','ezstring',3114,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,240,0,NULL,'','ezstring',3115,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,241,0,NULL,'Sweet Potatoes with Cranberries and Pineapple','ezstring',3116,'eng-GB',2,0,'sweet potatoes with cranberries and pineapple',2);
@@ -1492,7 +1492,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,241,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,241,0,NULL,'','eztags',3131,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,241,0,NULL,'','eztags',3132,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,241,0,NULL,'','ezstring',3133,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,241,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3134,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,241,NULL,NULL,NULL,'novaseometas',3134,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,241,0,NULL,'','ezstring',3135,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,241,0,NULL,'','ezstring',3136,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,242,0,NULL,'Vibrant Guacamole','ezstring',3137,'eng-GB',2,0,'vibrant guacamole',3);
@@ -1513,7 +1513,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,242,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,242,0,NULL,'','eztags',3152,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,242,0,NULL,'','eztags',3153,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,242,0,NULL,'','ezstring',3154,'eng-GB',2,0,'',3);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,242,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3155,'eng-GB',2,0,'',3);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,242,NULL,NULL,NULL,'novaseometas',3155,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,242,0,NULL,'','ezstring',3156,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,242,0,NULL,'','ezstring',3157,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,243,0,NULL,'Greek Quinoa Salad','ezstring',3158,'eng-GB',2,0,'greek quinoa salad',2);
@@ -1534,7 +1534,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,243,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,243,0,NULL,'','eztags',3173,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,243,0,NULL,'','eztags',3174,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,243,0,NULL,'','ezstring',3175,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,243,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3176,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,243,NULL,NULL,NULL,'novaseometas',3176,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,243,0,NULL,'','ezstring',3177,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,243,0,NULL,'','ezstring',3178,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,244,0,NULL,'Hearty Vegetable Soup','ezstring',3179,'eng-GB',2,0,'hearty vegetable soup',4);
@@ -1555,7 +1555,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,244,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,244,0,NULL,'','eztags',3194,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,244,0,NULL,'','eztags',3195,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,244,0,NULL,'','ezstring',3196,'eng-GB',2,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,244,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3197,'eng-GB',2,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,244,NULL,NULL,NULL,'novaseometas',3197,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,244,0,NULL,'','ezstring',3198,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,244,0,NULL,'','ezstring',3199,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,245,0,NULL,'Overnight Oatmeal','ezstring',3200,'eng-GB',2,0,'overnight oatmeal',2);
@@ -1576,7 +1576,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,245,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,245,0,NULL,'','eztags',3215,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,245,0,NULL,'','eztags',3216,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,245,0,NULL,'','ezstring',3217,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,245,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3218,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,245,NULL,NULL,NULL,'novaseometas',3218,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,245,0,NULL,'','ezstring',3219,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,245,0,NULL,'','ezstring',3220,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,246,0,NULL,'Low Carb Almond Breakfast Muffins','ezstring',3221,'eng-GB',2,0,'low carb almond breakfast muffins',3);
@@ -1597,7 +1597,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,246,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,246,0,NULL,'','eztags',3236,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,246,0,NULL,'','eztags',3237,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,246,0,NULL,'','ezstring',3238,'eng-GB',2,0,'',3);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,246,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3239,'eng-GB',2,0,'',3);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,246,NULL,NULL,NULL,'novaseometas',3239,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,246,0,NULL,'','ezstring',3240,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,246,0,NULL,'','ezstring',3241,'eng-GB',2,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,247,0,NULL,'Soft Whole Wheat Dinner Rolls','ezstring',3242,'eng-GB',2,0,'soft whole wheat dinner rolls',2);
@@ -1618,7 +1618,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,247,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,247,0,NULL,'','eztags',3257,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,247,0,NULL,'','eztags',3258,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,247,0,NULL,'','ezstring',3259,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,247,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3260,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,247,NULL,NULL,NULL,'novaseometas',3260,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,247,0,NULL,'','ezstring',3261,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,247,0,NULL,'','ezstring',3262,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,248,0,NULL,'Sweet Potato and Black Bean Veggie Burgers','ezstring',3263,'eng-GB',2,0,'sweet potato and black bean veggie burgers',2);
@@ -1639,7 +1639,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,248,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,248,0,NULL,'','eztags',3278,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,248,0,NULL,'','eztags',3279,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,248,0,NULL,'','ezstring',3280,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,248,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3281,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,248,NULL,NULL,NULL,'novaseometas',3281,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,248,0,NULL,'','ezstring',3282,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,248,0,NULL,'','ezstring',3283,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,249,0,NULL,'Power-up Smoothie','ezstring',3284,'eng-GB',2,0,'power-up smoothie',2);
@@ -1660,7 +1660,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,249,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,249,0,NULL,'','eztags',3299,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,249,0,NULL,'','eztags',3300,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,249,0,NULL,'','ezstring',3301,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,249,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3302,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,249,NULL,NULL,NULL,'novaseometas',3302,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,249,0,NULL,'','ezstring',3303,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,249,0,NULL,'','ezstring',3304,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,250,0,NULL,'What HIIT is and What HIIT Isn’t','ezstring',3305,'eng-GB',2,0,'what hiit is and what hiit isn’t',9);
@@ -1677,7 +1677,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,250,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,250,0,NULL,'','eztags',3316,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,250,0,NULL,'','eztags',3317,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,250,0,NULL,'','ezstring',3318,'eng-GB',2,0,'',9);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,250,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3319,'eng-GB',2,0,'',9);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,250,NULL,NULL,NULL,'novaseometas',3319,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,250,0,NULL,'','ezstring',3320,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,250,0,NULL,'','ezstring',3321,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,251,0,NULL,'I Can’t Build Muscle. What am I doing Wrong?','ezstring',3322,'eng-GB',2,0,'i can’t build muscle. what am i doing wrong?',6);
@@ -1694,7 +1694,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,251,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,251,0,NULL,'','eztags',3333,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,251,0,NULL,'','eztags',3334,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,251,0,NULL,'','ezstring',3335,'eng-GB',2,0,'',6);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,251,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3336,'eng-GB',2,0,'',6);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,251,NULL,NULL,NULL,'novaseometas',3336,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,251,0,NULL,'','ezstring',3337,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,251,0,NULL,'','ezstring',3338,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,252,0,NULL,'Fat Loss: A Realistic Plan to Lose a Lot of Weight','ezstring',3339,'eng-GB',2,0,'fat loss: a realistic plan to lose a lot of weight',8);
@@ -1711,7 +1711,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,252,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,252,0,NULL,'','eztags',3350,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,252,0,NULL,'','eztags',3351,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,252,0,NULL,'Produced by Fit&Healthy with Acme','ezstring',3352,'eng-GB',2,0,'produced by fit&healthy with acme',8);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,252,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3353,'eng-GB',2,0,'',8);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,252,NULL,NULL,NULL,'novaseometas',3353,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,252,0,NULL,'','ezstring',3354,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,252,0,NULL,'','ezstring',3355,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,253,0,NULL,'What’s Better: A Split Routine or Total Body Routine?','ezstring',3356,'eng-GB',2,0,'what’s better: a split routine or total body routine?',7);
@@ -1728,7 +1728,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,253,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,253,0,NULL,'','eztags',3367,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,253,0,NULL,'','eztags',3368,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,253,0,NULL,'','ezstring',3369,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,253,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3370,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,253,NULL,NULL,NULL,'novaseometas',3370,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,253,0,NULL,'','ezstring',3371,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,253,0,NULL,'','ezstring',3372,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,624,254,0,NULL,'15 Scrumptious Summer Tomato Recipes You Need to Try!','ezstring',3373,'eng-GB',2,0,'15 scrumptious summer tomato recipes you need to try!',8);
@@ -1745,7 +1745,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,254,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,254,0,NULL,'','eztags',3384,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,254,0,NULL,'','eztags',3385,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,254,0,NULL,'','ezstring',3386,'eng-GB',2,0,'',8);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,254,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3387,'eng-GB',2,0,'',8);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,254,NULL,NULL,NULL,'novaseometas',3387,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,254,0,NULL,'','ezstring',3388,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,254,0,NULL,'','ezstring',3389,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,254,0,0,'','ezgmaplocation',3390,'eng-GB',2,0,'',8);
@@ -1808,7 +1808,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,270,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,270,0,NULL,'','eztags',3447,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,270,0,NULL,'','eztags',3448,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,270,0,NULL,'Produced by Fit&Healthy with Acme','ezstring',3449,'eng-GB',2,0,'produced by fit&healthy with acme',8);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,270,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3450,'eng-GB',2,0,'',8);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,270,NULL,NULL,NULL,'novaseometas',3450,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,270,0,NULL,'','ezstring',3451,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,270,0,NULL,'','ezstring',3452,'eng-GB',2,0,'',8);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,270,0,0,'','ezgmaplocation',3453,'eng-GB',2,0,'',8);
@@ -1829,7 +1829,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,272,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,272,0,NULL,'','eztags',3468,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,272,0,NULL,'','eztags',3469,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,272,0,NULL,'','ezstring',3470,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,272,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3471,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,272,NULL,NULL,NULL,'novaseometas',3471,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,272,0,NULL,'','ezstring',3472,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,272,0,NULL,'','ezstring',3473,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,272,0,0,'','ezgmaplocation',3474,'eng-GB',2,0,'',5);
@@ -1847,7 +1847,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,273,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,273,0,NULL,'','eztags',3486,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,273,0,NULL,'','eztags',3487,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,273,0,NULL,'','ezstring',3488,'eng-GB',2,0,'',10);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,273,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3489,'eng-GB',2,0,'',10);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,273,NULL,NULL,NULL,'novaseometas',3489,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,273,0,NULL,'','ezstring',3490,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,273,0,NULL,'','ezstring',3491,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,274,0,NULL,'Fist vegetable measuring','ezstring',3492,'eng-GB',2,0,'fist vegetable measuring',1);
@@ -1867,7 +1867,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,275,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,275,0,NULL,'','eztags',3506,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,275,0,NULL,'','eztags',3507,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,275,0,NULL,'','ezstring',3508,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,275,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3509,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,275,NULL,NULL,NULL,'novaseometas',3509,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,275,0,NULL,'','ezstring',3510,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,275,0,NULL,'','ezstring',3511,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,276,0,NULL,'Running Workout Types: Knowing and Manipulating These Runs to Optimize Your Training','ezstring',3512,'eng-GB',2,0,'running workout types: knowing and manipulating these runs to optimize your training',6);
@@ -1884,7 +1884,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,276,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,276,0,NULL,'','eztags',3523,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,276,0,NULL,'','eztags',3524,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,276,0,NULL,'','ezstring',3525,'eng-GB',2,0,'',6);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,276,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3526,'eng-GB',2,0,'',6);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,276,NULL,NULL,NULL,'novaseometas',3526,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,276,0,NULL,'','ezstring',3527,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,276,0,NULL,'','ezstring',3528,'eng-GB',2,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,624,278,0,NULL,'Beginner Running Tips: When Does Running Become Fun?','ezstring',3546,'eng-GB',2,0,'beginner running tips: when does running become fun?',7);
@@ -1901,7 +1901,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,278,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,278,0,NULL,'','eztags',3557,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,278,0,NULL,'','eztags',3558,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,278,0,NULL,'','ezstring',3559,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,278,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3560,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,278,NULL,NULL,NULL,'novaseometas',3560,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,278,0,NULL,'','ezstring',3561,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,278,0,NULL,'','ezstring',3562,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,278,0,0,'','ezgmaplocation',3563,'eng-GB',2,0,'',7);
@@ -1929,7 +1929,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,283,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,283,0,NULL,'','eztags',3608,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,283,0,NULL,'','eztags',3609,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,283,0,NULL,'','ezstring',3610,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,283,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3611,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,283,NULL,NULL,NULL,'novaseometas',3611,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,283,0,NULL,'','ezstring',3612,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,283,0,NULL,'','ezstring',3613,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,283,0,0,'','ezgmaplocation',3614,'eng-GB',2,0,'',7);
@@ -1950,7 +1950,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,285,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,285,0,NULL,'','eztags',3629,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,285,0,NULL,'','eztags',3630,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,285,0,NULL,'','ezstring',3631,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,285,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3632,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,285,NULL,NULL,NULL,'novaseometas',3632,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,285,0,NULL,'','ezstring',3633,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,285,0,NULL,'','ezstring',3634,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,285,0,0,'','ezgmaplocation',3635,'eng-GB',2,0,'',7);
@@ -1968,7 +1968,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,286,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,286,0,NULL,'','eztags',3647,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,286,0,NULL,'','eztags',3648,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,286,0,NULL,'','ezstring',3649,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,286,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3650,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,286,NULL,NULL,NULL,'novaseometas',3650,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,286,0,NULL,'','ezstring',3651,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,286,0,NULL,'','ezstring',3652,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,286,0,0,'','ezgmaplocation',3653,'eng-GB',2,0,'',5);
@@ -1987,7 +1987,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,357,288,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,288,0,NULL,'','eztags',3668,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,288,0,NULL,'','eztags',3669,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,288,0,NULL,'','ezstring',3670,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,288,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3671,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,288,NULL,NULL,NULL,'novaseometas',3671,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,288,0,NULL,'','ezstring',3672,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,288,0,NULL,'','ezstring',3673,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,655,288,0,0,'','ezgmaplocation',3674,'eng-GB',2,0,'',5);
@@ -2004,7 +2004,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,289,0,NULL,'','eztags',368
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,289,0,NULL,'','ezstring',3685,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,289,0,0,'','ezboolean',3686,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,289,0,NULL,'','sckenhancedselection',3687,'eng-GB',3,0,'fit',3);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,289,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3688,'eng-GB',3,0,'',3);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,289,NULL,NULL,NULL,'novaseometas',3688,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,289,0,NULL,'','ezstring',3689,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,289,0,NULL,'','ezstring',3690,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,741,288,0,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',3691,'eng-GB',2,0,'',5);
@@ -2014,7 +2014,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,649,290,0,1045487555,'<?xml ve
 INSERT INTO `ezcontentobject_attribute` VALUES (0,819,290,0,NULL,'','eztags',3703,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,820,290,0,NULL,'','eztags',3704,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,821,290,0,NULL,'','ezstring',3705,'eng-GB',2,0,'',10);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,823,290,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3706,'eng-GB',2,0,'',10);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,823,290,NULL,NULL,NULL,'novaseometas',3706,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,661,290,0,NULL,'','ezstring',3707,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,822,290,0,NULL,'','ezstring',3708,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,348,292,0,NULL,'How to Track Your Mobility: Training for Performance and Injury Prevention','ezstring',3726,'eng-GB',2,0,'how to track your mobility: training for performance and injury prevention',13);
@@ -2031,7 +2031,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,292,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,292,0,NULL,'','eztags',3737,'eng-GB',2,0,'',13);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,292,0,NULL,'','eztags',3738,'eng-GB',2,0,'',13);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,292,0,NULL,'','ezstring',3739,'eng-GB',2,0,'',13);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,292,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3740,'eng-GB',2,0,'',13);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,292,NULL,NULL,NULL,'novaseometas',3740,'eng-GB',2,0,'',13);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,292,0,NULL,'','ezstring',3741,'eng-GB',2,0,'',13);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,292,0,NULL,'','ezstring',3742,'eng-GB',2,0,'',13);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,293,0,NULL,'Functional movement screen','ezstring',3743,'eng-GB',2,0,'functional movement screen',1);
@@ -2080,7 +2080,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,304,0,NULL,'','eztags',378
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,304,0,NULL,'','ezstring',3786,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,304,0,0,'','ezboolean',3787,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,304,0,NULL,'','sckenhancedselection',3788,'eng-GB',3,0,'fit',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,304,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3789,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,304,NULL,NULL,NULL,'novaseometas',3789,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,304,0,NULL,'','ezstring',3790,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,304,0,NULL,'','ezstring',3791,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,305,0,NULL,'10-Minute Jump Rope Workout','ezstring',3792,'eng-GB',3,0,'10-minute jump rope workout',1);
@@ -2096,7 +2096,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,305,0,NULL,'','eztags',380
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,305,0,NULL,'','ezstring',3802,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,305,0,0,'','ezboolean',3803,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,305,0,NULL,'','sckenhancedselection',3804,'eng-GB',3,0,'fit',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,305,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3805,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,305,NULL,NULL,NULL,'novaseometas',3805,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,305,0,NULL,'','ezstring',3806,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,305,0,NULL,'','ezstring',3807,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,306,0,NULL,'Brutal ABS & CORE Workout you should be doing','ezstring',3808,'eng-GB',3,0,'brutal abs & core workout you should be doing',2);
@@ -2112,7 +2112,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,306,0,NULL,'','eztags',381
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,306,0,NULL,'','ezstring',3818,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,306,0,0,'','ezboolean',3819,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,306,0,NULL,'','sckenhancedselection',3820,'eng-GB',3,0,'fit',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,306,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3821,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,306,NULL,NULL,NULL,'novaseometas',3821,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,306,0,NULL,'','ezstring',3822,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,306,0,NULL,'','ezstring',3823,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,307,0,NULL,'Healthy Vegan Recipe: Chia Pudding Parfait','ezstring',3824,'eng-GB',3,0,'healthy vegan recipe: chia pudding parfait',1);
@@ -2128,7 +2128,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,307,0,NULL,'','eztags',383
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,307,0,NULL,'','ezstring',3834,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,307,0,0,'','ezboolean',3835,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,307,0,NULL,'','sckenhancedselection',3836,'eng-GB',3,0,'fit',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,307,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3837,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,307,NULL,NULL,NULL,'novaseometas',3837,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,307,0,NULL,'','ezstring',3838,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,307,0,NULL,'','ezstring',3839,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,308,0,NULL,'Quick & Healthy Recipes ','ezstring',3840,'eng-GB',3,0,'quick & healthy recipes ',1);
@@ -2144,7 +2144,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,308,0,NULL,'','eztags',384
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,308,0,NULL,'','ezstring',3850,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,308,0,0,'','ezboolean',3851,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,308,0,NULL,'','sckenhancedselection',3852,'eng-GB',3,0,'fit',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,308,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3853,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,308,NULL,NULL,NULL,'novaseometas',3853,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,308,0,NULL,'','ezstring',3854,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,308,0,NULL,'','ezstring',3855,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,309,0,NULL,'Stanford Introduction to Food & Health - Trailer','ezstring',3856,'eng-GB',3,0,'stanford introduction to food & health - trailer',1);
@@ -2160,7 +2160,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,309,0,NULL,'','eztags',386
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,309,0,NULL,'','ezstring',3866,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,309,0,0,'','ezboolean',3867,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,309,0,NULL,'','sckenhancedselection',3868,'eng-GB',3,0,'fit',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,309,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3869,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,309,NULL,NULL,NULL,'novaseometas',3869,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,309,0,NULL,'','ezstring',3870,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,309,0,NULL,'','ezstring',3871,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,310,0,NULL,'8 Healthy Avocado Recipes That Can Be Made In Just 10 Minutes','ezstring',3872,'eng-GB',3,0,'8 healthy avocado recipes that can be made in just 10 minutes',2);
@@ -2176,7 +2176,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,310,0,NULL,'','eztags',388
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,310,0,NULL,'','ezstring',3882,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,310,0,0,'','ezboolean',3883,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,310,0,NULL,'','sckenhancedselection',3884,'eng-GB',3,0,'fit',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,310,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3885,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,310,NULL,NULL,NULL,'novaseometas',3885,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,310,0,NULL,'','ezstring',3886,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,310,0,NULL,'','ezstring',3887,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,311,0,NULL,'Quick & Healthy Vegan Breakfast Ideas!','ezstring',3888,'eng-GB',3,0,'quick & healthy vegan breakfast ideas!',1);
@@ -2192,7 +2192,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,311,0,NULL,'','eztags',389
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,311,0,NULL,'','ezstring',3898,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,311,0,0,'','ezboolean',3899,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,311,0,NULL,'','sckenhancedselection',3900,'eng-GB',3,0,'fit',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,311,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3901,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,311,NULL,NULL,NULL,'novaseometas',3901,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,311,0,NULL,'','ezstring',3902,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,311,0,NULL,'','ezstring',3903,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,312,0,NULL,'Healthy Pad Thai Recipe (cooking demo)','ezstring',3904,'eng-GB',3,0,'healthy pad thai recipe (cooking demo)',2);
@@ -2208,7 +2208,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,312,0,NULL,'','eztags',391
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,312,0,NULL,'','ezstring',3914,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,312,0,0,'','ezboolean',3915,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,312,0,NULL,'','sckenhancedselection',3916,'eng-GB',3,0,'fit',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,312,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3917,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,312,NULL,NULL,NULL,'novaseometas',3917,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,312,0,NULL,'','ezstring',3918,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,312,0,NULL,'','ezstring',3919,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,313,0,NULL,'Easy & Healthy Recipe Ideas // Primarily Plant-Based','ezstring',3920,'eng-GB',3,0,'easy & healthy recipe ideas // primarily plant-based',1);
@@ -2224,7 +2224,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,313,0,NULL,'','eztags',392
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,313,0,NULL,'','ezstring',3930,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,313,0,0,'','ezboolean',3931,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,313,0,NULL,'','sckenhancedselection',3932,'eng-GB',3,0,'fit',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,313,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3933,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,313,NULL,NULL,NULL,'novaseometas',3933,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,313,0,NULL,'','ezstring',3934,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,313,0,NULL,'','ezstring',3935,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,314,0,NULL,'Pyramid HIIT Workout - Intense Interval Cardio Challenge','ezstring',3936,'eng-GB',3,0,'pyramid hiit workout - intense interval cardio challenge',3);
@@ -2240,7 +2240,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,314,0,NULL,'','eztags',394
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,314,0,NULL,'','ezstring',3946,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,314,0,0,'','ezboolean',3947,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,314,0,NULL,'','sckenhancedselection',3948,'eng-GB',3,0,'fit',3);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,314,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3949,'eng-GB',3,0,'',3);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,314,NULL,NULL,NULL,'novaseometas',3949,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,314,0,NULL,'','ezstring',3950,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,314,0,NULL,'','ezstring',3951,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,315,0,NULL,'Ultimate HIIT Workout for People Who Get Bored Easily - Fat Burning HIIT Cardio Workout','ezstring',3952,'eng-GB',3,0,'ultimate hiit workout for people who get bored easily - fat burning hiit cardio workout',1);
@@ -2256,7 +2256,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,315,0,NULL,'','eztags',396
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,315,0,NULL,'','ezstring',3962,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,315,0,0,'','ezboolean',3963,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,315,0,NULL,'','sckenhancedselection',3964,'eng-GB',3,0,'fit',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,315,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3965,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,315,NULL,NULL,NULL,'novaseometas',3965,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,315,0,NULL,'','ezstring',3966,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,315,0,NULL,'','ezstring',3967,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,316,0,NULL,'Jump Rope Beginner Basics: HIIT Workout','ezstring',3968,'eng-GB',3,0,'jump rope beginner basics: hiit workout',2);
@@ -2272,7 +2272,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,316,0,NULL,'','eztags',397
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,316,0,NULL,'','ezstring',3978,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,316,0,0,'','ezboolean',3979,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,316,0,NULL,'','sckenhancedselection',3980,'eng-GB',3,0,'fit',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,316,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3981,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,316,NULL,NULL,NULL,'novaseometas',3981,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,316,0,NULL,'','ezstring',3982,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,316,0,NULL,'','ezstring',3983,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,317,0,NULL,'Brutal Beginner Bodyweight HIIT Workout','ezstring',3984,'eng-GB',3,0,'brutal beginner bodyweight hiit workout',2);
@@ -2288,7 +2288,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,317,0,NULL,'','eztags',399
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,317,0,NULL,'','ezstring',3994,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,317,0,0,'','ezboolean',3995,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,317,0,NULL,'','sckenhancedselection',3996,'eng-GB',3,0,'fit',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,317,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',3997,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,317,NULL,NULL,NULL,'novaseometas',3997,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,317,0,NULL,'','ezstring',3998,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,317,0,NULL,'','ezstring',3999,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,318,0,NULL,'What I Eat in a Day – Easy and Healthy Meal Ideas','ezstring',4000,'eng-GB',3,0,'what i eat in a day – easy and healthy meal ideas',2);
@@ -2304,7 +2304,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,318,0,NULL,'','eztags',400
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,318,0,NULL,'','ezstring',4010,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,318,0,0,'','ezboolean',4011,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,318,0,NULL,'','sckenhancedselection',4012,'eng-GB',3,0,'fit',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,318,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4013,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,318,NULL,NULL,NULL,'novaseometas',4013,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,318,0,NULL,'','ezstring',4014,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,318,0,NULL,'','ezstring',4015,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,319,0,NULL,'Running','ezstring',4016,'eng-GB',2,0,'running',1);
@@ -2329,7 +2329,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,322,0,NULL,'','eztags',403
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,322,0,NULL,'','ezstring',4035,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,322,0,0,'','ezboolean',4036,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,322,0,NULL,'','sckenhancedselection',4037,'eng-GB',3,0,'fit',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,322,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4038,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,322,NULL,NULL,NULL,'novaseometas',4038,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,322,0,NULL,'','ezstring',4039,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,322,0,NULL,'','ezstring',4040,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,323,0,NULL,'Bipolar Learning Curve','ezstring',4041,'eng-GB',2,0,'bipolar learning curve',1);
@@ -2355,7 +2355,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,326,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,326,0,NULL,'','eztags',4061,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,326,0,NULL,'','eztags',4062,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,326,0,NULL,'','ezstring',4063,'eng-GB',2,0,'',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,326,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4064,'eng-GB',2,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,326,NULL,NULL,NULL,'novaseometas',4064,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,326,0,NULL,'','ezstring',4065,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,326,0,NULL,'','ezstring',4066,'eng-GB',2,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,327,0,NULL,'Cookies','ezstring',4067,'eng-GB',2,0,'cookies',1);
@@ -2387,7 +2387,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,332,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,332,0,NULL,'','eztags',4093,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,332,0,NULL,'','eztags',4094,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,332,0,NULL,'','ezstring',4095,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,332,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4096,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,332,NULL,NULL,NULL,'novaseometas',4096,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,332,0,NULL,'','ezstring',4097,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,332,0,NULL,'','ezstring',4098,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,333,0,NULL,'Microbes','ezstring',4099,'eng-GB',2,0,'microbes',1);
@@ -2436,7 +2436,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,742,344,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,809,344,0,NULL,'','eztags',4159,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,367,344,0,NULL,'','eztags',4160,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,810,344,0,NULL,'','ezstring',4161,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,374,344,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4162,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,374,344,NULL,NULL,NULL,'novaseometas',4162,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,376,344,0,NULL,'','ezstring',4163,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,377,344,0,NULL,'','ezstring',4164,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,347,0,NULL,'Avocado, egg, bacon','ezstring',4185,'eng-GB',2,0,'avocado, egg, bacon',2);
@@ -2456,7 +2456,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,348,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,348,0,NULL,'','eztags',4199,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,348,0,NULL,'','eztags',4200,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,348,0,NULL,'','ezstring',4201,'eng-GB',2,0,'',7);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,348,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4202,'eng-GB',2,0,'',7);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,348,NULL,NULL,NULL,'novaseometas',4202,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,348,0,NULL,'','ezstring',4203,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,348,0,NULL,'','ezstring',4204,'eng-GB',2,0,'',7);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,349,0,NULL,'Plate','ezstring',4205,'eng-GB',2,0,'plate',1);
@@ -2475,7 +2475,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,786,353,0,NULL,'Health','ezstr
 INSERT INTO `ezcontentobject_attribute` VALUES (0,804,353,0,NULL,'','eztags',4218,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,795,353,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',4219,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,797,353,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',4220,'eng-GB',3,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,789,353,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4221,'eng-GB',3,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,789,353,NULL,NULL,NULL,'novaseometas',4221,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,793,353,0,NULL,'','ezstring',4222,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,794,353,0,NULL,'','ezstring',4223,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,360,0,NULL,'form-426165-unsplash','ezstring',4242,'eng-GB',2,0,'form-426165-unsplash',1);
@@ -2510,14 +2510,14 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,366,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,366,0,NULL,'','eztags',4271,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,366,0,NULL,'','eztags',4272,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,366,0,NULL,'','ezstring',4273,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,366,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4274,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,366,NULL,NULL,NULL,'novaseometas',4274,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,366,0,NULL,'','ezstring',4275,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,366,0,NULL,'','ezstring',4276,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,786,367,0,NULL,'HIIT','ezstring',4277,'eng-GB',3,0,'hiit',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,804,367,0,NULL,'','eztags',4278,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,795,367,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',4279,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,797,367,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',4280,'eng-GB',3,0,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,789,367,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4281,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,789,367,NULL,NULL,NULL,'novaseometas',4281,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,793,367,0,NULL,'','ezstring',4282,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,794,367,0,NULL,'','ezstring',4283,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,624,369,0,NULL,'Running Free: Ditching the GPS and Learning to Obsess Less','ezstring',4301,'eng-GB',2,0,'running free: ditching the gps and learning to obsess less',9);
@@ -2534,7 +2534,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,369,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,369,0,NULL,'','eztags',4312,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,369,0,NULL,'','eztags',4313,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,369,0,NULL,'','ezstring',4314,'eng-GB',2,0,'',9);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,369,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4315,'eng-GB',2,0,'',9);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,369,NULL,NULL,NULL,'novaseometas',4315,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,369,0,NULL,'','ezstring',4316,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,369,0,NULL,'','ezstring',4317,'eng-GB',2,0,'',9);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,369,0,0,'','ezgmaplocation',4318,'eng-GB',2,0,'',9);
@@ -2552,7 +2552,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,370,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,370,0,NULL,'','eztags',4330,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,370,0,NULL,'','eztags',4331,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,370,0,NULL,'','ezstring',4332,'eng-GB',2,0,'',12);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,370,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4333,'eng-GB',2,0,'',12);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,370,NULL,NULL,NULL,'novaseometas',4333,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,370,0,NULL,'','ezstring',4334,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,370,0,NULL,'','ezstring',4335,'eng-GB',2,0,'',12);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,838,290,NULL,NULL,NULL,'ezstring',4336,'eng-GB',2,0,'',10);
@@ -2578,7 +2578,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,840,318,NULL,NULL,NULL,'ezstri
 INSERT INTO `ezcontentobject_attribute` VALUES (0,840,322,NULL,NULL,NULL,'ezstring',4356,'eng-GB',3,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,397,372,0,NULL,'Showcase','ezstring',4375,'eng-GB',2,0,'showcase',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,401,372,0,NULL,'','ezstring',4376,'eng-GB',2,0,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,398,372,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4377,'eng-GB',2,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,398,372,NULL,NULL,NULL,'novaseometas',4377,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,762,372,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>Showcase for all view types</para></section>\n','ezrichtext',4378,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,399,372,0,NULL,'','ezstring',4379,'eng-GB',2,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,400,372,0,NULL,'','ezstring',4380,'eng-GB',2,0,'',1);
@@ -2599,7 +2599,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,741,373,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,805,373,0,NULL,'','eztags',4395,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,352,373,0,NULL,'','eztags',4396,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,806,373,0,NULL,'','ezstring',4397,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,358,373,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4398,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,358,373,NULL,NULL,NULL,'novaseometas',4398,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,359,373,0,NULL,'','ezstring',4399,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,360,373,0,NULL,'','ezstring',4400,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,327,374,0,NULL,'Audio test','ezstring',4401,'eng-GB',3,0,'audio test',3);
@@ -2631,14 +2631,14 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,632,376,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,807,376,0,NULL,'','eztags',4427,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,633,376,0,NULL,'','eztags',4428,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,808,376,0,NULL,'','ezstring',4429,'eng-GB',2,0,'',10);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,634,376,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4430,'eng-GB',2,0,'',10);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,634,376,NULL,NULL,NULL,'novaseometas',4430,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,636,376,0,NULL,'','ezstring',4431,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,637,376,0,NULL,'','ezstring',4432,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,656,376,0,0,'','ezgmaplocation',4433,'eng-GB',2,0,'',10);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,378,378,0,NULL,'Category test','ezstring',4452,'eng-GB',3,0,'category test',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,379,378,0,NULL,'','ezstring',4453,'eng-GB',3,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (4454,381,378,0,1,'','ezboolean',4454,'eng-GB',3,1,'',11);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,385,378,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4455,'eng-GB',3,0,'',11);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,385,378,NULL,NULL,NULL,'novaseometas',4455,'eng-GB',3,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,382,378,0,NULL,'','ezstring',4456,'eng-GB',3,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,383,378,0,0,'','ezboolean',4457,'eng-GB',3,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,384,378,0,-1,'','ezinteger',4458,'eng-GB',3,-1,'',11);
@@ -2671,15 +2671,15 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,648,381,0,1045487555,'<?xml ve
 INSERT INTO `ezcontentobject_attribute` VALUES (0,819,381,0,NULL,'','eztags',4487,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,820,381,0,NULL,'','eztags',4488,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,821,381,0,NULL,'','ezstring',4489,'eng-GB',2,0,'',11);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,823,381,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4490,'eng-GB',2,0,'',11);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,823,381,NULL,NULL,NULL,'novaseometas',4490,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,661,381,0,NULL,'','ezstring',4491,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,822,381,0,NULL,'','ezstring',4492,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,313,382,0,NULL,'HTML box test','ezstring',4493,'eng-GB',3,0,'html box test',14);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,314,382,0,NULL,'<div class=\"ad-container\" style=\"\r\n    background-color: #f8f9fc;\r\n    width: 100%;\r\n    max-width: 340px;\">\r\n    <div class=\"outer\" style=\"\r\n        width: 100%;\r\n        height: 0;\r\n        position: relative;\r\n        padding-bottom: 83.3%;\r\n        background-color: #f8f9fc;\">\r\n        <div class=\"inner\" style=\"\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n            right: 20px;\r\n            bottom: 20px;\r\n            display: flex;\r\n            justify-content: center;\r\n            text-align: center;\r\n            align-items: center;\r\n            font-weight: bold;\r\n            font-size: 24px;\r\n            background-color: #7BD7C0;\">\r\n            Rectangle Ad.\r\n        </div>\r\n    </div>\r\n</div>','eztext',4494,'eng-GB',3,0,'',14);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,315,382,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4495,'eng-GB',3,0,'',14);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,315,382,NULL,NULL,NULL,'novaseometas',4495,'eng-GB',3,0,'',14);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,397,383,0,NULL,'Landing page test','ezstring',4496,'eng-GB',2,0,'landing page test',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,401,383,0,NULL,'','ezstring',4497,'eng-GB',2,0,'',2);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,398,383,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4498,'eng-GB',2,0,'',2);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,398,383,NULL,NULL,NULL,'novaseometas',4498,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,762,383,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"/>\n','ezrichtext',4499,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,399,383,0,NULL,'','ezstring',4500,'eng-GB',2,0,'',2);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,400,383,0,NULL,'','ezstring',4501,'eng-GB',2,0,'',2);
@@ -2702,7 +2702,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,742,384,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,809,384,0,NULL,'','eztags',4518,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,367,384,0,NULL,'','eztags',4519,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,810,384,0,NULL,'Produced by Fit&Healthy with Acme','ezstring',4520,'eng-GB',2,0,'produced by fit&healthy with acme',11);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,374,384,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4521,'eng-GB',2,0,'',11);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,374,384,NULL,NULL,NULL,'novaseometas',4521,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,376,384,0,NULL,'','ezstring',4522,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,377,384,0,NULL,'','ezstring',4523,'eng-GB',2,0,'',11);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,767,385,0,NULL,'Recipe test','ezstring',4524,'eng-GB',2,0,'recipe test',5);
@@ -2723,7 +2723,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,776,385,0,NULL,'<?xml version=
 INSERT INTO `ezcontentobject_attribute` VALUES (0,812,385,0,NULL,'','eztags',4539,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,777,385,0,NULL,'','eztags',4540,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,811,385,0,NULL,'','ezstring',4541,'eng-GB',2,0,'',5);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,778,385,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4542,'eng-GB',2,0,'',5);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,778,385,NULL,NULL,NULL,'novaseometas',4542,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,779,385,0,NULL,'','ezstring',4543,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,780,385,0,NULL,'','ezstring',4544,'eng-GB',2,0,'',5);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,669,386,0,NULL,'Video test','ezstring',4545,'eng-GB',3,0,'video test',4);
@@ -2740,7 +2740,7 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,814,386,0,NULL,'','eztags',455
 INSERT INTO `ezcontentobject_attribute` VALUES (0,815,386,0,NULL,'','ezstring',4556,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,677,386,0,0,'','ezboolean',4557,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,676,386,0,NULL,'','sckenhancedselection',4558,'eng-GB',3,0,'fit',4);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,816,386,0,NULL,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<MetaData><title/><keywords/><description/><priority/><change>daily</change><sitemap_use>1</sitemap_use></MetaData>\n','xrowmetadata',4559,'eng-GB',3,0,'',4);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,816,386,NULL,NULL,NULL,'novaseometas',4559,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,817,386,0,NULL,'','ezstring',4560,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,818,386,0,NULL,'','ezstring',4561,'eng-GB',3,0,'',4);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,576,387,0,NULL,'justyn-warner-541680-unsplash (1)','ezstring',4562,'eng-GB',2,0,'justyn-warner-541680-unsplash (1)',1);
@@ -6944,4 +6944,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-21 12:00:00
+-- Dump completed on 2020-06-15 12:00:00
