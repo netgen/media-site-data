@@ -8504,14 +8504,14 @@ LOCK TABLES `nglayouts_role_policy` WRITE;
 /*!40000 ALTER TABLE `nglayouts_role_policy` DISABLE KEYS */;
 INSERT INTO `nglayouts_role_policy` VALUES (1,1,'6f69017f-8b9e-52ae-910b-26492515a8a4',1,'ui','access','[]');
 INSERT INTO `nglayouts_role_policy` VALUES (2,1,'89242ef8-bbb5-5a6f-8228-fdfd4a2e2421',1,'collection',NULL,'[]');
-INSERT INTO `nglayouts_role_policy` VALUES (4,1,'d3bf815b-0ffe-5c1f-9bdc-152dca0ce51a',1,'layout','edit','{\"layout\":{\"184\":\"1\",\"185\":\"4\",\"186\":\"5\",\"187\":\"11\",\"188\":\"17\"}}');
-INSERT INTO `nglayouts_role_policy` VALUES (5,1,'aa44032c-7a40-5a10-975c-1a713b62ecf4',1,'layout','clear_cache','{\"layout\":{\"371\":\"4\",\"372\":\"17\",\"373\":\"5\",\"374\":\"1\",\"375\":\"11\"}}');
+INSERT INTO `nglayouts_role_policy` VALUES (4,1,'d3bf815b-0ffe-5c1f-9bdc-152dca0ce51a',1,'layout','edit','{\"layout\":{\"184\":\"df2a8cde-6296-58cc-80f2-fe59cefa77e9\",\"185\":\"599cec3f-a51b-5cd1-b3a8-64f5b39c9d07\",\"186\":\"42e00950-eb86-570a-99fc-03dcc545d5d0\",\"187\":\"e10535d4-414f-5fc7-8178-505dc730ba47\",\"188\":\"91a4d984-203d-554d-b1c4-0bb00e5d55b7\"}}');
+INSERT INTO `nglayouts_role_policy` VALUES (5,1,'aa44032c-7a40-5a10-975c-1a713b62ecf4',1,'layout','clear_cache','{\"layout\":{\"184\":\"df2a8cde-6296-58cc-80f2-fe59cefa77e9\",\"185\":\"599cec3f-a51b-5cd1-b3a8-64f5b39c9d07\",\"186\":\"42e00950-eb86-570a-99fc-03dcc545d5d0\",\"187\":\"e10535d4-414f-5fc7-8178-505dc730ba47\",\"188\":\"91a4d984-203d-554d-b1c4-0bb00e5d55b7\"}}');
 INSERT INTO `nglayouts_role_policy` VALUES (6,1,'6ab1e329-a467-5d9a-a7ac-2535b39e886b',1,'block',NULL,'[]');
 INSERT INTO `nglayouts_role_policy` VALUES (7,1,'a145783d-f647-5812-ad4a-ee6ece9189a4',2,'ui','access','[]');
 INSERT INTO `nglayouts_role_policy` VALUES (8,1,'fd1e4959-9a1e-57d8-9d31-12b5a2d44d38',2,'collection','items','[]');
-INSERT INTO `nglayouts_role_policy` VALUES (9,1,'405cb328-2478-5315-921c-d74dd49aa8c1',2,'layout','edit','{\"layout\":{\"558\":\"11\",\"559\":\"1\",\"560\":\"5\",\"561\":\"17\",\"562\":\"4\"}}');
+INSERT INTO `nglayouts_role_policy` VALUES (9,1,'405cb328-2478-5315-921c-d74dd49aa8c1',2,'layout','edit','{\"layout\":{\"184\":\"df2a8cde-6296-58cc-80f2-fe59cefa77e9\",\"185\":\"599cec3f-a51b-5cd1-b3a8-64f5b39c9d07\",\"186\":\"42e00950-eb86-570a-99fc-03dcc545d5d0\",\"187\":\"e10535d4-414f-5fc7-8178-505dc730ba47\",\"188\":\"91a4d984-203d-554d-b1c4-0bb00e5d55b7\"}}');
 INSERT INTO `nglayouts_role_policy` VALUES (10,1,'679d67d7-8ff5-531b-8bde-378f38bf6cc3',2,'block','edit','{\"block_definition\":[\"title\",\"text\",\"rich_text\"]}');
-INSERT INTO `nglayouts_role_policy` VALUES (11,1,'4189f7fd-3769-5416-a713-898dc58c0cda',2,'layout','clear_cache','{\"layout\":{\"745\":\"17\",\"746\":\"4\",\"747\":\"5\",\"748\":\"1\",\"749\":\"11\"}}');
+INSERT INTO `nglayouts_role_policy` VALUES (11,1,'4189f7fd-3769-5416-a713-898dc58c0cda',2,'layout','clear_cache','{\"layout\":{\"184\":\"df2a8cde-6296-58cc-80f2-fe59cefa77e9\",\"185\":\"599cec3f-a51b-5cd1-b3a8-64f5b39c9d07\",\"186\":\"42e00950-eb86-570a-99fc-03dcc545d5d0\",\"187\":\"e10535d4-414f-5fc7-8178-505dc730ba47\",\"188\":\"91a4d984-203d-554d-b1c4-0bb00e5d55b7\"}}');
 /*!40000 ALTER TABLE `nglayouts_role_policy` ENABLE KEYS */;
 UNLOCK TABLES;
 
