@@ -1174,7 +1174,7 @@ CREATE TABLE `nglayouts_block` (
   `view_type` varchar(191) NOT NULL,
   `item_view_type` varchar(191) NOT NULL,
   `name` varchar(191) NOT NULL,
-  `config` text NOT NULL,
+  `config` longtext NOT NULL,
   `translatable` tinyint(4) NOT NULL,
   `main_locale` varchar(191) NOT NULL,
   `always_available` tinyint(4) NOT NULL,
@@ -1218,7 +1218,7 @@ CREATE TABLE `nglayouts_block_translation` (
   `block_id` int(11) NOT NULL,
   `status` int(11) NOT NULL,
   `locale` varchar(191) NOT NULL,
-  `parameters` text NOT NULL,
+  `parameters` longtext NOT NULL,
   PRIMARY KEY (`block_id`,`status`,`locale`),
   CONSTRAINT `fk_ngl_block_translation_block` FOREIGN KEY (`block_id`, `status`) REFERENCES `nglayouts_block` (`id`, `status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1261,7 +1261,7 @@ CREATE TABLE `nglayouts_collection_item` (
   `value` varchar(191) DEFAULT NULL,
   `value_type` varchar(191) NOT NULL,
   `view_type` varchar(191) DEFAULT NULL,
-  `config` text NOT NULL,
+  `config` longtext NOT NULL,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_collection_item_uuid` (`uuid`,`status`),
   KEY `idx_ngl_collection` (`collection_id`,`status`),
@@ -1300,7 +1300,7 @@ CREATE TABLE `nglayouts_collection_query_translation` (
   `query_id` int(11) NOT NULL,
   `status` int(11) NOT NULL,
   `locale` varchar(191) NOT NULL,
-  `parameters` text NOT NULL,
+  `parameters` longtext NOT NULL,
   PRIMARY KEY (`query_id`,`status`,`locale`),
   CONSTRAINT `fk_ngl_query_translation_query` FOREIGN KEY (`query_id`, `status`) REFERENCES `nglayouts_collection_query` (`id`, `status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1357,7 +1357,7 @@ CREATE TABLE `nglayouts_layout` (
   `uuid` char(36) NOT NULL,
   `type` varchar(191) NOT NULL,
   `name` varchar(191) NOT NULL,
-  `description` text NOT NULL,
+  `description` longtext NOT NULL,
   `created` int(11) NOT NULL,
   `modified` int(11) NOT NULL,
   `shared` tinyint(1) NOT NULL,
@@ -1413,7 +1413,7 @@ CREATE TABLE `nglayouts_role` (
   `uuid` char(36) NOT NULL,
   `name` varchar(191) NOT NULL,
   `identifier` varchar(191) NOT NULL,
-  `description` text NOT NULL,
+  `description` longtext NOT NULL,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_role_uuid` (`uuid`,`status`),
   KEY `idx_ngl_role_identifier` (`identifier`)
@@ -1434,7 +1434,7 @@ CREATE TABLE `nglayouts_role_policy` (
   `role_id` int(11) NOT NULL,
   `component` varchar(191) DEFAULT NULL,
   `permission` varchar(191) DEFAULT NULL,
-  `limitations` text NOT NULL,
+  `limitations` longtext NOT NULL,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_role_policy_uuid` (`uuid`,`status`),
   KEY `idx_ngl_role` (`role_id`,`status`),
@@ -1455,11 +1455,11 @@ CREATE TABLE `nglayouts_rule` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` int(11) NOT NULL,
   `uuid` char(36) NOT NULL,
-  `layout_id` int(11) DEFAULT NULL,
-  `comment` text NOT NULL,
+  `layout_uuid` char(36) DEFAULT NULL,
+  `comment` longtext NOT NULL,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_rule_uuid` (`uuid`,`status`),
-  KEY `idx_ngl_related_layout` (`layout_id`)
+  KEY `idx_ngl_related_layout` (`layout_uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -1476,7 +1476,7 @@ CREATE TABLE `nglayouts_rule_condition` (
   `uuid` char(36) NOT NULL,
   `rule_id` int(11) NOT NULL,
   `type` varchar(191) NOT NULL,
-  `value` text,
+  `value` longtext,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_rule_condition_uuid` (`uuid`,`status`),
   KEY `idx_ngl_rule` (`rule_id`,`status`),
@@ -1512,7 +1512,7 @@ CREATE TABLE `nglayouts_rule_target` (
   `uuid` char(36) NOT NULL,
   `rule_id` int(11) NOT NULL,
   `type` varchar(191) NOT NULL,
-  `value` text,
+  `value` longtext,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_rule_target_uuid` (`uuid`,`status`),
   KEY `idx_ngl_rule` (`rule_id`,`status`),
@@ -1533,12 +1533,12 @@ CREATE TABLE `nglayouts_zone` (
   `layout_id` int(11) NOT NULL,
   `status` int(11) NOT NULL,
   `root_block_id` int(11) NOT NULL,
-  `linked_layout_id` int(11) DEFAULT NULL,
+  `linked_layout_uuid` char(36) DEFAULT NULL,
   `linked_zone_identifier` varchar(191) DEFAULT NULL,
   PRIMARY KEY (`identifier`,`layout_id`,`status`),
   KEY `idx_ngl_layout` (`layout_id`,`status`),
   KEY `idx_ngl_root_block` (`root_block_id`,`status`),
-  KEY `idx_ngl_linked_zone` (`linked_layout_id`,`linked_zone_identifier`),
+  KEY `idx_ngl_linked_zone` (`linked_layout_uuid`,`linked_zone_identifier`),
   CONSTRAINT `fk_ngl_zone_block` FOREIGN KEY (`root_block_id`, `status`) REFERENCES `nglayouts_block` (`id`, `status`),
   CONSTRAINT `fk_ngl_zone_layout` FOREIGN KEY (`layout_id`, `status`) REFERENCES `nglayouts_layout` (`id`, `status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

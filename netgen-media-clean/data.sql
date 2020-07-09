@@ -1314,14 +1314,15 @@ UNLOCK TABLES;
 
 LOCK TABLES `nglayouts_migration_versions` WRITE;
 /*!40000 ALTER TABLE `nglayouts_migration_versions` DISABLE KEYS */;
-INSERT INTO `nglayouts_migration_versions` VALUES ('000700','2019-06-15 12:00:00');
-INSERT INTO `nglayouts_migration_versions` VALUES ('000800','2019-06-15 12:00:00');
-INSERT INTO `nglayouts_migration_versions` VALUES ('000900','2019-06-15 12:00:00');
-INSERT INTO `nglayouts_migration_versions` VALUES ('001000','2019-06-15 12:00:00');
-INSERT INTO `nglayouts_migration_versions` VALUES ('001100','2019-06-15 12:00:00');
-INSERT INTO `nglayouts_migration_versions` VALUES ('001200','2019-06-15 12:00:00');
-INSERT INTO `nglayouts_migration_versions` VALUES ('001300','2019-06-15 12:00:00');
-INSERT INTO `nglayouts_migration_versions` VALUES ('010000','2019-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('000700','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('000800','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('000900','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('001000','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('001100','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('001200','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('001300','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('010000','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('010200','2020-06-15 12:00:00');
 /*!40000 ALTER TABLE `nglayouts_migration_versions` ENABLE KEYS */;
 UNLOCK TABLES;
 
