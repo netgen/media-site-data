@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.21, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.22, for Linux (x86_64)
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	8.0.21-0ubuntu0.20.04.4
+-- Server version	8.0.22-0ubuntu0.20.04.2
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -89,6 +89,7 @@ INSERT INTO `ezcobj_state_link` VALUES (170,1);
 INSERT INTO `ezcobj_state_link` VALUES (171,1);
 INSERT INTO `ezcobj_state_link` VALUES (172,1);
 INSERT INTO `ezcobj_state_link` VALUES (173,1);
+INSERT INTO `ezcobj_state_link` VALUES (401,1);
 /*!40000 ALTER TABLE `ezcobj_state_link` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -503,7 +504,7 @@ INSERT INTO `ezcontentobject` VALUES (3,1,13,2,3,1033920794,'Editors',14,1033920
 INSERT INTO `ezcontentobject` VALUES (4,6,14,2,3,1472412012,'Administrator User',14,1033920830,'1bb4fe25487f05527efa8bfd394cecc7',2,1,0);
 INSERT INTO `ezcontentobject` VALUES (49,1,41,2,3,1060695457,'Media',14,1060695457,'a6e35cbcb7cd6ae4b691f3eee30cd262',3,1,0);
 INSERT INTO `ezcontentobject` VALUES (3,2,42,2,3,1397205317,'Anonymous users',14,1072180330,'15b256dbea2ae72418ff5facc999e8f9',2,1,0);
-INSERT INTO `ezcontentobject` VALUES (47,98,61,2,3,1453475463,'Home',14,1361269607,'c2a20616415e22135b81e68285d5f1dd',1,1,0);
+INSERT INTO `ezcontentobject` VALUES (47,99,61,2,3,1603965428,'Sites',14,1361269607,'c2a20616415e22135b81e68285d5f1dd',1,1,0);
 INSERT INTO `ezcontentobject` VALUES (49,1,62,2,3,1361279440,'Configuration',14,1361279440,'447c35347602e8f843ddc7d0008f30f3',3,1,0);
 INSERT INTO `ezcontentobject` VALUES (50,41,63,2,3,1600943131,'Netgen Media Site - [SITEINFO]',14,1361279467,'9eba65ee85ab04642c83b00a7dbfe247',3,1,0);
 INSERT INTO `ezcontentobject` VALUES (49,2,84,2,3,1380807379,'Banners',14,1366199858,'23c0873871e0acbe897cb90e20cf31d3',3,1,0);
@@ -512,6 +513,7 @@ INSERT INTO `ezcontentobject` VALUES (49,1,170,2,3,1416081876,'Files',14,1416081
 INSERT INTO `ezcontentobject` VALUES (49,1,171,2,3,1416081888,'Images',14,1416081888,'dc0c8aba89a4196000da84ef63500661',3,1,0);
 INSERT INTO `ezcontentobject` VALUES (49,1,172,2,3,1416081920,'Multimedia',14,1416081920,'cb5405ce7c36cc145098735004ef4f3a',3,1,0);
 INSERT INTO `ezcontentobject` VALUES (104,1,173,2,3,1570440525,'Netgen Media Site - [COOKIE POLICY]',14,1570440525,'60c1a4f0386e2c808348331bfefd772b',3,1,0);
+INSERT INTO `ezcontentobject` VALUES (47,1,401,2,2,1603965407,'Fit & Healthy',14,1603965407,'66fb2e697be1d5aa5c94e51b74be676d',1,1,0);
 /*!40000 ALTER TABLE `ezcontentobject` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -540,8 +542,8 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,179,10,0,0,'','eztext',177,'en
 INSERT INTO `ezcontentobject_attribute` VALUES (0,179,14,0,0,'','eztext',178,'eng-GB',3,0,'',6);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,180,10,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ezimage serial_number=\"1\" is_valid=\"\" filename=\"\" suffix=\"\" basename=\"\" dirpath=\"\" url=\"\" original_filename=\"\" mime_type=\"\" width=\"\" height=\"\" alternative_text=\"\" alias_key=\"1293033771\" timestamp=\"1379074071\"><original attribute_id=\"179\" attribute_version=\"3\" attribute_language=\"eng-GB\"/></ezimage>\n','ezimage',179,'eng-GB',3,0,'',3);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,180,14,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ezimage serial_number=\"1\" is_valid=\"\" filename=\"\" suffix=\"\" basename=\"\" dirpath=\"\" url=\"\" original_filename=\"\" mime_type=\"\" width=\"\" height=\"\" alternative_text=\"\" alias_key=\"1293033771\" timestamp=\"1472412002\"><original attribute_id=\"180\" attribute_version=\"6\" attribute_language=\"eng-GB\"/></ezimage>\n','ezimage',180,'eng-GB',3,0,'',6);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,394,61,0,NULL,'Home','ezstring',226,'eng-GB',3,0,'home',98);
-INSERT INTO `ezcontentobject_attribute` VALUES (0,395,61,NULL,NULL,NULL,'novaseometas',228,'eng-GB',3,0,'',98);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,394,61,NULL,NULL,'Sites','ezstring',226,'eng-GB',3,0,'sites',99);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,395,61,NULL,NULL,NULL,'novaseometas',228,'eng-GB',3,0,'',99);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,405,62,0,NULL,'Configuration','ezstring',230,'eng-GB',3,0,'configuration',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,406,63,NULL,NULL,'Netgen Media Site','ezstring',231,'eng-GB',3,0,'netgen media site',41);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,407,63,NULL,NULL,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<related-objects><relation-list/></related-objects>\n','ezobjectrelationlist',232,'eng-GB',3,0,'',41);
@@ -592,6 +594,8 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,863,173,0,NULL,'Social cookies
 INSERT INTO `ezcontentobject_attribute` VALUES (0,864,173,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>We use some social sharing plugins, to allow you to share certain pages of our website on social media.</para></section>\n','ezrichtext',2137,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (2138,865,173,0,NULL,'','eztext',2138,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (2139,866,173,0,NULL,'','eztext',2139,'eng-GB',3,0,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,394,401,NULL,NULL,'Fit & Healthy','ezstring',2140,'eng-GB',2,0,'fit & healthy',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (0,395,401,NULL,NULL,NULL,'novaseometas',2141,'eng-GB',2,0,'',1);
 /*!40000 ALTER TABLE `ezcontentobject_attribute` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -620,7 +624,7 @@ INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,13,3,'Editors','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',6,14,3,'Administrator User','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,41,3,'Media','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',2,42,3,'Anonymous users','eng-GB');
-INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',98,61,3,'Home','eng-GB');
+INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',99,61,3,'Sites','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,62,3,'Configuration','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',41,63,3,'Netgen Media Site - [SITEINFO]','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',2,84,3,'Banners','eng-GB');
@@ -629,6 +633,7 @@ INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,170,3,'Files','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,171,3,'Images','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,172,3,'Multimedia','eng-GB');
 INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,173,3,'Netgen Media Site - [COOKIE POLICY]','eng-GB');
+INSERT INTO `ezcontentobject_name` VALUES ('eng-GB',1,401,3,'Fit & Healthy','eng-GB');
 /*!40000 ALTER TABLE `ezcontentobject_name` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -648,7 +653,7 @@ UNLOCK TABLES;
 LOCK TABLES `ezcontentobject_tree` WRITE;
 /*!40000 ALTER TABLE `ezcontentobject_tree` DISABLE KEYS */;
 INSERT INTO `ezcontentobject_tree` VALUES (0,1,1,0,0,0,1,1570440551,1,1,'','/1/',0,'629709ba256fe317c3ddcee35453a96a',1,1);
-INSERT INTO `ezcontentobject_tree` VALUES (61,1,98,1,0,0,2,1536838855,2,1,'','/1/2/',0,'f3e90596361e31d496d4026eb624c983',8,1);
+INSERT INTO `ezcontentobject_tree` VALUES (61,1,99,1,0,0,2,1536838855,2,1,'node_2','/1/2/',0,'f3e90596361e31d496d4026eb624c983',8,1);
 INSERT INTO `ezcontentobject_tree` VALUES (4,1,1,1,0,0,5,1472412012,5,1,'users','/1/5/',0,'3f6d92f8044aed134f32153517850f5a',1,1);
 INSERT INTO `ezcontentobject_tree` VALUES (11,1,1,2,0,0,12,1452255195,12,5,'users/members','/1/5/12/',0,'a66e8445a6726eed1a20768a32a7c818',1,1);
 INSERT INTO `ezcontentobject_tree` VALUES (12,1,1,2,0,0,13,1472412012,13,5,'users/administrator_users','/1/5/13/',0,'769380b7aa94541679167eab817ca893',1,1);
@@ -665,6 +670,7 @@ INSERT INTO `ezcontentobject_tree` VALUES (63,1,41,3,0,0,65,1555422952,65,64,'me
 INSERT INTO `ezcontentobject_tree` VALUES (84,1,2,2,0,0,85,1536839235,85,43,'media/banners','/1/43/85/',6,'34f42ccb142b1dd46c020a49c3d650f8',9,1);
 INSERT INTO `ezcontentobject_tree` VALUES (168,1,1,2,0,0,166,1536839209,166,43,'media/menu_items','/1/43/166/',5,'315ad5948c74c87826f574f129440bdd',9,1);
 INSERT INTO `ezcontentobject_tree` VALUES (173,1,1,3,0,0,167,1570440525,167,64,'media/configuration/netgen_media_site2','/1/43/64/167/',0,'190a75b271d6e197ab013726fd2fa9ed',1,1);
+INSERT INTO `ezcontentobject_tree` VALUES (401,1,1,2,0,0,385,1603965407,385,2,'fit_healthy','/1/2/385/',0,'abc522bd83edd9753a2de5d5c3ca84bd',9,1);
 /*!40000 ALTER TABLE `ezcontentobject_tree` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -686,11 +692,12 @@ INSERT INTO `ezcontentobject_version` VALUES (170,1416081871,14,1307,2,3,1416081
 INSERT INTO `ezcontentobject_version` VALUES (171,1416081884,14,1308,2,3,1416081888,1,0,1,0);
 INSERT INTO `ezcontentobject_version` VALUES (172,1416081915,14,1309,2,3,1416081920,1,0,1,0);
 INSERT INTO `ezcontentobject_version` VALUES (11,1452255189,14,1560,2,3,1452255195,1,0,1,0);
-INSERT INTO `ezcontentobject_version` VALUES (61,1453475428,14,1584,2,3,1453475463,1,0,98,0);
 INSERT INTO `ezcontentobject_version` VALUES (10,1453475780,14,1586,2,3,1453475784,1,0,3,0);
 INSERT INTO `ezcontentobject_version` VALUES (14,1472411997,14,2038,2,3,1472412012,1,0,6,0);
 INSERT INTO `ezcontentobject_version` VALUES (173,1570440422,14,2726,2,3,1570440525,1,0,1,0);
 INSERT INTO `ezcontentobject_version` VALUES (63,1600943110,14,2729,2,3,1600943131,1,0,41,0);
+INSERT INTO `ezcontentobject_version` VALUES (401,1603965398,14,2730,2,2,1603965407,1,0,1,0);
+INSERT INTO `ezcontentobject_version` VALUES (61,1603965419,14,2731,2,3,1603965428,1,0,99,0);
 /*!40000 ALTER TABLE `ezcontentobject_version` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -786,10 +793,10 @@ INSERT INTO `eznode_assignment` VALUES (170,1,0,835,1,2,43,'99fa90309bcd4073e914
 INSERT INTO `eznode_assignment` VALUES (171,1,0,836,1,2,43,'937edb559ffc791eb126a05b52d9f392','0',9,1,0,0);
 INSERT INTO `eznode_assignment` VALUES (172,1,0,837,1,2,43,'941854cfe0ce7cd619e2427339ef9c8f','0',9,1,0,0);
 INSERT INTO `eznode_assignment` VALUES (11,1,0,1098,1,2,5,'','0',1,1,0,0);
-INSERT INTO `eznode_assignment` VALUES (61,98,-1,1122,1,2,1,'f3e90596361e31d496d4026eb624c983','0',8,0,0,0);
 INSERT INTO `eznode_assignment` VALUES (10,3,-1,1124,1,2,44,'2cf8343bee7b482bab82b269d8fecd76','0',9,1,0,0);
 INSERT INTO `eznode_assignment` VALUES (14,6,-1,1583,1,2,13,'e5161a99f733200b9ed4e80f9c16187b','0',1,1,0,0);
 INSERT INTO `eznode_assignment` VALUES (173,1,0,2248,1,2,64,'190a75b271d6e197ab013726fd2fa9ed','0',1,1,0,0);
+INSERT INTO `eznode_assignment` VALUES (401,1,0,2249,1,2,2,'abc522bd83edd9753a2de5d5c3ca84bd','0',9,1,0,0);
 /*!40000 ALTER TABLE `eznode_assignment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1104,6 +1111,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `ezurlalias_ml` WRITE;
 /*!40000 ALTER TABLE `ezurlalias_ml` DISABLE KEYS */;
+INSERT INTO `ezurlalias_ml` VALUES ('eznode:385','eznode',0,20,0,1,2,20,0,'fit-healthy','3198800cd0599581af4bdada7aabe886');
 INSERT INTO `ezurlalias_ml` VALUES ('eznode:43','eznode',1,9,0,1,3,9,0,'media','62933a2951ef01f4eafd9bdf4d3cd2f0');
 INSERT INTO `ezurlalias_ml` VALUES ('eznode:5','eznode',1,2,0,1,3,2,0,'users','9bc65c2abec141778ffaa729489f3e87');
 INSERT INTO `ezurlalias_ml` VALUES ('eznode:2','eznode',1,1,0,1,3,1,0,'','d41d8cd98f00b204e9800998ecf8427e');
@@ -1149,6 +1157,7 @@ INSERT INTO `ezurlalias_ml_incr` VALUES (16);
 INSERT INTO `ezurlalias_ml_incr` VALUES (17);
 INSERT INTO `ezurlalias_ml_incr` VALUES (18);
 INSERT INTO `ezurlalias_ml_incr` VALUES (19);
+INSERT INTO `ezurlalias_ml_incr` VALUES (20);
 /*!40000 ALTER TABLE `ezurlalias_ml_incr` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1440,4 +1449,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-24 12:00:00
+-- Dump completed on 2020-10-29 12:00:00
