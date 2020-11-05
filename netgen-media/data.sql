@@ -7956,6 +7956,8 @@ INSERT INTO `nglayouts_block` VALUES (471,1,'feb2e9c1-7470-4bdf-b52c-860a036c38f
 INSERT INTO `nglayouts_block` VALUES (472,1,'3794d828-bd03-4493-b22b-092777f8d1c1',31,1,'/443/472/',443,'root',7,'column','column','standard','','[]',1,'en_GB',1);
 INSERT INTO `nglayouts_block` VALUES (473,1,'8e6af62a-f75f-4109-a5a3-d782406783ab',31,2,'/443/472/473/',472,'main',0,'title','title','standard','','[]',1,'en_GB',1);
 INSERT INTO `nglayouts_block` VALUES (474,1,'c7e8baf3-5345-4145-a6d0-dacc727bf41c',31,2,'/443/472/474/',472,'main',1,'gallery','thumb_gallery','gallery_thumb','','[]',0,'en_GB',1);
+INSERT INTO `nglayouts_block` VALUES (475,1,'c393015f-0286-47ed-a66d-fa06502825f7',2,1,'/8/475/',8,'root',1,'column','column','standard','','[]',1,'en_GB',1);
+INSERT INTO `nglayouts_block` VALUES (476,1,'d0a26813-1e92-4364-b22a-a36b54b675a5',2,2,'/8/475/476/',475,'main',0,'twig_block','twig_block','standard','','[]',0,'en_GB',1);
 /*!40000 ALTER TABLE `nglayouts_block` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8227,6 +8229,8 @@ INSERT INTO `nglayouts_block_translation` VALUES (471,1,'en_GB','{\"next_and_pre
 INSERT INTO `nglayouts_block_translation` VALUES (472,1,'en_GB','{\"background_color:enabled\":false,\"background_color:color\":null,\"background_image:enabled\":false,\"background_image:image\":null,\"vertical_whitespace:enabled\":true,\"vertical_whitespace:top\":\"none\",\"vertical_whitespace:bottom\":\"medium\",\"css_class\":null,\"css_id\":null,\"set_container\":true,\"set_container:size\":\"\"}');
 INSERT INTO `nglayouts_block_translation` VALUES (473,1,'en_GB','{\"tag\":\"h2\",\"title\":\"Gallery thumb view\",\"use_link\":false,\"link\":{\"link_type\":null,\"link\":null,\"link_suffix\":null,\"new_window\":false},\"vertical_whitespace:enabled\":true,\"vertical_whitespace:top\":\"small\",\"vertical_whitespace:bottom\":\"small\",\"title_icon:enabled\":false,\"title_icon:css_class\":null,\"css_class\":null,\"css_id\":null,\"set_container\":false,\"set_container:size\":\"\"}');
 INSERT INTO `nglayouts_block_translation` VALUES (474,1,'en_GB','{\"next_and_previous\":true,\"show_pagination\":false,\"infinite_loop\":false,\"transition\":\"slide\",\"autoplay\":false,\"autoplay_time\":null,\"number_of_thumbnails\":3,\"thumbnails_to_move\":null,\"show_details\":true,\"show_details_on_hover\":false,\"enable_lightbox\":true,\"vertical_whitespace:enabled\":false,\"vertical_whitespace:top\":\"none\",\"vertical_whitespace:bottom\":\"none\",\"css_class\":null,\"css_id\":null,\"set_container\":false,\"set_container:size\":\"\"}');
+INSERT INTO `nglayouts_block_translation` VALUES (475,1,'en_GB','{\"background_color:enabled\":true,\"background_color:color\":\"primary\",\"background_image:enabled\":false,\"background_image:image\":null,\"vertical_whitespace:enabled\":false,\"vertical_whitespace:top\":null,\"vertical_whitespace:bottom\":null,\"css_class\":null,\"css_id\":null,\"set_container\":false,\"set_container:size\":\"\"}');
+INSERT INTO `nglayouts_block_translation` VALUES (476,1,'en_GB','{\"block_name\":\"breadcrumb\",\"vertical_whitespace:enabled\":false,\"vertical_whitespace:top\":null,\"vertical_whitespace:bottom\":null,\"css_class\":null,\"css_id\":null,\"set_container\":true,\"set_container:size\":\"\"}');
 /*!40000 ALTER TABLE `nglayouts_block_translation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8485,7 +8489,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `nglayouts_layout` WRITE;
 /*!40000 ALTER TABLE `nglayouts_layout` DISABLE KEYS */;
-INSERT INTO `nglayouts_layout` VALUES (2,1,'fd0aa7af-77a8-5a03-bf10-80018f5db1dc','layout_2','Header / Footer','',1532346950,1533069225,1,'en_GB');
+INSERT INTO `nglayouts_layout` VALUES (2,1,'fd0aa7af-77a8-5a03-bf10-80018f5db1dc','layout_2','Header / Footer','',1532346950,1604582023,1,'en_GB');
 INSERT INTO `nglayouts_layout` VALUES (7,1,'d14c8271-5a0c-5f1d-a1e6-df4d0b77e638','layout_1','Prefooter','',1533039857,1533039972,1,'en_GB');
 INSERT INTO `nglayouts_layout` VALUES (9,1,'7ee9efc4-645e-5ac5-8ca6-975161c1ef94','layout_1','Right Column / Article','',1533126052,1535034427,1,'en_GB');
 INSERT INTO `nglayouts_layout` VALUES (19,1,'1d969451-6743-5ac1-85b8-6cc0f9ef7084','layout_2','Default Layout','',1602863768,1604576353,0,'en_GB');
