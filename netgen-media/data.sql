@@ -7715,6 +7715,33 @@ LOCK TABLES `ezworkflow_process` WRITE;
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `lexik_trans_unit`
+--
+
+LOCK TABLES `lexik_trans_unit` WRITE;
+/*!40000 ALTER TABLE `lexik_trans_unit` DISABLE KEYS */;
+/*!40000 ALTER TABLE `lexik_trans_unit` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `lexik_trans_unit_translations`
+--
+
+LOCK TABLES `lexik_trans_unit_translations` WRITE;
+/*!40000 ALTER TABLE `lexik_trans_unit_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `lexik_trans_unit_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `lexik_translation_file`
+--
+
+LOCK TABLES `lexik_translation_file` WRITE;
+/*!40000 ALTER TABLE `lexik_translation_file` DISABLE KEYS */;
+/*!40000 ALTER TABLE `lexik_translation_file` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `nglayouts_block`
 --
 
