@@ -1154,6 +1154,23 @@ CREATE TABLE `ezuser_setting` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `ibexa_setting`
+--
+
+DROP TABLE IF EXISTS `ibexa_setting`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ibexa_setting` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group` varchar(128) NOT NULL,
+  `identifier` varchar(128) NOT NULL,
+  `value` text NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ibexa_setting_group_identifier` (`group`, `identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `nglayouts_block`
 --
 

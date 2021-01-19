@@ -6209,6 +6209,15 @@ INSERT INTO `ezuser_setting` VALUES (1,10,14);
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `ibexa_setting`
+--
+
+LOCK TABLES `ibexa_setting` WRITE;
+/*!40000 ALTER TABLE `ibexa_setting` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ibexa_setting` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `nglayouts_block`
 --
 
