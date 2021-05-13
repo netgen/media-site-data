@@ -23,12 +23,12 @@ DROP TABLE IF EXISTS `ezbinaryfile`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezbinaryfile` (
-  `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
-  `download_count` int(11) NOT NULL DEFAULT '0',
+  `contentobject_attribute_id` int NOT NULL DEFAULT '0',
+  `download_count` int NOT NULL DEFAULT '0',
   `filename` varchar(255) NOT NULL DEFAULT '',
   `mime_type` varchar(255) NOT NULL DEFAULT '',
   `original_filename` varchar(255) NOT NULL DEFAULT '',
-  `version` int(11) NOT NULL DEFAULT '0',
+  `version` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`contentobject_attribute_id`,`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -41,12 +41,12 @@ DROP TABLE IF EXISTS `ezcobj_state`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state` (
-  `default_language_id` bigint(20) NOT NULL DEFAULT '0',
-  `group_id` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `default_language_id` bigint NOT NULL DEFAULT '0',
+  `group_id` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
   `identifier` varchar(45) NOT NULL DEFAULT '',
-  `language_mask` bigint(20) NOT NULL DEFAULT '0',
-  `priority` int(11) NOT NULL DEFAULT '0',
+  `language_mask` bigint NOT NULL DEFAULT '0',
+  `priority` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `ezcobj_state_identifier` (`group_id`,`identifier`),
   KEY `ezcobj_state_priority` (`priority`),
@@ -62,10 +62,10 @@ DROP TABLE IF EXISTS `ezcobj_state_group`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state_group` (
-  `default_language_id` bigint(20) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `default_language_id` bigint NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
   `identifier` varchar(45) NOT NULL DEFAULT '',
-  `language_mask` bigint(20) NOT NULL DEFAULT '0',
+  `language_mask` bigint NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `ezcobj_state_group_identifier` (`identifier`),
   KEY `ezcobj_state_group_lmask` (`language_mask`)
@@ -80,11 +80,11 @@ DROP TABLE IF EXISTS `ezcobj_state_group_language`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state_group_language` (
-  `contentobject_state_group_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_state_group_id` int NOT NULL DEFAULT '0',
   `description` longtext NOT NULL,
-  `language_id` bigint(20) NOT NULL DEFAULT '0',
+  `language_id` bigint NOT NULL DEFAULT '0',
   `name` varchar(45) NOT NULL DEFAULT '',
-  `real_language_id` bigint(20) NOT NULL DEFAULT '0',
+  `real_language_id` bigint NOT NULL DEFAULT '0',
   PRIMARY KEY (`contentobject_state_group_id`,`real_language_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -97,9 +97,9 @@ DROP TABLE IF EXISTS `ezcobj_state_language`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state_language` (
-  `contentobject_state_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_state_id` int NOT NULL DEFAULT '0',
   `description` longtext NOT NULL,
-  `language_id` bigint(20) NOT NULL DEFAULT '0',
+  `language_id` bigint NOT NULL DEFAULT '0',
   `name` varchar(45) NOT NULL DEFAULT '',
   PRIMARY KEY (`contentobject_state_id`,`language_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -113,8 +113,8 @@ DROP TABLE IF EXISTS `ezcobj_state_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcobj_state_link` (
-  `contentobject_id` int(11) NOT NULL DEFAULT '0',
-  `contentobject_state_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_id` int NOT NULL DEFAULT '0',
+  `contentobject_state_id` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`contentobject_id`,`contentobject_state_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -127,8 +127,8 @@ DROP TABLE IF EXISTS `ezcontent_language`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontent_language` (
-  `disabled` int(11) NOT NULL DEFAULT '0',
-  `id` bigint(20) NOT NULL DEFAULT '0',
+  `disabled` int NOT NULL DEFAULT '0',
+  `id` bigint NOT NULL DEFAULT '0',
   `locale` varchar(20) NOT NULL DEFAULT '',
   `name` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
@@ -144,16 +144,16 @@ DROP TABLE IF EXISTS `ezcontentbrowsebookmark`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentbrowsebookmark` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL DEFAULT '',
-  `node_id` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
+  `node_id` int NOT NULL DEFAULT '0',
+  `user_id` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ezcontentbrowsebookmark_location` (`node_id`),
   KEY `ezcontentbrowsebookmark_user` (`user_id`),
   KEY `ezcontentbrowsebookmark_user_location` (`user_id`,`node_id`),
-  CONSTRAINT `ezcontentbrowsebookmark_location_fk` FOREIGN KEY (`node_id`) REFERENCES `ezcontentobject_tree` (`node_id`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  CONSTRAINT `ezcontentbrowsebookmark_user_fk` FOREIGN KEY (`user_id`) REFERENCES `ezuser` (`contentobject_id`) ON DELETE CASCADE ON UPDATE NO ACTION
+  CONSTRAINT `ezcontentbrowsebookmark_location_fk` FOREIGN KEY (`node_id`) REFERENCES `ezcontentobject_tree` (`node_id`) ON DELETE CASCADE,
+  CONSTRAINT `ezcontentbrowsebookmark_user_fk` FOREIGN KEY (`user_id`) REFERENCES `ezuser` (`contentobject_id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -165,24 +165,24 @@ DROP TABLE IF EXISTS `ezcontentclass`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass` (
-  `always_available` int(11) NOT NULL DEFAULT '0',
+  `always_available` int NOT NULL DEFAULT '0',
   `contentobject_name` varchar(255) DEFAULT NULL,
-  `created` int(11) NOT NULL DEFAULT '0',
-  `creator_id` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `created` int NOT NULL DEFAULT '0',
+  `creator_id` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) NOT NULL DEFAULT '',
-  `initial_language_id` bigint(20) NOT NULL DEFAULT '0',
-  `is_container` int(11) NOT NULL DEFAULT '0',
-  `language_mask` bigint(20) NOT NULL DEFAULT '0',
-  `modified` int(11) NOT NULL DEFAULT '0',
-  `modifier_id` int(11) NOT NULL DEFAULT '0',
+  `initial_language_id` bigint NOT NULL DEFAULT '0',
+  `is_container` int NOT NULL DEFAULT '0',
+  `language_mask` bigint NOT NULL DEFAULT '0',
+  `modified` int NOT NULL DEFAULT '0',
+  `modifier_id` int NOT NULL DEFAULT '0',
   `remote_id` varchar(100) NOT NULL DEFAULT '',
   `serialized_description_list` longtext,
   `serialized_name_list` longtext,
-  `sort_field` int(11) NOT NULL DEFAULT '1',
-  `sort_order` int(11) NOT NULL DEFAULT '1',
+  `sort_field` int NOT NULL DEFAULT '1',
+  `sort_order` int NOT NULL DEFAULT '1',
   `url_alias_name` varchar(255) DEFAULT NULL,
-  `version` int(11) NOT NULL DEFAULT '0',
+  `version` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`version`),
   KEY `ezcontentclass_version` (`version`),
   KEY `ezcontentclass_identifier` (`identifier`,`version`)
@@ -197,34 +197,34 @@ DROP TABLE IF EXISTS `ezcontentclass_attribute`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass_attribute` (
-  `can_translate` int(11) DEFAULT '1',
+  `can_translate` int DEFAULT '1',
   `category` varchar(25) NOT NULL DEFAULT '',
-  `contentclass_id` int(11) NOT NULL DEFAULT '0',
+  `contentclass_id` int NOT NULL DEFAULT '0',
   `data_float1` double DEFAULT NULL,
   `data_float2` double DEFAULT NULL,
   `data_float3` double DEFAULT NULL,
   `data_float4` double DEFAULT NULL,
-  `data_int1` int(11) DEFAULT NULL,
-  `data_int2` int(11) DEFAULT NULL,
-  `data_int3` int(11) DEFAULT NULL,
-  `data_int4` int(11) DEFAULT NULL,
+  `data_int1` int DEFAULT NULL,
+  `data_int2` int DEFAULT NULL,
+  `data_int3` int DEFAULT NULL,
+  `data_int4` int DEFAULT NULL,
   `data_text1` varchar(255) DEFAULT NULL,
   `data_text2` varchar(50) DEFAULT NULL,
   `data_text3` varchar(50) DEFAULT NULL,
   `data_text4` varchar(255) DEFAULT NULL,
   `data_text5` longtext,
   `data_type_string` varchar(50) NOT NULL DEFAULT '',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) NOT NULL DEFAULT '',
-  `is_information_collector` int(11) NOT NULL DEFAULT '0',
-  `is_required` int(11) NOT NULL DEFAULT '0',
-  `is_searchable` int(11) NOT NULL DEFAULT '0',
+  `is_information_collector` int NOT NULL DEFAULT '0',
+  `is_required` int NOT NULL DEFAULT '0',
+  `is_searchable` int NOT NULL DEFAULT '0',
   `is_thumbnail` tinyint(1) NOT NULL DEFAULT '0',
-  `placement` int(11) NOT NULL DEFAULT '0',
+  `placement` int NOT NULL DEFAULT '0',
   `serialized_data_text` longtext,
   `serialized_description_list` longtext,
   `serialized_name_list` longtext NOT NULL,
-  `version` int(11) NOT NULL DEFAULT '0',
+  `version` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`version`),
   KEY `ezcontentclass_attr_ccid` (`contentclass_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -238,9 +238,9 @@ DROP TABLE IF EXISTS `ezcontentclass_attribute_ml`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass_attribute_ml` (
-  `contentclass_attribute_id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `language_id` bigint(20) NOT NULL,
+  `contentclass_attribute_id` int NOT NULL,
+  `version` int NOT NULL,
+  `language_id` bigint NOT NULL,
   `name` varchar(255) NOT NULL,
   `description` text,
   `data_text` text,
@@ -259,9 +259,9 @@ DROP TABLE IF EXISTS `ezcontentclass_classgroup`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass_classgroup` (
-  `contentclass_id` int(11) NOT NULL DEFAULT '0',
-  `contentclass_version` int(11) NOT NULL DEFAULT '0',
-  `group_id` int(11) NOT NULL DEFAULT '0',
+  `contentclass_id` int NOT NULL DEFAULT '0',
+  `contentclass_version` int NOT NULL DEFAULT '0',
+  `group_id` int NOT NULL DEFAULT '0',
   `group_name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`contentclass_id`,`contentclass_version`,`group_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -275,9 +275,9 @@ DROP TABLE IF EXISTS `ezcontentclass_name`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclass_name` (
-  `contentclass_id` int(11) NOT NULL DEFAULT '0',
-  `contentclass_version` int(11) NOT NULL DEFAULT '0',
-  `language_id` bigint(20) NOT NULL DEFAULT '0',
+  `contentclass_id` int NOT NULL DEFAULT '0',
+  `contentclass_version` int NOT NULL DEFAULT '0',
+  `language_id` bigint NOT NULL DEFAULT '0',
   `language_locale` varchar(20) NOT NULL DEFAULT '',
   `name` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`contentclass_id`,`contentclass_version`,`language_id`)
@@ -292,11 +292,11 @@ DROP TABLE IF EXISTS `ezcontentclassgroup`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentclassgroup` (
-  `created` int(11) NOT NULL DEFAULT '0',
-  `creator_id` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `modified` int(11) NOT NULL DEFAULT '0',
-  `modifier_id` int(11) NOT NULL DEFAULT '0',
+  `created` int NOT NULL DEFAULT '0',
+  `creator_id` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `modified` int NOT NULL DEFAULT '0',
+  `modifier_id` int NOT NULL DEFAULT '0',
   `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -310,18 +310,18 @@ DROP TABLE IF EXISTS `ezcontentobject`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject` (
-  `contentclass_id` int(11) NOT NULL DEFAULT '0',
-  `current_version` int(11) DEFAULT NULL,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `initial_language_id` bigint(20) NOT NULL DEFAULT '0',
-  `language_mask` bigint(20) NOT NULL DEFAULT '0',
-  `modified` int(11) NOT NULL DEFAULT '0',
+  `contentclass_id` int NOT NULL DEFAULT '0',
+  `current_version` int DEFAULT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `initial_language_id` bigint NOT NULL DEFAULT '0',
+  `language_mask` bigint NOT NULL DEFAULT '0',
+  `modified` int NOT NULL DEFAULT '0',
   `name` varchar(255) DEFAULT NULL,
-  `owner_id` int(11) NOT NULL DEFAULT '0',
-  `published` int(11) NOT NULL DEFAULT '0',
+  `owner_id` int NOT NULL DEFAULT '0',
+  `published` int NOT NULL DEFAULT '0',
   `remote_id` varchar(100) DEFAULT NULL,
-  `section_id` int(11) NOT NULL DEFAULT '0',
-  `status` int(11) DEFAULT '0',
+  `section_id` int NOT NULL DEFAULT '0',
+  `status` int DEFAULT '0',
   `is_hidden` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `ezcontentobject_remote_id` (`remote_id`),
@@ -343,19 +343,19 @@ DROP TABLE IF EXISTS `ezcontentobject_attribute`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_attribute` (
-  `attribute_original_id` int(11) DEFAULT '0',
-  `contentclassattribute_id` int(11) NOT NULL DEFAULT '0',
-  `contentobject_id` int(11) NOT NULL DEFAULT '0',
+  `attribute_original_id` int DEFAULT '0',
+  `contentclassattribute_id` int NOT NULL DEFAULT '0',
+  `contentobject_id` int NOT NULL DEFAULT '0',
   `data_float` double DEFAULT NULL,
-  `data_int` int(11) DEFAULT NULL,
+  `data_int` int DEFAULT NULL,
   `data_text` longtext,
   `data_type_string` varchar(50) DEFAULT '',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `language_code` varchar(20) NOT NULL DEFAULT '',
-  `language_id` bigint(20) NOT NULL DEFAULT '0',
-  `sort_key_int` int(11) NOT NULL DEFAULT '0',
+  `language_id` bigint NOT NULL DEFAULT '0',
+  `sort_key_int` int NOT NULL DEFAULT '0',
   `sort_key_string` varchar(255) NOT NULL DEFAULT '',
-  `version` int(11) NOT NULL DEFAULT '0',
+  `version` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`version`),
   KEY `ezcontentobject_attribute_co_id_ver_lang_code` (`contentobject_id`,`version`,`language_code`),
   KEY `ezcontentobject_classattr_id` (`contentclassattribute_id`),
@@ -373,12 +373,12 @@ DROP TABLE IF EXISTS `ezcontentobject_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_link` (
-  `contentclassattribute_id` int(11) NOT NULL DEFAULT '0',
-  `from_contentobject_id` int(11) NOT NULL DEFAULT '0',
-  `from_contentobject_version` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `relation_type` int(11) NOT NULL DEFAULT '1',
-  `to_contentobject_id` int(11) NOT NULL DEFAULT '0',
+  `contentclassattribute_id` int NOT NULL DEFAULT '0',
+  `from_contentobject_id` int NOT NULL DEFAULT '0',
+  `from_contentobject_version` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `relation_type` int NOT NULL DEFAULT '1',
+  `to_contentobject_id` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ezco_link_to_co_id` (`to_contentobject_id`),
   KEY `ezco_link_from` (`from_contentobject_id`,`from_contentobject_version`,`contentclassattribute_id`)
@@ -394,9 +394,9 @@ DROP TABLE IF EXISTS `ezcontentobject_name`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_name` (
   `content_translation` varchar(20) NOT NULL DEFAULT '',
-  `content_version` int(11) NOT NULL DEFAULT '0',
-  `contentobject_id` int(11) NOT NULL DEFAULT '0',
-  `language_id` bigint(20) NOT NULL DEFAULT '0',
+  `content_version` int NOT NULL DEFAULT '0',
+  `contentobject_id` int NOT NULL DEFAULT '0',
+  `language_id` bigint NOT NULL DEFAULT '0',
   `name` varchar(255) DEFAULT NULL,
   `real_translation` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`contentobject_id`,`content_version`,`content_translation`),
@@ -414,22 +414,22 @@ DROP TABLE IF EXISTS `ezcontentobject_trash`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_trash` (
-  `contentobject_id` int(11) DEFAULT NULL,
-  `contentobject_version` int(11) DEFAULT NULL,
-  `depth` int(11) NOT NULL DEFAULT '0',
-  `is_hidden` int(11) NOT NULL DEFAULT '0',
-  `is_invisible` int(11) NOT NULL DEFAULT '0',
-  `main_node_id` int(11) DEFAULT NULL,
-  `modified_subnode` int(11) DEFAULT '0',
-  `node_id` int(11) NOT NULL DEFAULT '0',
-  `parent_node_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_id` int DEFAULT NULL,
+  `contentobject_version` int DEFAULT NULL,
+  `depth` int NOT NULL DEFAULT '0',
+  `is_hidden` int NOT NULL DEFAULT '0',
+  `is_invisible` int NOT NULL DEFAULT '0',
+  `main_node_id` int DEFAULT NULL,
+  `modified_subnode` int DEFAULT '0',
+  `node_id` int NOT NULL DEFAULT '0',
+  `parent_node_id` int NOT NULL DEFAULT '0',
   `path_identification_string` longtext,
   `path_string` varchar(255) NOT NULL DEFAULT '',
-  `priority` int(11) NOT NULL DEFAULT '0',
+  `priority` int NOT NULL DEFAULT '0',
   `remote_id` varchar(100) NOT NULL DEFAULT '',
-  `sort_field` int(11) DEFAULT '1',
-  `sort_order` int(11) DEFAULT '1',
-  `trashed` int(11) NOT NULL DEFAULT '0',
+  `sort_field` int DEFAULT '1',
+  `sort_order` int DEFAULT '1',
+  `trashed` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`node_id`),
   KEY `ezcobj_trash_depth` (`depth`),
   KEY `ezcobj_trash_p_node_id` (`parent_node_id`),
@@ -448,22 +448,22 @@ DROP TABLE IF EXISTS `ezcontentobject_tree`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_tree` (
-  `contentobject_id` int(11) DEFAULT NULL,
-  `contentobject_is_published` int(11) DEFAULT NULL,
-  `contentobject_version` int(11) DEFAULT NULL,
-  `depth` int(11) NOT NULL DEFAULT '0',
-  `is_hidden` int(11) NOT NULL DEFAULT '0',
-  `is_invisible` int(11) NOT NULL DEFAULT '0',
-  `main_node_id` int(11) DEFAULT NULL,
-  `modified_subnode` int(11) DEFAULT '0',
-  `node_id` int(11) NOT NULL AUTO_INCREMENT,
-  `parent_node_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_id` int DEFAULT NULL,
+  `contentobject_is_published` int DEFAULT NULL,
+  `contentobject_version` int DEFAULT NULL,
+  `depth` int NOT NULL DEFAULT '0',
+  `is_hidden` int NOT NULL DEFAULT '0',
+  `is_invisible` int NOT NULL DEFAULT '0',
+  `main_node_id` int DEFAULT NULL,
+  `modified_subnode` int DEFAULT '0',
+  `node_id` int NOT NULL AUTO_INCREMENT,
+  `parent_node_id` int NOT NULL DEFAULT '0',
   `path_identification_string` longtext,
   `path_string` varchar(255) NOT NULL DEFAULT '',
-  `priority` int(11) NOT NULL DEFAULT '0',
+  `priority` int NOT NULL DEFAULT '0',
   `remote_id` varchar(100) NOT NULL DEFAULT '',
-  `sort_field` int(11) DEFAULT '1',
-  `sort_order` int(11) DEFAULT '1',
+  `sort_field` int DEFAULT '1',
+  `sort_order` int DEFAULT '1',
   PRIMARY KEY (`node_id`),
   KEY `ezcontentobject_tree_p_node_id` (`parent_node_id`),
   KEY `ezcontentobject_tree_path_ident` (`path_identification_string`(50)),
@@ -484,17 +484,17 @@ DROP TABLE IF EXISTS `ezcontentobject_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezcontentobject_version` (
-  `contentobject_id` int(11) DEFAULT NULL,
-  `created` int(11) NOT NULL DEFAULT '0',
-  `creator_id` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `initial_language_id` bigint(20) NOT NULL DEFAULT '0',
-  `language_mask` bigint(20) NOT NULL DEFAULT '0',
-  `modified` int(11) NOT NULL DEFAULT '0',
-  `status` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  `version` int(11) NOT NULL DEFAULT '0',
-  `workflow_event_pos` int(11) DEFAULT '0',
+  `contentobject_id` int DEFAULT NULL,
+  `created` int NOT NULL DEFAULT '0',
+  `creator_id` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `initial_language_id` bigint NOT NULL DEFAULT '0',
+  `language_mask` bigint NOT NULL DEFAULT '0',
+  `modified` int NOT NULL DEFAULT '0',
+  `status` int NOT NULL DEFAULT '0',
+  `user_id` int NOT NULL DEFAULT '0',
+  `version` int NOT NULL DEFAULT '0',
+  `workflow_event_pos` int DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ezcobj_version_creator_id` (`creator_id`),
   KEY `ezcobj_version_status` (`status`),
@@ -516,8 +516,8 @@ CREATE TABLE `ezdfsfile` (
   `name_trunk` text NOT NULL,
   `datatype` varchar(255) NOT NULL DEFAULT 'application/octet-stream',
   `scope` varchar(25) NOT NULL DEFAULT '',
-  `size` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `mtime` int(11) NOT NULL DEFAULT '0',
+  `size` bigint unsigned NOT NULL DEFAULT '0',
+  `mtime` int NOT NULL DEFAULT '0',
   `expired` tinyint(1) NOT NULL DEFAULT '0',
   `status` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`name_hash`),
@@ -536,8 +536,8 @@ DROP TABLE IF EXISTS `ezgmaplocation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezgmaplocation` (
-  `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
-  `contentobject_version` int(11) NOT NULL DEFAULT '0',
+  `contentobject_attribute_id` int NOT NULL DEFAULT '0',
+  `contentobject_version` int NOT NULL DEFAULT '0',
   `latitude` double NOT NULL DEFAULT '0',
   `longitude` double NOT NULL DEFAULT '0',
   `address` varchar(150) DEFAULT NULL,
@@ -554,9 +554,9 @@ DROP TABLE IF EXISTS `ezimagefile`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezimagefile` (
-  `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_attribute_id` int NOT NULL DEFAULT '0',
   `filepath` longtext NOT NULL,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   KEY `ezimagefile_file` (`filepath`(191)),
   KEY `ezimagefile_coid` (`contentobject_attribute_id`)
@@ -571,11 +571,11 @@ DROP TABLE IF EXISTS `ezinfocollection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezinfocollection` (
-  `contentobject_id` int(11) NOT NULL DEFAULT '0',
-  `created` int(11) NOT NULL DEFAULT '0',
-  `creator_id` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `modified` int(11) DEFAULT '0',
+  `contentobject_id` int NOT NULL DEFAULT '0',
+  `created` int NOT NULL DEFAULT '0',
+  `creator_id` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `modified` int DEFAULT '0',
   `user_identifier` varchar(34) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `ezinfocollection_co_id_created` (`contentobject_id`,`created`)
@@ -590,14 +590,14 @@ DROP TABLE IF EXISTS `ezinfocollection_attribute`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezinfocollection_attribute` (
-  `contentclass_attribute_id` int(11) NOT NULL DEFAULT '0',
-  `contentobject_attribute_id` int(11) DEFAULT NULL,
-  `contentobject_id` int(11) DEFAULT NULL,
+  `contentclass_attribute_id` int NOT NULL DEFAULT '0',
+  `contentobject_attribute_id` int DEFAULT NULL,
+  `contentobject_id` int DEFAULT NULL,
   `data_float` double DEFAULT NULL,
-  `data_int` int(11) DEFAULT NULL,
+  `data_int` int DEFAULT NULL,
   `data_text` longtext,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `informationcollection_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `informationcollection_id` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ezinfocollection_attr_cca_id` (`contentclass_attribute_id`),
   KEY `ezinfocollection_attr_co_id` (`contentobject_id`),
@@ -614,8 +614,8 @@ DROP TABLE IF EXISTS `ezkeyword`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezkeyword` (
-  `class_id` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `class_id` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
   `keyword` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `ezkeyword_keyword` (`keyword`(191))
@@ -630,10 +630,10 @@ DROP TABLE IF EXISTS `ezkeyword_attribute_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezkeyword_attribute_link` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `keyword_id` int(11) NOT NULL DEFAULT '0',
-  `objectattribute_id` int(11) NOT NULL DEFAULT '0',
-  `version` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `keyword_id` int NOT NULL DEFAULT '0',
+  `objectattribute_id` int NOT NULL DEFAULT '0',
+  `version` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ezkeyword_attr_link_oaid` (`objectattribute_id`),
   KEY `ezkeyword_attr_link_kid_oaid` (`keyword_id`,`objectattribute_id`),
@@ -649,19 +649,19 @@ DROP TABLE IF EXISTS `ezmedia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezmedia` (
-  `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_attribute_id` int NOT NULL DEFAULT '0',
   `controls` varchar(50) DEFAULT NULL,
   `filename` varchar(255) NOT NULL DEFAULT '',
-  `has_controller` int(11) DEFAULT '0',
-  `height` int(11) DEFAULT NULL,
-  `is_autoplay` int(11) DEFAULT '0',
-  `is_loop` int(11) DEFAULT '0',
+  `has_controller` int DEFAULT '0',
+  `height` int DEFAULT NULL,
+  `is_autoplay` int DEFAULT '0',
+  `is_loop` int DEFAULT '0',
   `mime_type` varchar(50) NOT NULL DEFAULT '',
   `original_filename` varchar(255) NOT NULL DEFAULT '',
   `pluginspage` varchar(255) DEFAULT NULL,
   `quality` varchar(50) DEFAULT NULL,
-  `version` int(11) NOT NULL DEFAULT '0',
-  `width` int(11) DEFAULT NULL,
+  `version` int NOT NULL DEFAULT '0',
+  `width` int DEFAULT NULL,
   PRIMARY KEY (`contentobject_attribute_id`,`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -674,19 +674,19 @@ DROP TABLE IF EXISTS `eznode_assignment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eznode_assignment` (
-  `contentobject_id` int(11) DEFAULT NULL,
-  `contentobject_version` int(11) DEFAULT NULL,
-  `from_node_id` int(11) DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `is_main` int(11) NOT NULL DEFAULT '0',
-  `op_code` int(11) NOT NULL DEFAULT '0',
-  `parent_node` int(11) DEFAULT NULL,
+  `contentobject_id` int DEFAULT NULL,
+  `contentobject_version` int DEFAULT NULL,
+  `from_node_id` int DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `is_main` int NOT NULL DEFAULT '0',
+  `op_code` int NOT NULL DEFAULT '0',
+  `parent_node` int DEFAULT NULL,
   `parent_remote_id` varchar(100) NOT NULL DEFAULT '',
   `remote_id` varchar(100) NOT NULL DEFAULT '0',
-  `sort_field` int(11) DEFAULT '1',
-  `sort_order` int(11) DEFAULT '1',
-  `priority` int(11) NOT NULL DEFAULT '0',
-  `is_hidden` int(11) NOT NULL DEFAULT '0',
+  `sort_field` int DEFAULT '1',
+  `sort_order` int DEFAULT '1',
+  `priority` int NOT NULL DEFAULT '0',
+  `is_hidden` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `eznode_assignment_is_main` (`is_main`),
   KEY `eznode_assignment_coid_cov` (`contentobject_id`,`contentobject_version`),
@@ -703,11 +703,11 @@ DROP TABLE IF EXISTS `eznotification`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eznotification` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `owner_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `owner_id` int NOT NULL DEFAULT '0',
   `is_pending` tinyint(1) NOT NULL DEFAULT '1',
   `type` varchar(128) NOT NULL DEFAULT '',
-  `created` int(11) NOT NULL DEFAULT '0',
+  `created` int NOT NULL DEFAULT '0',
   `data` longtext,
   PRIMARY KEY (`id`),
   KEY `eznotification_owner_is_pending` (`owner_id`,`is_pending`),
@@ -723,8 +723,8 @@ DROP TABLE IF EXISTS `ezpackage`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpackage` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `install_date` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `install_date` int NOT NULL DEFAULT '0',
   `name` varchar(100) NOT NULL DEFAULT '',
   `version` varchar(30) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
@@ -740,10 +740,10 @@ DROP TABLE IF EXISTS `ezpolicy`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpolicy` (
   `function_name` varchar(255) DEFAULT NULL,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `module_name` varchar(255) DEFAULT NULL,
-  `original_id` int(11) NOT NULL DEFAULT '0',
-  `role_id` int(11) DEFAULT NULL,
+  `original_id` int NOT NULL DEFAULT '0',
+  `role_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `ezpolicy_role_id` (`role_id`),
   KEY `ezpolicy_original_id` (`original_id`)
@@ -758,9 +758,9 @@ DROP TABLE IF EXISTS `ezpolicy_limitation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpolicy_limitation` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `identifier` varchar(255) NOT NULL DEFAULT '',
-  `policy_id` int(11) DEFAULT NULL,
+  `policy_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `policy_id` (`policy_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -774,8 +774,8 @@ DROP TABLE IF EXISTS `ezpolicy_limitation_value`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpolicy_limitation_value` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `limitation_id` int(11) DEFAULT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `limitation_id` int DEFAULT NULL,
   `value` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `ezpolicy_limit_value_limit_id` (`limitation_id`),
@@ -791,9 +791,9 @@ DROP TABLE IF EXISTS `ezpreferences`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezpreferences` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
-  `user_id` int(11) NOT NULL DEFAULT '0',
+  `user_id` int NOT NULL DEFAULT '0',
   `value` longtext,
   PRIMARY KEY (`id`),
   KEY `ezpreferences_user_id_idx` (`user_id`,`name`),
@@ -809,11 +809,11 @@ DROP TABLE IF EXISTS `ezrole`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezrole` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `is_new` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `is_new` int NOT NULL DEFAULT '0',
   `name` varchar(255) NOT NULL DEFAULT '',
   `value` char(1) DEFAULT NULL,
-  `version` int(11) DEFAULT '0',
+  `version` int DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -826,20 +826,20 @@ DROP TABLE IF EXISTS `ezsearch_object_word_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezsearch_object_word_link` (
-  `contentclass_attribute_id` int(11) NOT NULL DEFAULT '0',
-  `contentclass_id` int(11) NOT NULL DEFAULT '0',
-  `contentobject_id` int(11) NOT NULL DEFAULT '0',
+  `contentclass_attribute_id` int NOT NULL DEFAULT '0',
+  `contentclass_id` int NOT NULL DEFAULT '0',
+  `contentobject_id` int NOT NULL DEFAULT '0',
   `frequency` double NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `identifier` varchar(255) NOT NULL DEFAULT '',
-  `integer_value` int(11) NOT NULL DEFAULT '0',
-  `next_word_id` int(11) NOT NULL DEFAULT '0',
-  `placement` int(11) NOT NULL DEFAULT '0',
-  `prev_word_id` int(11) NOT NULL DEFAULT '0',
-  `published` int(11) NOT NULL DEFAULT '0',
-  `section_id` int(11) NOT NULL DEFAULT '0',
-  `word_id` int(11) NOT NULL DEFAULT '0',
-  `language_mask` bigint(20) NOT NULL DEFAULT '0',
+  `integer_value` int NOT NULL DEFAULT '0',
+  `next_word_id` int NOT NULL DEFAULT '0',
+  `placement` int NOT NULL DEFAULT '0',
+  `prev_word_id` int NOT NULL DEFAULT '0',
+  `published` int NOT NULL DEFAULT '0',
+  `section_id` int NOT NULL DEFAULT '0',
+  `word_id` int NOT NULL DEFAULT '0',
+  `language_mask` bigint NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ezsearch_object_word_link_object` (`contentobject_id`),
   KEY `ezsearch_object_word_link_identifier` (`identifier`(191)),
@@ -857,8 +857,8 @@ DROP TABLE IF EXISTS `ezsearch_word`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezsearch_word` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `object_count` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `object_count` int NOT NULL DEFAULT '0',
   `word` varchar(150) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `ezsearch_word_word_i` (`word`),
@@ -874,7 +874,7 @@ DROP TABLE IF EXISTS `ezsection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezsection` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `identifier` varchar(255) DEFAULT NULL,
   `locale` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
@@ -905,16 +905,16 @@ DROP TABLE IF EXISTS `eztags`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eztags` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `parent_id` int(11) NOT NULL DEFAULT '0',
-  `main_tag_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `parent_id` int NOT NULL DEFAULT '0',
+  `main_tag_id` int NOT NULL DEFAULT '0',
   `keyword` varchar(255) NOT NULL DEFAULT '',
-  `depth` int(11) NOT NULL DEFAULT '1',
+  `depth` int NOT NULL DEFAULT '1',
   `path_string` varchar(255) NOT NULL DEFAULT '',
-  `modified` int(11) NOT NULL DEFAULT '0',
+  `modified` int NOT NULL DEFAULT '0',
   `remote_id` varchar(100) NOT NULL DEFAULT '',
-  `main_language_id` bigint(20) NOT NULL DEFAULT '0',
-  `language_mask` bigint(20) NOT NULL DEFAULT '0',
+  `main_language_id` bigint NOT NULL DEFAULT '0',
+  `language_mask` bigint NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `idx_eztags_remote_id` (`remote_id`),
   KEY `idx_eztags_keyword` (`keyword`(191)),
@@ -930,12 +930,12 @@ DROP TABLE IF EXISTS `eztags_attribute_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eztags_attribute_link` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `keyword_id` int(11) NOT NULL DEFAULT '0',
-  `objectattribute_id` int(11) NOT NULL DEFAULT '0',
-  `objectattribute_version` int(11) NOT NULL DEFAULT '0',
-  `object_id` int(11) NOT NULL DEFAULT '0',
-  `priority` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `keyword_id` int NOT NULL DEFAULT '0',
+  `objectattribute_id` int NOT NULL DEFAULT '0',
+  `objectattribute_version` int NOT NULL DEFAULT '0',
+  `object_id` int NOT NULL DEFAULT '0',
+  `priority` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `idx_eztags_attr_link_keyword_id` (`keyword_id`),
   KEY `idx_eztags_attr_link_kid_oaid_oav` (`keyword_id`,`objectattribute_id`,`objectattribute_version`),
@@ -952,11 +952,11 @@ DROP TABLE IF EXISTS `eztags_keyword`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eztags_keyword` (
-  `keyword_id` int(11) NOT NULL DEFAULT '0',
-  `language_id` bigint(20) NOT NULL DEFAULT '0',
+  `keyword_id` int NOT NULL DEFAULT '0',
+  `language_id` bigint NOT NULL DEFAULT '0',
   `keyword` varchar(255) NOT NULL DEFAULT '',
   `locale` varchar(20) NOT NULL DEFAULT '',
-  `status` int(11) NOT NULL DEFAULT '0',
+  `status` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`keyword_id`,`locale`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -969,11 +969,11 @@ DROP TABLE IF EXISTS `ezurl`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurl` (
-  `created` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `is_valid` int(11) NOT NULL DEFAULT '1',
-  `last_checked` int(11) NOT NULL DEFAULT '0',
-  `modified` int(11) NOT NULL DEFAULT '0',
+  `created` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `is_valid` int NOT NULL DEFAULT '1',
+  `last_checked` int NOT NULL DEFAULT '0',
+  `modified` int NOT NULL DEFAULT '0',
   `original_url_md5` varchar(32) NOT NULL DEFAULT '',
   `url` longtext,
   PRIMARY KEY (`id`),
@@ -989,9 +989,9 @@ DROP TABLE IF EXISTS `ezurl_object_link`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurl_object_link` (
-  `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
-  `contentobject_attribute_version` int(11) NOT NULL DEFAULT '0',
-  `url_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_attribute_id` int NOT NULL DEFAULT '0',
+  `contentobject_attribute_version` int NOT NULL DEFAULT '0',
+  `url_id` int NOT NULL DEFAULT '0',
   KEY `ezurl_ol_coa_id` (`contentobject_attribute_id`),
   KEY `ezurl_ol_url_id` (`url_id`),
   KEY `ezurl_ol_coa_version` (`contentobject_attribute_version`)
@@ -1007,11 +1007,11 @@ DROP TABLE IF EXISTS `ezurlalias`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurlalias` (
   `destination_url` longtext NOT NULL,
-  `forward_to_id` int(11) NOT NULL DEFAULT '0',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `is_imported` int(11) NOT NULL DEFAULT '0',
-  `is_internal` int(11) NOT NULL DEFAULT '1',
-  `is_wildcard` int(11) NOT NULL DEFAULT '0',
+  `forward_to_id` int NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `is_imported` int NOT NULL DEFAULT '0',
+  `is_internal` int NOT NULL DEFAULT '1',
+  `is_wildcard` int NOT NULL DEFAULT '0',
   `source_md5` varchar(32) DEFAULT NULL,
   `source_url` longtext NOT NULL,
   PRIMARY KEY (`id`),
@@ -1034,13 +1034,13 @@ DROP TABLE IF EXISTS `ezurlalias_ml`;
 CREATE TABLE `ezurlalias_ml` (
   `action` longtext NOT NULL,
   `action_type` varchar(32) NOT NULL DEFAULT '',
-  `alias_redirects` int(11) NOT NULL DEFAULT '1',
-  `id` int(11) NOT NULL DEFAULT '0',
-  `is_alias` int(11) NOT NULL DEFAULT '0',
-  `is_original` int(11) NOT NULL DEFAULT '0',
-  `lang_mask` bigint(20) NOT NULL DEFAULT '0',
-  `link` int(11) NOT NULL DEFAULT '0',
-  `parent` int(11) NOT NULL DEFAULT '0',
+  `alias_redirects` int NOT NULL DEFAULT '1',
+  `id` int NOT NULL DEFAULT '0',
+  `is_alias` int NOT NULL DEFAULT '0',
+  `is_original` int NOT NULL DEFAULT '0',
+  `lang_mask` bigint NOT NULL DEFAULT '0',
+  `link` int NOT NULL DEFAULT '0',
+  `parent` int NOT NULL DEFAULT '0',
   `text` longtext NOT NULL,
   `text_md5` varchar(32) NOT NULL DEFAULT '',
   PRIMARY KEY (`parent`,`text_md5`),
@@ -1062,7 +1062,7 @@ DROP TABLE IF EXISTS `ezurlalias_ml_incr`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurlalias_ml_incr` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1076,9 +1076,9 @@ DROP TABLE IF EXISTS `ezurlwildcard`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezurlwildcard` (
   `destination_url` longtext NOT NULL,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `source_url` longtext NOT NULL,
-  `type` int(11) NOT NULL DEFAULT '0',
+  `type` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1091,12 +1091,12 @@ DROP TABLE IF EXISTS `ezuser`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezuser` (
-  `contentobject_id` int(11) NOT NULL DEFAULT '0',
+  `contentobject_id` int NOT NULL DEFAULT '0',
   `email` varchar(150) NOT NULL DEFAULT '',
   `login` varchar(150) NOT NULL DEFAULT '',
   `password_hash` varchar(255) DEFAULT NULL,
-  `password_hash_type` int(11) NOT NULL DEFAULT '1',
-  `password_updated_at` int(11) DEFAULT NULL,
+  `password_hash_type` int NOT NULL DEFAULT '1',
+  `password_updated_at` int DEFAULT NULL,
   PRIMARY KEY (`contentobject_id`),
   UNIQUE KEY `ezuser_login` (`login`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1111,9 +1111,9 @@ DROP TABLE IF EXISTS `ezuser_accountkey`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezuser_accountkey` (
   `hash_key` varchar(32) NOT NULL DEFAULT '',
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL AUTO_INCREMENT,
+  `time` int NOT NULL DEFAULT '0',
+  `user_id` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `hash_key` (`hash_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1127,11 +1127,11 @@ DROP TABLE IF EXISTS `ezuser_role`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezuser_role` (
-  `contentobject_id` int(11) DEFAULT NULL,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `contentobject_id` int DEFAULT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
   `limit_identifier` varchar(255) DEFAULT '',
   `limit_value` varchar(255) DEFAULT '',
-  `role_id` int(11) DEFAULT NULL,
+  `role_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `ezuser_role_role_id` (`role_id`),
   KEY `ezuser_role_contentobject_id` (`contentobject_id`)
@@ -1146,9 +1146,9 @@ DROP TABLE IF EXISTS `ezuser_setting`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ezuser_setting` (
-  `is_enabled` int(11) NOT NULL DEFAULT '0',
-  `max_login` int(11) DEFAULT NULL,
-  `user_id` int(11) NOT NULL DEFAULT '0',
+  `is_enabled` int NOT NULL DEFAULT '0',
+  `max_login` int DEFAULT NULL,
+  `user_id` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1161,12 +1161,12 @@ DROP TABLE IF EXISTS `ibexa_setting`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ibexa_setting` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `group` varchar(128) NOT NULL,
   `identifier` varchar(128) NOT NULL,
   `value` text NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `ibexa_setting_group_identifier` (`group`, `identifier`)
+  UNIQUE KEY `ibexa_setting_group_identifier` (`group`,`identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -1178,23 +1178,23 @@ DROP TABLE IF EXISTS `nglayouts_block`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_block` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `layout_id` int(11) NOT NULL,
-  `depth` int(11) NOT NULL,
+  `layout_id` int NOT NULL,
+  `depth` int NOT NULL,
   `path` varchar(191) NOT NULL,
-  `parent_id` int(11) DEFAULT NULL,
+  `parent_id` int DEFAULT NULL,
   `placeholder` varchar(191) DEFAULT NULL,
-  `position` int(11) DEFAULT NULL,
+  `position` int DEFAULT NULL,
   `definition_identifier` varchar(191) NOT NULL,
   `view_type` varchar(191) NOT NULL,
   `item_view_type` varchar(191) NOT NULL,
   `name` varchar(191) NOT NULL,
   `config` longtext NOT NULL,
-  `translatable` tinyint(4) NOT NULL,
+  `translatable` tinyint NOT NULL,
   `main_locale` varchar(191) NOT NULL,
-  `always_available` tinyint(4) NOT NULL,
+  `always_available` tinyint NOT NULL,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_block_uuid` (`uuid`,`status`),
   KEY `idx_ngl_layout` (`layout_id`,`status`),
@@ -1211,11 +1211,11 @@ DROP TABLE IF EXISTS `nglayouts_block_collection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_block_collection` (
-  `block_id` int(11) NOT NULL,
-  `block_status` int(11) NOT NULL,
+  `block_id` int NOT NULL,
+  `block_status` int NOT NULL,
   `identifier` varchar(191) NOT NULL,
-  `collection_id` int(11) NOT NULL,
-  `collection_status` int(11) NOT NULL,
+  `collection_id` int NOT NULL,
+  `collection_status` int NOT NULL,
   PRIMARY KEY (`block_id`,`block_status`,`identifier`),
   KEY `idx_ngl_block` (`block_id`,`block_status`),
   KEY `idx_ngl_collection` (`collection_id`,`collection_status`),
@@ -1232,8 +1232,8 @@ DROP TABLE IF EXISTS `nglayouts_block_translation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_block_translation` (
-  `block_id` int(11) NOT NULL,
-  `status` int(11) NOT NULL,
+  `block_id` int NOT NULL,
+  `status` int NOT NULL,
   `locale` varchar(191) NOT NULL,
   `parameters` longtext NOT NULL,
   PRIMARY KEY (`block_id`,`status`,`locale`),
@@ -1249,14 +1249,14 @@ DROP TABLE IF EXISTS `nglayouts_collection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `start` int(11) NOT NULL,
-  `length` int(11) DEFAULT NULL,
-  `translatable` tinyint(4) NOT NULL,
+  `start` int NOT NULL,
+  `length` int DEFAULT NULL,
+  `translatable` tinyint NOT NULL,
   `main_locale` varchar(191) NOT NULL,
-  `always_available` tinyint(4) NOT NULL,
+  `always_available` tinyint NOT NULL,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_collection_uuid` (`uuid`,`status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1270,11 +1270,11 @@ DROP TABLE IF EXISTS `nglayouts_collection_item`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_item` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `collection_id` int(11) NOT NULL,
-  `position` int(11) NOT NULL,
+  `collection_id` int NOT NULL,
+  `position` int NOT NULL,
   `value` varchar(191) DEFAULT NULL,
   `value_type` varchar(191) NOT NULL,
   `view_type` varchar(191) DEFAULT NULL,
@@ -1294,10 +1294,10 @@ DROP TABLE IF EXISTS `nglayouts_collection_query`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_query` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `collection_id` int(11) NOT NULL,
+  `collection_id` int NOT NULL,
   `type` varchar(191) NOT NULL,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_collection_query_uuid` (`uuid`,`status`),
@@ -1314,8 +1314,8 @@ DROP TABLE IF EXISTS `nglayouts_collection_query_translation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_query_translation` (
-  `query_id` int(11) NOT NULL,
-  `status` int(11) NOT NULL,
+  `query_id` int NOT NULL,
+  `status` int NOT NULL,
   `locale` varchar(191) NOT NULL,
   `parameters` longtext NOT NULL,
   PRIMARY KEY (`query_id`,`status`,`locale`),
@@ -1331,11 +1331,11 @@ DROP TABLE IF EXISTS `nglayouts_collection_slot`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_slot` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `collection_id` int(11) NOT NULL,
-  `position` int(11) NOT NULL,
+  `collection_id` int NOT NULL,
+  `position` int NOT NULL,
   `view_type` varchar(191) DEFAULT NULL,
   PRIMARY KEY (`id`,`status`),
   UNIQUE KEY `idx_ngl_collection_slot_uuid` (`uuid`,`status`),
@@ -1353,8 +1353,8 @@ DROP TABLE IF EXISTS `nglayouts_collection_translation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_collection_translation` (
-  `collection_id` int(11) NOT NULL,
-  `status` int(11) NOT NULL,
+  `collection_id` int NOT NULL,
+  `status` int NOT NULL,
   `locale` varchar(191) NOT NULL,
   PRIMARY KEY (`collection_id`,`status`,`locale`),
   CONSTRAINT `fk_ngl_collection_translation_collection` FOREIGN KEY (`collection_id`, `status`) REFERENCES `nglayouts_collection` (`id`, `status`)
@@ -1369,14 +1369,14 @@ DROP TABLE IF EXISTS `nglayouts_layout`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_layout` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
   `type` varchar(191) NOT NULL,
   `name` varchar(191) NOT NULL,
   `description` longtext NOT NULL,
-  `created` int(11) NOT NULL,
-  `modified` int(11) NOT NULL,
+  `created` int NOT NULL,
+  `modified` int NOT NULL,
   `shared` tinyint(1) NOT NULL,
   `main_locale` varchar(191) NOT NULL,
   PRIMARY KEY (`id`,`status`),
@@ -1395,8 +1395,8 @@ DROP TABLE IF EXISTS `nglayouts_layout_translation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_layout_translation` (
-  `layout_id` int(11) NOT NULL,
-  `status` int(11) NOT NULL,
+  `layout_id` int NOT NULL,
+  `status` int NOT NULL,
   `locale` varchar(191) NOT NULL,
   PRIMARY KEY (`layout_id`,`status`,`locale`),
   CONSTRAINT `fk_ngl_layout_translation_layout` FOREIGN KEY (`layout_id`, `status`) REFERENCES `nglayouts_layout` (`id`, `status`)
@@ -1425,8 +1425,8 @@ DROP TABLE IF EXISTS `nglayouts_role`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_role` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
   `name` varchar(191) NOT NULL,
   `identifier` varchar(191) NOT NULL,
@@ -1445,10 +1445,10 @@ DROP TABLE IF EXISTS `nglayouts_role_policy`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_role_policy` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `role_id` int(11) NOT NULL,
+  `role_id` int NOT NULL,
   `component` varchar(191) DEFAULT NULL,
   `permission` varchar(191) DEFAULT NULL,
   `limitations` longtext NOT NULL,
@@ -1469,10 +1469,10 @@ DROP TABLE IF EXISTS `nglayouts_rule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `rule_group_id` int(11) NOT NULL,
+  `rule_group_id` int NOT NULL,
   `layout_uuid` char(36) DEFAULT NULL,
   `description` longtext NOT NULL,
   PRIMARY KEY (`id`,`status`),
@@ -1489,8 +1489,8 @@ DROP TABLE IF EXISTS `nglayouts_rule_condition`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_condition` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
   `type` varchar(191) NOT NULL,
   `value` longtext,
@@ -1507,10 +1507,10 @@ DROP TABLE IF EXISTS `nglayouts_rule_condition_rule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_condition_rule` (
-  `condition_id` int(11) NOT NULL,
-  `condition_status` int(11) NOT NULL,
-  `rule_id` int(11) NOT NULL,
-  `rule_status` int(11) NOT NULL,
+  `condition_id` int NOT NULL,
+  `condition_status` int NOT NULL,
+  `rule_id` int NOT NULL,
+  `rule_status` int NOT NULL,
   PRIMARY KEY (`condition_id`,`condition_status`),
   KEY `idx_ngl_rule` (`rule_id`,`rule_status`),
   CONSTRAINT `fk_ngl_rule_condition_rule_rule` FOREIGN KEY (`rule_id`, `rule_status`) REFERENCES `nglayouts_rule` (`id`, `status`),
@@ -1526,10 +1526,10 @@ DROP TABLE IF EXISTS `nglayouts_rule_condition_rule_group`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_condition_rule_group` (
-  `condition_id` int(11) NOT NULL,
-  `condition_status` int(11) NOT NULL,
-  `rule_group_id` int(11) NOT NULL,
-  `rule_group_status` int(11) NOT NULL,
+  `condition_id` int NOT NULL,
+  `condition_status` int NOT NULL,
+  `rule_group_id` int NOT NULL,
+  `rule_group_status` int NOT NULL,
   PRIMARY KEY (`condition_id`,`condition_status`),
   KEY `idx_ngl_rule_group` (`rule_group_id`,`rule_group_status`),
   CONSTRAINT `fk_ngl_rule_condition_rule_group_rule_condition` FOREIGN KEY (`condition_id`, `condition_status`) REFERENCES `nglayouts_rule_condition` (`id`, `status`),
@@ -1545,9 +1545,9 @@ DROP TABLE IF EXISTS `nglayouts_rule_data`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_data` (
-  `rule_id` int(11) NOT NULL,
+  `rule_id` int NOT NULL,
   `enabled` tinyint(1) NOT NULL,
-  `priority` int(11) NOT NULL,
+  `priority` int NOT NULL,
   PRIMARY KEY (`rule_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1560,12 +1560,12 @@ DROP TABLE IF EXISTS `nglayouts_rule_group`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_group` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `depth` int(11) NOT NULL,
+  `depth` int NOT NULL,
   `path` varchar(191) NOT NULL,
-  `parent_id` int(11) DEFAULT NULL,
+  `parent_id` int DEFAULT NULL,
   `name` varchar(191) NOT NULL,
   `description` longtext NOT NULL,
   PRIMARY KEY (`id`,`status`),
@@ -1582,9 +1582,9 @@ DROP TABLE IF EXISTS `nglayouts_rule_group_data`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_group_data` (
-  `rule_group_id` int(11) NOT NULL,
+  `rule_group_id` int NOT NULL,
   `enabled` tinyint(1) NOT NULL,
-  `priority` int(11) NOT NULL,
+  `priority` int NOT NULL,
   PRIMARY KEY (`rule_group_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1597,10 +1597,10 @@ DROP TABLE IF EXISTS `nglayouts_rule_target`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_rule_target` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `status` int NOT NULL,
   `uuid` char(36) NOT NULL,
-  `rule_id` int(11) NOT NULL,
+  `rule_id` int NOT NULL,
   `type` varchar(191) NOT NULL,
   `value` longtext,
   PRIMARY KEY (`id`,`status`),
@@ -1620,9 +1620,9 @@ DROP TABLE IF EXISTS `nglayouts_zone`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_zone` (
   `identifier` varchar(191) NOT NULL,
-  `layout_id` int(11) NOT NULL,
-  `status` int(11) NOT NULL,
-  `root_block_id` int(11) NOT NULL,
+  `layout_id` int NOT NULL,
+  `status` int NOT NULL,
+  `root_block_id` int NOT NULL,
   `linked_layout_uuid` char(36) DEFAULT NULL,
   `linked_zone_identifier` varchar(191) DEFAULT NULL,
   PRIMARY KEY (`identifier`,`layout_id`,`status`),
@@ -1642,8 +1642,8 @@ DROP TABLE IF EXISTS `nguser_setting`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nguser_setting` (
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  `is_activated` int(11) NOT NULL DEFAULT '0',
+  `user_id` int NOT NULL DEFAULT '0',
+  `is_activated` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1656,10 +1656,10 @@ DROP TABLE IF EXISTS `novaseo_meta`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `novaseo_meta` (
-  `objectattribute_id` bigint(20) unsigned NOT NULL,
+  `objectattribute_id` bigint unsigned NOT NULL,
   `meta_name` varchar(255) NOT NULL,
   `meta_content` text NOT NULL,
-  `objectattribute_version` int(10) unsigned NOT NULL,
+  `objectattribute_version` int unsigned NOT NULL,
   PRIMARY KEY (`objectattribute_id`,`objectattribute_version`,`meta_name`),
   KEY `novaseo_idx_content` (`objectattribute_id`,`objectattribute_version`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1689,8 +1689,8 @@ DROP TABLE IF EXISTS `sckenhancedselection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sckenhancedselection` (
-  `contentobject_attribute_id` int(11) NOT NULL DEFAULT '0',
-  `contentobject_attribute_version` int(11) NOT NULL DEFAULT '0',
+  `contentobject_attribute_id` int NOT NULL DEFAULT '0',
+  `contentobject_attribute_version` int NOT NULL DEFAULT '0',
   `identifier` varchar(255) NOT NULL DEFAULT '',
   KEY `sckenhancedselection_coaid_coav` (`contentobject_attribute_id`,`contentobject_attribute_version`),
   KEY `sckenhancedselection_coaid_coav_iden` (`contentobject_attribute_id`,`contentobject_attribute_version`,`identifier`(191))
