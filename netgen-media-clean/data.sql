@@ -3184,7 +3184,7 @@ INSERT INTO `nglayouts_migration_versions` VALUES ('001200','2020-06-15 12:00:00
 INSERT INTO `nglayouts_migration_versions` VALUES ('001300','2020-06-15 12:00:00');
 INSERT INTO `nglayouts_migration_versions` VALUES ('010000','2020-06-15 12:00:00');
 INSERT INTO `nglayouts_migration_versions` VALUES ('010200','2020-06-15 12:00:00');
-INSERT INTO `nglayouts_migration_versions` VALUES ('010300','2021-05-13 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('010300','2020-06-15 12:00:00');
 /*!40000 ALTER TABLE `nglayouts_migration_versions` ENABLE KEYS */;
 UNLOCK TABLES;
 
