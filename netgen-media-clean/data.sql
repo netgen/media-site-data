@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.22, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.23, for Linux (x86_64)
 --
 -- Host: localhost    Database: ngmedia
 -- ------------------------------------------------------
--- Server version	8.0.22-0ubuntu0.20.04.2
+-- Server version	8.0.23-0ubuntu0.20.10.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -3184,6 +3184,7 @@ INSERT INTO `nglayouts_migration_versions` VALUES ('001200','2020-06-15 12:00:00
 INSERT INTO `nglayouts_migration_versions` VALUES ('001300','2020-06-15 12:00:00');
 INSERT INTO `nglayouts_migration_versions` VALUES ('010000','2020-06-15 12:00:00');
 INSERT INTO `nglayouts_migration_versions` VALUES ('010200','2020-06-15 12:00:00');
+INSERT INTO `nglayouts_migration_versions` VALUES ('010300','2021-05-13 12:00:00');
 /*!40000 ALTER TABLE `nglayouts_migration_versions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3231,12 +3232,50 @@ LOCK TABLES `nglayouts_rule_condition` WRITE;
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `nglayouts_rule_condition_rule`
+--
+
+LOCK TABLES `nglayouts_rule_condition_rule` WRITE;
+/*!40000 ALTER TABLE `nglayouts_rule_condition_rule` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_rule_condition_rule` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `nglayouts_rule_condition_rule_group`
+--
+
+LOCK TABLES `nglayouts_rule_condition_rule_group` WRITE;
+/*!40000 ALTER TABLE `nglayouts_rule_condition_rule_group` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nglayouts_rule_condition_rule_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `nglayouts_rule_data`
 --
 
 LOCK TABLES `nglayouts_rule_data` WRITE;
 /*!40000 ALTER TABLE `nglayouts_rule_data` DISABLE KEYS */;
 /*!40000 ALTER TABLE `nglayouts_rule_data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `nglayouts_rule_group`
+--
+
+LOCK TABLES `nglayouts_rule_group` WRITE;
+/*!40000 ALTER TABLE `nglayouts_rule_group` DISABLE KEYS */;
+INSERT INTO `nglayouts_rule_group` VALUES (1,1,'00000000-0000-0000-0000-000000000000',0,'/1/',NULL,'Root','');
+/*!40000 ALTER TABLE `nglayouts_rule_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `nglayouts_rule_group_data`
+--
+
+LOCK TABLES `nglayouts_rule_group_data` WRITE;
+/*!40000 ALTER TABLE `nglayouts_rule_group_data` DISABLE KEYS */;
+INSERT INTO `nglayouts_rule_group_data` VALUES (1,1,0);
+/*!40000 ALTER TABLE `nglayouts_rule_group_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -3284,4 +3323,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-05 12:00:00
+-- Dump completed on 2021-05-13 12:00:00
