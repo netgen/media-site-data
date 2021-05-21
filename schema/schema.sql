@@ -2824,7 +2824,7 @@ DROP TABLE IF EXISTS `nglayouts_migration_versions`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `nglayouts_migration_versions` (
   `version` varchar(14) NOT NULL,
-  `executed_at` datetime DEFAULT NULL COMMENT '(DC2Type:datetime_immutable)',
+  `executed_at` datetime NOT NULL COMMENT '(DC2Type:datetime_immutable)',
   PRIMARY KEY (`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -3085,4 +3085,4 @@ CREATE TABLE `sckenhancedselection` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-13 14:53:19
+-- Dump completed on 2021-05-13 12:00:00
