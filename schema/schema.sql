@@ -1658,7 +1658,7 @@ DROP TABLE IF EXISTS `novaseo_meta`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `novaseo_meta` (
   `objectattribute_id` bigint unsigned NOT NULL,
-  `meta_name` varchar(255) NOT NULL,
+  `meta_name` varchar(191) NOT NULL,
   `meta_content` text NOT NULL,
   `objectattribute_version` int unsigned NOT NULL,
   PRIMARY KEY (`objectattribute_id`,`objectattribute_version`,`meta_name`),
