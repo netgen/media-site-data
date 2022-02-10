@@ -1166,7 +1166,8 @@ CREATE TABLE `ibexa_setting` (
   `identifier` varchar(128) NOT NULL,
   `value` text NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `ibexa_setting_group_identifier` (`group`,`identifier`)
+  UNIQUE KEY `ibexa_setting_group_identifier` (`group`,`identifier`),
+  KEY `ibexa_setting_id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
