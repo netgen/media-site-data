@@ -298,6 +298,7 @@ CREATE TABLE `ezcontentclassgroup` (
   `modified` int NOT NULL DEFAULT '0',
   `modifier_id` int NOT NULL DEFAULT '0',
   `name` varchar(255) DEFAULT NULL,
+  `is_system` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;

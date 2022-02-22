@@ -670,9 +670,9 @@ UNLOCK TABLES;
 
 LOCK TABLES `ezcontentclassgroup` WRITE;
 /*!40000 ALTER TABLE `ezcontentclassgroup` DISABLE KEYS */;
-INSERT INTO `ezcontentclassgroup` VALUES (1031216928,14,1,1033922106,14,'Netgen');
-INSERT INTO `ezcontentclassgroup` VALUES (1031216941,14,2,1033922113,14,'Media');
-INSERT INTO `ezcontentclassgroup` VALUES (1032009743,14,3,1033922120,14,'Users');
+INSERT INTO `ezcontentclassgroup` VALUES (1031216928,14,1,1033922106,14,'Netgen',0);
+INSERT INTO `ezcontentclassgroup` VALUES (1031216941,14,2,1033922113,14,'Media',0);
+INSERT INTO `ezcontentclassgroup` VALUES (1032009743,14,3,1033922120,14,'Users',0);
 /*!40000 ALTER TABLE `ezcontentclassgroup` ENABLE KEYS */;
 UNLOCK TABLES;
 
