@@ -578,13 +578,13 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,846,173,0,NULL,'Got it!','ezst
 INSERT INTO `ezcontentobject_attribute` VALUES (0,847,173,0,NULL,'Necessary cookies','ezstring',2120,'eng-GB',3,0,'necessary cookies',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,848,173,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>Necessary cookies enable core functionality. The website cannot function properly without these cookies, and can only be disabled by changing your browser preferences.</para></section>\n','ezrichtext',2121,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (2122,849,173,0,1,'','ezboolean',2122,'eng-GB',3,1,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (2123,850,173,0,1,'','ezboolean',2123,'eng-GB',3,1,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (2123,850,173,0,0,'','ezboolean',2123,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,851,173,0,NULL,'Analytics cookies','ezstring',2124,'eng-GB',3,0,'analytics cookies',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,852,173,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>Analytics cookies help us to improve our website by collecting and reporting information on its usage.</para></section>\n','ezrichtext',2125,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (2126,853,173,0,NULL,'','eztext',2126,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (2127,854,173,0,NULL,'','eztext',2127,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (2128,855,173,0,1,'','ezboolean',2128,'eng-GB',3,1,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (2129,856,173,0,1,'','ezboolean',2129,'eng-GB',3,1,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (2129,856,173,0,0,'','ezboolean',2129,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,857,173,0,NULL,'Marketing cookies','ezstring',2130,'eng-GB',3,0,'marketing cookies',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,858,173,0,1045487555,'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>We use marketing cookies to help us improve the relevancy of advertising campaigns you receive.</para></section>\n','ezrichtext',2131,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (2132,859,173,0,NULL,'','eztext',2132,'eng-GB',3,0,'',1);
