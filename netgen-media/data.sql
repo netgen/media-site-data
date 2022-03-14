@@ -2899,13 +2899,13 @@ INSERT INTO `ezcontentobject_attribute` VALUES (0,846,400,0,NULL,'Got it!','ezst
 INSERT INTO `ezcontentobject_attribute` VALUES (0,847,400,0,NULL,'Necessary cookies','ezstring',4602,'eng-GB',3,0,'necessary cookies',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,848,400,0,1045487555,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<section xmlns:image=\"http://ez.no/namespaces/ezpublish3/image/\" xmlns:xhtml=\"http://ez.no/namespaces/ezpublish3/xhtml/\" xmlns:custom=\"http://ez.no/namespaces/ezpublish3/custom/\"><paragraph>Necessary cookies enable core functionality. The website cannot function properly without these cookies, and can only be disabled by changing your browser preferences.</paragraph></section>\n','ezxmltext',4603,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (4604,849,400,0,1,'','ezboolean',4604,'eng-GB',3,1,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (4605,850,400,0,1,'','ezboolean',4605,'eng-GB',3,1,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (4605,850,400,0,0,'','ezboolean',4605,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,851,400,0,NULL,'Analytics cookies','ezstring',4606,'eng-GB',3,0,'analytics cookies',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,852,400,0,1045487555,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<section xmlns:image=\"http://ez.no/namespaces/ezpublish3/image/\" xmlns:xhtml=\"http://ez.no/namespaces/ezpublish3/xhtml/\" xmlns:custom=\"http://ez.no/namespaces/ezpublish3/custom/\"><paragraph>Analytics cookies help us to improve our website by collecting and reporting information on its usage.</paragraph></section>\n','ezxmltext',4607,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (4608,853,400,0,NULL,'','eztext',4608,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (4609,854,400,0,NULL,'','eztext',4609,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (4610,855,400,0,1,'','ezboolean',4610,'eng-GB',3,1,'',1);
-INSERT INTO `ezcontentobject_attribute` VALUES (4611,856,400,0,1,'','ezboolean',4611,'eng-GB',3,1,'',1);
+INSERT INTO `ezcontentobject_attribute` VALUES (4611,856,400,0,0,'','ezboolean',4611,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,857,400,0,NULL,'Marketing cookies','ezstring',4612,'eng-GB',3,0,'marketing cookies',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (0,858,400,0,1045487555,'<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<section xmlns:image=\"http://ez.no/namespaces/ezpublish3/image/\" xmlns:xhtml=\"http://ez.no/namespaces/ezpublish3/xhtml/\" xmlns:custom=\"http://ez.no/namespaces/ezpublish3/custom/\"><paragraph>We use marketing cookies to help us improve the relevancy of advertising campaigns you receive.</paragraph></section>\n','ezxmltext',4613,'eng-GB',3,0,'',1);
 INSERT INTO `ezcontentobject_attribute` VALUES (4614,859,400,0,NULL,'','eztext',4614,'eng-GB',3,0,'',1);
