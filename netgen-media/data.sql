@@ -3956,15 +3956,9 @@ INSERT INTO `ezcontentclass_classgroup` VALUES (109,0,1,'Netgen');
 INSERT INTO `ezcontentclass_classgroup` VALUES (110,0,1,'Netgen');
 INSERT INTO `ezcontentclass_classgroup` VALUES (111,0,1,'Netgen');
 INSERT INTO `ezcontentclass_classgroup` VALUES (113,0,4,'Netgen Components');
-INSERT INTO `ezcontentclass_classgroup` VALUES (114,1,4,'Netgen Components');
-INSERT INTO `ezcontentclass_classgroup` VALUES (115,1,4,'Netgen Components');
-INSERT INTO `ezcontentclass_classgroup` VALUES (116,1,4,'Netgen Components');
 INSERT INTO `ezcontentclass_classgroup` VALUES (118,0,1,'Netgen');
 INSERT INTO `ezcontentclass_classgroup` VALUES (119,0,1,'Netgen');
 INSERT INTO `ezcontentclass_classgroup` VALUES (120,0,4,'Netgen Components');
-INSERT INTO `ezcontentclass_classgroup` VALUES (121,1,1,'Netgen');
-INSERT INTO `ezcontentclass_classgroup` VALUES (122,1,1,'Netgen');
-INSERT INTO `ezcontentclass_classgroup` VALUES (124,1,4,'Netgen Components');
 /*!40000 ALTER TABLE `ezcontentclass_classgroup` ENABLE KEYS */;
 UNLOCK TABLES;
 
