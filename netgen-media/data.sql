@@ -7728,6 +7728,7 @@ INSERT INTO `ezpreferences` VALUES (1,'timezone',14,'Europe/Zagreb');
 INSERT INTO `ezpreferences` VALUES (2,'short_datetime_format',14,'{\"date_format\":\"dd\\/MM\\/yyyy\",\"time_format\":\"HH:mm\"}');
 INSERT INTO `ezpreferences` VALUES (3,'full_datetime_format',14,'{\"date_format\":\"LLLL dd, yyyy\",\"time_format\":\"HH:mm\"}');
 INSERT INTO `ezpreferences` VALUES (4,'language',14,'en');
+INSERT INTO `ezpreferences` VALUES (5,'focus_mode',14,'0');
 /*!40000 ALTER TABLE `ezpreferences` ENABLE KEYS */;
 UNLOCK TABLES;
 
