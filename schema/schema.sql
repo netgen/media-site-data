@@ -1190,6 +1190,7 @@ CREATE TABLE `ibexa_token` (
   `identifier` varchar(128) DEFAULT NULL,
   `created` int NOT NULL DEFAULT '0',
   `expires` int NOT NULL DEFAULT '0',
+  `revoked` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `ibexa_token_unique` (`token`,`identifier`,`type_id`),
   KEY `IDX_B5412887C54C8C93` (`type_id`),
