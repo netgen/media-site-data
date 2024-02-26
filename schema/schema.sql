@@ -226,7 +226,8 @@ CREATE TABLE `ezcontentclass_attribute` (
   `serialized_name_list` longtext NOT NULL,
   `version` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`version`),
-  KEY `ezcontentclass_attr_ccid` (`contentclass_id`)
+  KEY `ezcontentclass_attr_ccid` (`contentclass_id`),
+  KEY `ezcontentclass_attr_dts` (`data_type_string`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -362,7 +363,8 @@ CREATE TABLE `ezcontentobject_attribute` (
   KEY `ezcontentobject_classattr_id` (`contentclassattribute_id`),
   KEY `sort_key_string` (`sort_key_string`(191)),
   KEY `ezcontentobject_attribute_language_code` (`language_code`),
-  KEY `sort_key_int` (`sort_key_int`)
+  KEY `sort_key_int` (`sort_key_int`),
+  KEY `ezcontentobject_attribute_co_id_ver` (`contentobject_id`,`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -382,7 +384,8 @@ CREATE TABLE `ezcontentobject_link` (
   `to_contentobject_id` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ezco_link_to_co_id` (`to_contentobject_id`),
-  KEY `ezco_link_from` (`from_contentobject_id`,`from_contentobject_version`,`contentclassattribute_id`)
+  KEY `ezco_link_from` (`from_contentobject_id`,`from_contentobject_version`,`contentclassattribute_id`),
+  KEY `ezco_link_cca_id` (`contentclassattribute_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -497,10 +500,10 @@ CREATE TABLE `ezcontentobject_version` (
   `version` int NOT NULL DEFAULT '0',
   `workflow_event_pos` int DEFAULT '0',
   PRIMARY KEY (`id`),
-  KEY `ezcobj_version_creator_id` (`creator_id`),
   KEY `ezcobj_version_status` (`status`),
   KEY `idx_object_version_objver` (`contentobject_id`,`version`),
-  KEY `ezcontobj_version_obj_status` (`contentobject_id`,`status`)
+  KEY `ezcontobj_version_obj_status` (`contentobject_id`,`status`),
+  KEY `ezcobj_version_creator_id` (`creator_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -995,7 +998,8 @@ CREATE TABLE `ezurl_object_link` (
   `url_id` int NOT NULL DEFAULT '0',
   KEY `ezurl_ol_coa_id` (`contentobject_attribute_id`),
   KEY `ezurl_ol_url_id` (`url_id`),
-  KEY `ezurl_ol_coa_version` (`contentobject_attribute_version`)
+  KEY `ezurl_ol_coa_version` (`contentobject_attribute_version`),
+  KEY `ezurl_ol_coa_id_cav` (`contentobject_attribute_id`,`contentobject_attribute_version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -1165,12 +1169,91 @@ CREATE TABLE `ibexa_setting` (
   `id` int NOT NULL AUTO_INCREMENT,
   `group` varchar(128) NOT NULL,
   `identifier` varchar(128) NOT NULL,
-  `value` text NOT NULL,
+  `value` json NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `ibexa_setting_group_identifier` (`group`,`identifier`),
   KEY `ibexa_setting_id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ibexa_token`
+--
+
+DROP TABLE IF EXISTS `ibexa_token`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ibexa_token` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `type_id` int NOT NULL,
+  `token` varchar(255) NOT NULL,
+  `identifier` varchar(128) DEFAULT NULL,
+  `created` int NOT NULL DEFAULT '0',
+  `expires` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ibexa_token_unique` (`token`,`identifier`,`type_id`),
+  KEY `IDX_B5412887C54C8C93` (`type_id`),
+  CONSTRAINT `ibexa_token_type_id_fk` FOREIGN KEY (`type_id`) REFERENCES `ibexa_token_type` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ibexa_token_type`
+--
+
+DROP TABLE IF EXISTS `ibexa_token_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ibexa_token_type` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `identifier` varchar(64) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ibexa_token_type_unique` (`identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ibexa_user_invitations`
+--
+
+DROP TABLE IF EXISTS `ibexa_user_invitations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ibexa_user_invitations` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `site_access_name` varchar(255) NOT NULL,
+  `hash` varchar(255) NOT NULL,
+  `creation_date` int NOT NULL,
+  `used` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ibexa_user_invitations_email_uindex` (`email`(191)),
+  UNIQUE KEY `ibexa_user_invitations_hash_uindex` (`hash`(191)),
+  KEY `ibexa_user_invitations_email_idx` (`email`),
+  KEY `ibexa_user_invitations_hash_idx` (`hash`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ibexa_user_invitations_assignments`
+--
+
+DROP TABLE IF EXISTS `ibexa_user_invitations_assignments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ibexa_user_invitations_assignments` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `invitation_id` int NOT NULL,
+  `user_group_id` int DEFAULT NULL,
+  `role_id` int DEFAULT NULL,
+  `limitation_type` varchar(255) DEFAULT NULL,
+  `limitation_value` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_DA5A7872A35D7AF0` (`invitation_id`),
+  CONSTRAINT `ibexa_user_invitations_assignments_ibexa_user_invitations_id_fk` FOREIGN KEY (`invitation_id`) REFERENCES `ibexa_user_invitations` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 --
 -- Table structure for table `nglayouts_block`

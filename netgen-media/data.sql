@@ -10822,6 +10822,42 @@ LOCK TABLES `ibexa_setting` WRITE;
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `ibexa_token`
+--
+
+LOCK TABLES `ibexa_token` WRITE;
+/*!40000 ALTER TABLE `ibexa_token` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ibexa_token` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ibexa_token_type`
+--
+
+LOCK TABLES `ibexa_token_type` WRITE;
+/*!40000 ALTER TABLE `ibexa_token_type` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ibexa_token_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ibexa_user_invitations`
+--
+
+LOCK TABLES `ibexa_user_invitations` WRITE;
+/*!40000 ALTER TABLE `ibexa_user_invitations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ibexa_user_invitations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ibexa_user_invitations_assignments`
+--
+
+LOCK TABLES `ibexa_user_invitations_assignments` WRITE;
+/*!40000 ALTER TABLE `ibexa_user_invitations_assignments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ibexa_user_invitations_assignments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `nglayouts_block`
 --
 
